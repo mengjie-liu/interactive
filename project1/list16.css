@@ -1,0 +1,147 @@
+@font-face{
+		font-family: ha;
+		src: url('NeueHaasGrotDispRD-35Thin.otf');
+}
+
+div {
+	padding: 0pt;
+	margin:0pt;
+	border:0pt;
+	display: inline;
+	position: absolute;
+	font-family: ha;
+	font-size: 450%;
+	letter-spacing: 1.75pt;
+	border:0.3pt solid black;
+	background-color: white;
+	border-width: thin;}
+
+div.s3{
+	left: -120pt;
+	top: -15pt;
+}
+
+div.s1{
+	left: 240pt;
+	top: -20pt;
+	
+}
+
+div.s2{
+	left: 460pt;
+	top: 60pt;
+}
+
+div.s4{
+	left: 650pt;
+	top: -140pt;
+}
+
+div.s1a{
+	border-right-style: none;
+	left: 1100pt;
+	top: -60pt;
+	
+}
+
+div.s2a{
+	left: 800pt;
+	top: 235pt;
+}
+
+
+.s3a{
+	left: 828pt;
+	top: 1050pt;
+	border-right-style: none;
+}
+
+.s4a{
+	left: 580pt;
+	top: 610pt;
+}
+
+.s1b{
+	left: 310pt;
+	top: 380pt;
+}
+
+.s3b{
+	left: -110pt;
+	top: 500pt;
+}
+
+.s2b{
+	left: 180pt;
+	top: 700pt;
+}
+
+.s4b{
+	left: 630pt;
+	top: 820pt;
+}
+
+.s1c{
+	left: 490pt;
+	top: 1100pt;
+}
+
+.s3c{
+	left: 891pt;
+	top: 1360pt;
+	border-right-style: none;
+}
+
+.s4c{
+	left: -100pt;
+	top: 925pt;
+}
+
+.s1d{
+	left: 85pt;
+	top: 1050pt;
+}
+
+.s2c{
+	border-bottom-style: none;
+	left: 175pt;
+	top: 1184pt;
+}
+
+.s4d{
+	left: 600pt;
+	top: 1460pt;
+}
+
+
+.s3d{
+	left: -160pt;
+	top: 1330pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
