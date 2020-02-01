@@ -1,0 +1,377 @@
+
+h1,h2,h3,h4,h5,h6,p{
+	border: 0pt;
+	padding: 0pt;
+	margin: 0pt;
+	position: absolute;
+	display: inline;
+}
+
+.title{
+	left: 50pt;
+	top: 30pt;
+}
+
+.ccc{
+	left: 55pt;
+	top: 130pt;
+}
+
+.df{
+	left: 110pt;
+	top: 380pt;
+}
+
+.tur{
+	left: 120pt;
+	top:565pt;
+}
+
+
+.sit{
+	left: 400pt;
+	top: 120pt;
+}
+
+.lsh{
+	left: 540pt;
+	top: 70pt;
+}
+
+.sil{
+	left: 520pt;
+	top: 540pt;
+}
+
+.son{
+	left: 640pt;
+	top: 565pt;
+}
+
+.ts{
+	left: 800pt;
+	top: 20pt;
+}
+
+.nb{
+	left: 812pt;
+	top: 18pt;
+}
+
+.ds{
+	left: 880pt;
+	top: 600pt;
+}
+
+.fl{
+	left: 945pt;
+	top: 590pt;
+}
+
+.cut{
+	left: 1060pt;
+	top: 60pt;
+}
+
+.in{
+	left: 1070pt;
+	top: 45pt;
+}
+
+.bh{
+	left: 1200pt;
+	top: 30pt;
+}
+
+.imt{
+	left: 1310pt;
+	top: 540pt;
+}
+
+.clc{
+	left: 1324pt;
+	top: 425pt;
+}
+
+.void{
+	left: 1440pt;
+	top: 5pt;
+}
+
+.str{
+	left: 1630pt;
+	top: 240pt;
+}
+
+.red{
+	left: 1690pt;
+	top: 480pt;
+}
+
+
+div.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.s14,.s15,.s16,.s17,.s18,.s19,.s20,.s21,.s22,.s23,.s24,.s25,.s26,.s27,.s28,.s29,.s30,.s31,.s32,.s33,.s34,.s35,.s36,.s37,.s38,.s39,.s40{
+	position: absolute;
+	background-color: #3A8FB7
+}
+
+.s1{
+	width: 165pt;
+	height: 25pt;
+	left: 225pt;
+	top: 30pt;
+}
+
+.s2{
+	width: 130pt;
+	height: 35pt;
+	left: 260pt;
+	top: 55pt;
+}
+
+.s3{
+	width: 340pt;
+	height: 37pt;
+	left: 50pt;
+	top: 90pt;
+}
+
+.s4{
+	width:325pt; 
+	height:255pt;
+	left: 65pt;
+	top: 120pt;
+}
+
+.s5{
+	width: 1607pt;
+	height: 60pt;
+	left: 10pt;
+	top: 315pt;
+}
+
+.s6{
+	width: 393pt;
+	height: 190pt;
+	left: 120pt;
+	top: 370pt;
+}
+
+.s7{
+	width: 358pt;
+	height: 15pt;
+	left: 155pt;
+	top: 560pt;
+}
+
+.s8{
+	width: 313pt;
+	height: 18pt;
+	left: 200pt;
+	top: 575pt;
+}
+
+.s9{
+	width: 333pt;
+	height: 15pt;
+	left: 180pt;
+	top: 593pt;
+}
+
+.s10{
+	width: 345pt;
+	height: 25pt;
+	left: 168pt;
+	top: 607pt;
+}
+
+.s11{
+	width: 404pt;
+	height: 200pt;
+	left: 390pt;
+	top: 175pt;
+}
+
+.s12{
+	width: 289pt;
+	height: 25pt;
+	left: 505pt;
+	top: 150pt;
+}
+
+.s13{
+	width: 299pt;
+	height: 15pt;
+	left: 495pt;
+	top: 138pt;
+}
+
+.s14{
+	width: 259pt;
+	height: 52pt;
+	left: 535pt;
+	top: 87pt;
+}
+
+.s15{
+	width: 161pt;
+	height: 80pt;
+	left: 633pt;
+	top: 20pt;
+}
+
+.s16{
+	width: 810pt;
+	height: 200pt;
+	left: 490pt;
+	top: 337pt;
+}
+
+.s17{
+	width: 733pt;
+	height: 32pt;
+	left: 567pt;
+	top: 530pt;
+}
+
+.s18{
+	width: 68pt;
+	height: 45pt;
+	left: 567pt;
+	top: 560pt;
+}
+
+.s19{
+	width: 634pt;
+	height: 27pt;
+	left: 666pt;
+	top: 560pt;
+}
+
+.s20{
+	width: 207pt;
+	height: 60pt;
+	left: 666pt;
+	top: 580pt;
+}
+
+.s21{
+	width: 69pt;
+	height: 20pt;
+	left: 870pt;
+	top: 579pt;
+}
+
+.s22{
+	width: 318pt;
+	height: 45pt;
+	left: 982pt;
+	top: 580pt;
+}
+
+.s23{
+	width: 263pt;
+	height: 200pt;
+	left: 790pt;
+	top: 160pt;
+}
+
+.s24{
+	width: 243pt;
+	height: 200pt;
+	left: 810pt;
+	top: 70pt;
+}
+
+.s25{
+	width: 170pt;
+	height: 20pt;
+	left: 883pt;
+	top: 53pt; 
+}
+
+.s26{
+	width: 118pt;
+	height: 22pt;
+	left: 935pt;
+	top: 33pt;
+}
+
+.s27{
+	width: 667pt;
+	height: 170pt;
+	left: 950pt;
+	top: 250pt;
+}
+
+.s28{
+	width: 20pt;
+	height: 113pt;
+	left: 1296pt;
+	top: 420pt;
+}
+
+.s29{
+	width: 547pt;
+	height: 100pt;
+	left: 1070pt;
+	top: 196pt;
+}
+
+.s30{
+	width: 700pt;
+	height: 182pt;
+	left: 1081pt;
+	top: 48pt;
+}
+
+.s31{
+	width: 112pt;
+	height: 35pt;
+	left: 1081pt;
+	top: 15pt;
+}
+
+.s32{
+	width: 168pt;
+	height: 45pt;
+	left: 1267pt;
+	top: 7pt;
+}
+
+
+.s33{
+	width: 381pt;
+	height: 40pt;
+	left: 1400pt;
+	top: 23pt;
+}
+
+.s34{
+	width: 500pt;
+	height: 117pt;
+	left: 1349pt;
+	top: 357pt;
+}
+
+.s35{
+	width: 332pt;
+	height: 130pt;
+	left: 1349pt;
+	top: 460pt;
+}
+
+.s36{
+	width: 20pt;
+	height: 90pt;
+	left: 1336pt;
+	top: 500pt;
+}
+
+.s37{
+	width: 70pt;
+	height: 70pt;
+	left: 1680pt;
+	top: 520pt;
+}
+
+
