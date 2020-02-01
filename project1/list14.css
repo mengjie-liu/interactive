@@ -1,0 +1,646 @@
+div.s0,.s1,.s2,.s3,.s3a,.s3b,.s3c,.s3d,.s3e,.s3f,.s3g,.s3h,.s4,.s5,.s6,.s7,.s8,.s8a,.s8b,.s9,.s10,.s11,.s12,.s13,
+.s14,.s15,.s15a,.s15b,.s15c,.s15d,.s15e,.s15f,.s15g,.s16,.s17,.s17a,.s17b,.s17c,.s18,.s19,.s20,.s20a,.s21,.s22,.s22a,
+.s22b,.s22c,.s23,.s23a,.s23b,.s23c,.s23d,.s23e,.s23f,.s23g,.s23h,.s23i,.s23j,.s23k,.s23l,.s23m{
+	background-color: white;
+	position: absolute;
+	display: inline;
+}
+
+div.s0{
+	border:1.75pt solid black;
+	border-right-style: none;
+	width:823pt; 
+	height:720pt;
+	left: 435pt;
+	top: -3pt;
+}
+
+div.s1{
+	border:1.5pt solid black;
+	background-color: black;
+	width:390pt; 
+	height:222pt;
+	left: 370pt;
+	top: -35pt;
+}
+
+div.s2{
+	border:1.5pt solid black;
+	width:390pt; 
+	height:222pt;
+	left: 340pt;
+	top: -2pt;
+}
+
+div.s3{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 35pt;
+	top: 55pt;
+}
+
+div.s3a{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	background-color: black;
+	left: 65pt;
+	top: 75pt;
+}
+
+	div.s3b{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 95pt;
+	top: 95pt;
+}
+
+div.s3c{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 125pt;
+	top: 115pt;
+}
+
+div.s3d{
+	border:1pt solid black;
+	background-color: black;
+	width:250pt; 
+	height:150pt;
+	left: 155pt;
+	top: 135pt;
+}
+
+div.s3e{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 185pt;
+	top: 155pt;
+}
+
+div.s3f{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 215pt;
+	top: 175pt;
+}
+
+div.s3g{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 245pt;
+	top: 195pt;
+}
+
+div.s3h{
+	border:1pt solid black;
+	width:250pt; 
+	height:150pt;
+	left: 275pt;
+	top: 215pt;
+}
+
+div.s4{
+	border:1pt solid black;
+	width:270pt; 
+	height:190pt;
+	left: 885pt;
+	top: 235pt;
+}
+
+div.s5{
+	border:1pt solid black;
+	width:200pt; 
+	height:120pt;
+	left: 835pt;
+	top: 150pt;
+}
+
+div.s6{
+	border:1pt solid black;
+	width:200pt; 
+	height:120pt;
+	left: 980pt;
+	top: 90pt;
+}
+
+div.s7{
+	border:1.5pt dashed black;
+	border-right-style: none;
+	width:130pt; 
+	height:85pt;
+	left: 1125pt;
+	top: 355pt;
+}
+
+div.s8{
+	border:1pt solid black;
+	background-color: black;
+	width:735pt; 
+	height:620pt;
+	left: 75pt;
+	top: 515pt;
+}
+
+div.s8a{
+	border:1pt solid black;
+	width:735pt; 
+	height:620pt;
+	left: 37pt;
+	top: 587pt;
+}
+
+div.s8b{
+	border:1pt solid black;
+	width:735pt; 
+	height:620pt;
+	left: 1pt;
+	top: 659pt;
+}
+
+div.s9{
+	border:2pt solid black;
+	width:280pt; 
+	height:134pt;
+	left: 714pt;
+	top: 400pt;
+}
+
+div.s10{
+	border:1.5pt dashed black;
+	width:316pt; 
+	height:136pt;
+	left: 322pt;
+	top: 475pt;
+}
+
+div.s11{
+	border:1pt solid black;
+	background-color: black;
+	width:440pt; 
+	height:320pt;
+	left: 745pt;
+	top: 685pt;
+}
+
+div.s12{
+	border:1pt solid black;
+	width:440pt; 
+	height:320pt;
+	left: 675pt;
+	top: 640pt;
+}
+
+div.s13{
+	border:1pt solid black;
+	width:520pt; 
+	height:120pt;
+	left: 370pt;
+	top: 930pt;
+}
+
+div.s14{
+	border:1.5pt dashed black;
+	border-right-style: none;
+	width:150pt; 
+	height:113pt;
+	left: 1105pt;
+	top: 979pt;
+}
+
+div.s15{
+	border:0.75pt solid black;
+	background-color: black;
+	width:135pt; 
+	height:82pt;
+	left: -20pt;
+	top: 868pt;
+}
+
+div.s15a{
+	border:0.75pt solid black;
+	width:135pt; 
+	height:82pt;
+	left: 47pt;
+	top: 898pt;
+}
+
+div.s15b{
+	border:0.75pt solid black;
+	width:135pt; 
+	height:82pt;
+	left: 114pt;
+	top: 928pt;
+}
+
+div.s15c{
+	border:0.75pt solid black;
+	width:135pt; 
+	height:82pt;
+	left: 181pt;
+	top: 958pt;
+}
+div.s15d{
+	border:0.75pt solid black;
+	background-color: black;
+	width:135pt; 
+	height:82pt;
+	left: 150pt;
+	top: 1004pt;
+}
+div.s15e{
+	border:0.75pt solid black;
+	width:135pt; 
+	height:82pt;
+	left: 120pt;
+	top: 1050pt;
+}
+div.s15f{
+	border:0.75pt solid black;
+	background-color: black;
+	width:135pt; 
+	height:82pt;
+	left: 90pt;
+	top: 1095pt;
+}
+div.s15g{
+	border:0.75pt solid black;
+	width:135pt; 
+	height:82pt;
+	left: 60pt;
+	top: 1140pt;
+}
+
+div.s16{
+	border:2pt solid black;
+	width: 513pt;
+	height: 400pt;
+	left: 15pt;
+	top:1183pt;
+}
+
+div.s17{
+	border:1pt solid black;
+	width: 580pt;
+	height: 340pt;
+	left: -4pt;
+	top:1640pt;
+}
+
+div.s17a{
+	border:1pt solid black;
+	background-color: black;
+	width: 580pt;
+	height: 340pt;
+	left: 54pt;
+	top:1604pt;
+}
+div.s17b{
+	border:1pt solid black;
+	width: 580pt;
+	height: 340pt;
+	left: 112pt;
+	top:1563pt;
+}
+
+div.s17c{
+	border:1pt solid black;
+	width: 580pt;
+	height: 340pt;
+	left: 170pt;
+	top:1522pt;
+}
+
+div.s18{
+	border:1pt solid black;
+	width: 640pt;
+	height: 330pt;
+	left: 610pt;
+	top:1400pt;
+}
+
+div.s19{
+	border:1pt solid black;
+	width: 435pt;
+	height: 120pt;
+	left: 791pt;
+	top:1320pt;
+}
+
+div.s20{
+	border:1pt solid black;
+	background-color: black;
+	width: 150pt;
+	height: 95pt;
+	left: 703pt;
+	top:1246pt;
+}
+
+div.s20a{
+	border:1pt solid black;
+	width: 150pt;
+	height: 95pt;
+	left: 718pt;
+	top:1260pt;
+}
+
+div.s21{
+	border:1.5pt dashed black;
+	width: 228pt;
+	height: 97pt;
+	left: 88pt;
+	top:1530pt;
+}
+
+div.s22{
+	border:1.5pt solid black;
+	width: 412pt;
+	height: 120pt;
+	left: 845pt;
+	top:1571pt;
+}
+
+div.s22a{
+	border:1.5pt solid black;
+	background-color: black;
+	width: 425pt;
+	height: 120pt;
+	left: 792pt;
+	top:1645pt;
+}
+
+div.s22b{
+	border:1.5pt solid black;
+	width: 425pt;
+	height: 120pt;
+	left: 739pt;
+	top:1719pt;
+}
+
+div.s22c{
+	border:2pt solid black;
+	width: 425pt;
+	height: 120pt;
+	left: 686pt;
+	top:1793pt;
+}
+
+div.s23{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 270pt;
+	top: 1871pt; 
+}
+
+div.s23a{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 304pt;
+	top: 1839pt; 
+}
+
+div.s23b{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 338pt;
+	top: 1807pt; 
+}
+
+div.s23c{
+	border:0.75pt solid black;
+	background-color: black;
+	width: 150pt;
+	height: 97pt;
+	left: 372pt;
+	top: 1775pt; 
+}
+
+div.s23d{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 406pt;
+	top: 1743pt; 
+}
+
+div.s23e{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 440pt;
+	top: 1711pt; 
+}
+
+div.s23f{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 474pt;
+	top: 1679pt; 
+}
+
+div.s23g{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 508pt;
+	top: 1647pt; 
+}
+
+div.s23h{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 542pt;
+	top: 1615pt; 
+}
+
+div.s23i{
+	border:0.75pt solid black;
+	background-color: black;
+	width: 150pt;
+	height: 97pt;
+	left: 530pt;
+	top: 1600pt; 
+}
+
+div.s23j{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 510pt;
+	top: 1583pt; 
+}
+
+div.s23k{
+	border:0.75pt solid black;
+	background-color: black;
+	width: 150pt;
+	height: 97pt;
+	left: 490pt;
+	top: 1561pt; 
+}
+
+div.s23l{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 470pt;
+	top: 1539pt; 
+}
+
+div.s23m{
+	border:0.75pt solid black;
+	width: 150pt;
+	height: 97pt;
+	left: 450pt;
+	top: 1517pt; 
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0pt;
+	margin: 0pt;
+	border: 0pt;
+	position: absolute;
+	display: inline;
+}
+
+.hsr{
+	left: 330pt;
+	top: 260pt;
+}
+
+.clock{
+	left: 470pt;
+	top: 60pt;
+}
+
+.good{
+	left: 1045pt;
+	top: 140pt;
+}
+
+.tear{
+	left: 900pt;
+	top: 205pt;
+}
+
+.pl{
+	left: 610pt;
+	top: 330pt;
+}
+
+.wk{
+	left: 975pt;
+	top: 340pt;
+}
+
+.void{
+	left: 1160pt;
+	top: 396pt;
+}
+
+.ccc{
+	left: 70pt;
+	top: 420pt;
+}
+
+.fl{
+	left: 750pt;
+	top: 460pt;
+}
+
+.las{
+	left: 435pt;
+	top: 540pt;
+}
+
+.in{
+	left: 1020pt;
+	top: 570pt;
+}
+
+.td{
+	left: 750pt;
+	top: 700pt;
+}
+
+.sca{
+	left: 190pt;
+	top: 780pt;
+}
+
+.ct{
+	left: 485pt;
+	top: 980pt;
+}
+
+.wit{
+	left: 1155pt;
+	top: 1035pt;
+}
+
+.nt{
+	left: 440pt;
+	top: 1120pt;
+}
+
+.sea{
+	left: 980pt;
+	top: 1200pt;
+}
+
+.sun{
+	left: 97pt;
+	top: 1170pt;
+}
+
+.sd{
+	left: 775pt;
+	top: 1305pt;
+}
+
+.grp{
+	left: 931pt;
+	top: 1375pt;
+}
+
+.sa{
+	left: 180pt;
+	top: 1355pt;
+}
+
+.wiao{
+	left: 890pt;
+	top: 1500pt;
+}
+
+.swt{
+	left: 157pt;
+	top: 1575pt;
+}
+
+.red{
+	left: 510pt;
+	top: 1555pt;
+}
+
+.ds{
+	left: 320pt;
+	top: 1720pt;
+}
+
+
+.dv{
+	left: 868pt;
+	top: 1844pt;
+}
