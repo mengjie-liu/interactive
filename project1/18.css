@@ -1,0 +1,191 @@
+@font-face{
+	font-family: lala;
+	src:url(GrandSlang-Roman.otf);
+}
+
+body{
+	background-color: #343EA0
+}
+
+.list{
+	background-color: white;
+	padding:18pt;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+	position: absolute;
+	font-size: 196%;
+	font-family: lala;
+	left: 558pt;
+	top: 76pt;
+	width: 107pt;
+	line-height: 87%;
+	box-shadow: 2pt 2pt 25pt #2B3187;
+}
+
+.w1,.w2,.w3,.w4,.w5,.w6,.w7,.w8,.w9,.w10,.w11,.w12,.w13,.w14,.w15,.w16,.w17,.w18,.w19{
+	position: absolute;
+	font-size: 50%;
+	font-family: lala;
+	line-height: 110%;
+}
+
+.w1{
+	left: 585pt;
+	top: 83pt;
+}
+
+
+.w2{
+	left: 645pt;
+	top: 106.5pt;
+}
+
+.w3{
+	left: 608pt;
+	top: 145pt;
+}
+
+.w4{
+	left: 636pt;
+	top: 168pt;
+}
+
+.w5{
+	left: 565pt;
+	top: 188.75pt;
+}
+
+.w6{
+	left: 632pt;
+	top: 208pt;
+}
+
+.w7{
+	left: 560.5pt;
+	top: 255pt;
+}
+
+.w8{
+	left: 668pt;
+	top: 242pt;
+}
+
+.w9{
+	left: 654pt;
+	top: 289pt;
+}
+
+.w10{
+	left: 565pt;
+	top: 303pt;
+}
+
+.w11{
+	left: 642pt;
+	top: 336pt;
+}
+
+.w12{
+	left: 575pt;
+	top: 349.75pt;
+}
+
+.w13{
+	left: 665pt;
+	top: 363pt;
+}
+
+.w14{
+	left: 631pt;
+	top: 396pt;
+}
+
+.w15{
+	left: 561pt;
+	top: 411pt;
+}
+
+.w16{
+	left: 635pt;
+	top: 425pt;
+}
+
+.w17{
+	left: 562pt;
+	top: 446pt;
+}
+
+.w18{
+	left: 560pt;
+	top: 492pt;
+}
+
+.w19{
+	left: 650pt;
+	top: 530pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
