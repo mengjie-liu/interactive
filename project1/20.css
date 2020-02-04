@@ -1,0 +1,40 @@
+@font-face{
+    font-family: haa;
+    src: url(FFBauLFBold.otf);
+}
+
+body{
+    height:100%;
+    width: 100%;
+}
+ .outer{
+    height:640pt;
+    width:1260pt;
+    background: transparent;
+    overflow: hidden;
+    position: fixed;
+    left: 0pt;
+    top: 0pt;
+}
+.inner{
+    position: fixed;
+    left: 580pt;
+    top: 270pt;
+    width: 100pt;
+    height: 100pt;
+    border-radius: 200pt;
+    box-shadow: black 0 0 0 2000pt;
+}
+
+.ttt{
+    font-family: haa;
+    position: absolute;
+    font-size: 120%;
+    top: 250pt;
+    left: 530pt;
+    width: 210pt;
+    line-height: 100%;
+}
+
+
+

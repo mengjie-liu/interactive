@@ -1,0 +1,47 @@
+@font-face{
+	font-family: hiahia;
+	src:url(SwedenSans.otf);
+}
+
+.t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8,.t9,.t10,.t11,.t12,.t13,.t14,.t15,.t16,.t17,.t18,.t19,.t20,.t21,.t22,.t23,.t24,.t25,.t26,.t27,.t28,.t29,.e1,.e2,.e3,.e4,.e5,.e6,.e7,.e8,.e9,.e10{
+	padding:14pt;
+	padding-bottom: 0pt;
+	padding-top: 0pt;
+	font-family: hiahia;
+	font-size: 220%;
+	background-color: black;
+	border-radius: 24pt;
+	color: white;
+	margin: 1.5pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	
+}
+
+.e1,.e2,.e3,.e4,.e5,.e6,.e7,.e8,.e9,.e10{
+	background-color: white;
+	padding-left: 3pt;
+	padding-right: 3pt;
+}
+
+
+div{
+	position: relative;
+	left: 0pt;
+	top: 20pt;
+	display: inline-block;
+	text-align: center;
+}
+
+.drag{
+	font-family: hiahia;
+	position: absolute;
+	text-align: center;
+	border-top: 1pt solid black;
+	border-bottom: 1pt solid black;
+	left: 0pt;
+	top: 15pt;
+	width: 1260pt;
+	height: 20pt;
+	margin:0pt;
+}
