@@ -1,0 +1,7 @@
+.ot{
+	filter: blur(15pt);
+}
+
+.ot:hover {
+	filter: blur(0pt);
+}

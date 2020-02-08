@@ -1,0 +1,362 @@
+@font-face{
+    font-family: haha;
+    src:url(SwedenSans.otf);
+}
+
+body{
+    margin:0;
+    padding:0;
+    cursor: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+div{
+    font-family: haha;
+    font-size: 60pt;
+    box-sizing: content-box;
+    padding: 10pt;
+    position: absolute;
+    text-align: center;
+    transition: transform 0.7s;
+    line-height: 85%;
+    /*background-color: red*/
+
+}
+
+.back{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.sol{
+    color: #D0104C;
+}
+
+.sha{
+    text-shadow: 0pt 0pt 1.5pt #00AD0C, 0pt 0pt 1.5pt #00AD0C, 0pt 0pt 1.5pt #00AD0C, 0pt 0pt 1.5pt #00AD0C, 0pt 0pt 1.5pt #00AD0C;
+    color: white;
+}
+
+#sw{
+    left: 3pt;
+    top: 10pt;
+
+}
+
+#sw:hover{
+    transform: rotate(15deg);
+    transition: 0.70s;
+}
+
+#wi{
+    left: 490pt;
+    top: 2pt;
+}
+
+#wi:hover{
+    transform: rotate(-4deg);
+    transition: 0.70s;
+}
+
+#da{
+    left: 90pt;
+    top: 85pt;
+}
+
+#da:hover{
+    transform: rotate(-7.5deg);
+    transition: 0.70s;
+}
+
+#im{
+    left: 875pt;
+    top: 20pt;
+    font-size: 50pt;
+}
+
+#im:hover{
+    transform: rotate(-16deg);
+    transition: 0.70s;
+}
+
+#vo{
+    left: 1120pt;
+    top: 50pt;
+    font-size: 50pt;
+}
+
+#vo:hover{
+    transform: rotate(-10deg);
+    transition: 0.70s;
+}
+
+#si{
+    left: 940pt;
+    top: 95pt;
+    font-size: 50pt;
+}
+
+#si:hover{
+    transform: rotate(10deg);
+    transition: 0.70s;
+}
+
+#tu{
+    left: 310pt;
+    top: 60pt;
+}
+
+#tu:hover{
+    transform: rotate(5deg);
+    transition: 0.70s;
+}
+
+#no{
+    left: 20pt;
+    top: 140pt;
+    font-size: 50pt;
+}
+
+#no:hover{
+    transform: rotate(-2deg);
+    transition: 0.70s;
+}
+
+#so{
+    left: 890pt;
+    top: 145pt;
+}
+
+#so:hover{
+    transform: rotate(-7deg);
+    transition: 0.70s;
+}
+
+#ab{
+    left: 560pt;
+    top: 180pt;
+}
+
+#ab:hover{
+    transform: rotate(13deg);
+    transition: 0.70s;
+}
+
+#co{
+    left: 285pt;
+    top: 248pt;
+    font-size: 50pt
+}
+
+#co:hover{
+    transform: rotate(8.5deg);
+    transition: 0.70s;
+}
+
+#te{
+    left: 630pt;
+    top: 260pt;
+}
+
+#te:hover{
+    transform: rotate(3deg);
+    transition: 0.70s;
+}
+
+#dr{
+    left: 880pt;
+    top: 210pt;
+}
+
+#dr:hover{
+    transform: rotate(-7.5deg);
+    transition: 0.70s;
+}
+
+#go{
+    left: 5pt;
+    top: 350pt;
+}
+
+#go:hover{
+    transform: rotate(-23.5deg);
+    transition: 0.70s;
+}
+
+#cu{
+    left: 270pt;
+    top: 295pt;
+}
+
+#cu:hover{
+    transform: rotate(4deg);
+    transition: 0.70s;
+}
+
+#wit{
+    left: 40pt;
+    top: 245pt;
+    font-size: 50pt;
+}
+
+#wit:hover{
+    transform: rotate(20.5deg);
+    transition: 0.70s;
+}
+
+#red{
+    left: 805pt;
+    top: 105pt;
+}
+
+#red:hover{
+    transform: rotate(45deg);
+    transition: 0.70s;
+}
+
+#fl{
+    left: 285pt;
+    top: 0pt;
+}
+
+#fl:hover{
+    transform: rotate(-9.5deg);
+    transition: 0.70s;
+}
+
+#fl1{
+    left: 180pt;
+    top: 410pt;
+}
+
+#fl1:hover{
+    transform: rotate(8deg);
+    transition: 0.70s;
+}
+
+#in{
+    left: 400pt;
+    top: 410pt;
+}
+
+#in:hover{
+    transform: rotate(4.5deg);
+    transition: 0.70s;
+}
+
+#dj{
+    left: 1018pt;
+    top: 313pt;
+}
+
+#dj:hover{
+    transform: rotate(11.5deg);
+    transition: 0.70s;
+}
+
+#ls{
+    left: 50pt;
+    top: 480pt;
+    font-size: 50pt;
+}
+
+#ls:hover{
+    transform: rotate(-5.2deg);
+    transition: 0.70s;
+}
+
+#aw{
+    left: 870pt;
+    top: 430pt;
+    font-size: 50pt;
+}
+
+#aw:hover{
+    transform: rotate(-9deg);
+    transition: 0.70s;
+}
+
+#wal{
+    left: 720pt;
+    top: 365pt;
+}
+
+#wal:hover{
+    transform: rotate(-2.5deg);
+    transition: 0.70s;
+}
+
+#sit{
+    left: 410pt;
+    top: 525pt;
+}
+
+#sit:hover{
+    transform: rotate(-2deg);
+    transition: 0.70s;
+}
+
+#gp{
+    left: 0pt;
+    top: 522pt;
+}
+
+#gp:hover{
+    transform: rotate(5deg);
+    transition: 0.70s;
+}
+
+#clo{
+    left: 1015pt;
+    top: 510pt;
+    font-size: 50pt;
+}
+
+#clo:hover{
+    transform: rotate(6deg);
+    transition: 0.70s;
+}
+
+#tse{
+    left: 125pt;
+    top: 190pt;
+    font-size: 50pt;
+}
+
+#tse:hover{
+    transform: rotate(-5.5deg);
+    transition: 0.70s;
+}
+
+#hsr{
+    left: 440pt;
+    top: 470pt;
+    font-size: 50pt;
+}
+
+#hsr:hover{
+    transform: rotate(2.5deg);
+    transition: 0.70s;
+}
+
+a{
+    position: absolute;
+    left: 1200pt;
+    top: 620pt;
+    font-size: 20pt;
+}
+
+
+
+
+
+
+
+
+
+
+
