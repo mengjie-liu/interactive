@@ -1,0 +1,208 @@
+@font-face{
+	font-family: haha;
+	src:url(SolideMirageMono.otf);
+}
+
+body{
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.boom{
+	padding:0;
+	margin:0;
+	font-family: haha;
+	font-size:40pt;
+	line-height:0%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/*text-align: center;*/
+}
+
+.lala{
+	color: white;
+	font-size: 50pt;
+	letter-spacing: 15pt;
+}
+
+
+.boom:hover #w1{
+	transform: translate(-480pt,-200pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w2{
+	transform: translate(300pt,150pt); 
+	font-size: 20pt;
+	transition: 0.4s ease;
+}
+
+.boom:hover #w3{
+	transform: translate(-50pt,305pt); 
+	font-size: 20pt;
+	transition: 0.7s ease;
+}
+
+.boom:hover #w4{
+	transform: translate(350pt,-300pt); 
+	font-size: 20pt;
+	transition: 0.2s ease;
+}
+
+.boom:hover #w5{
+	transform: translate(-200pt,-100pt); 
+	font-size: 20pt;
+	transition: 0.4s ease;
+}
+
+.boom:hover #w6{
+	transform: translate(400pt,210pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w7{
+	transform: translate(540pt,-200pt); 
+	font-size: 20pt;
+	transition: 0.7s ease;
+}
+
+.boom:hover #w8{
+	transform: translate(-100pt,-230pt); 
+	font-size: 20pt;
+	transition: 0.4s ease;
+}
+
+.boom:hover #w9{
+	transform: translate(50pt,-150pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w10{
+	transform: translate(-370pt,280pt); 
+	font-size: 20pt;
+	transition: 0.3s ease;
+}
+
+.boom:hover #w11{
+	transform: translate(-430pt,100pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w12{
+	transform: translate(-120pt,220pt); 
+	font-size: 20pt;
+	transition: 0.2s ease;
+}
+
+.boom:hover #w13{
+	transform: translate(270pt,30pt); 
+	font-size: 20pt;
+	transition: 0.6s ease;
+}
+
+.boom:hover #w14{
+	transform: translate(-270pt,-45pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w15{
+	transform: translate(-180pt,64pt); 
+	font-size: 20pt;
+	transition: 0.3s ease;
+}
+
+.boom:hover #w16{
+	transform: translate(0pt,240pt); 
+	font-size: 20pt;
+	transition: 0.7s ease;
+}
+
+.boom:hover #w17{
+	transform: translate(185pt,-80pt); 
+	font-size: 20pt;
+	transition: 0.4s ease;
+}
+
+.boom:hover #w18{
+	transform: translate(-112pt,-271pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w19{
+	transform: translate(137pt,291pt); 
+	font-size: 20pt;
+	transition: 0.6s ease;
+}
+
+.boom:hover #w20{
+	transform: translate(329pt,87pt); 
+	font-size: 20pt;
+	transition: 0.7s ease;
+}
+
+.boom:hover #w21{
+	transform: translate(-273pt,193pt); 
+	font-size: 20pt;
+	transition: 0.3s ease;
+}
+
+.boom:hover #w22{
+	transform: translate(459pt,-122pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w23{
+	transform: translate(393pt,-24pt); 
+	font-size: 20pt;
+	transition: 0.2s ease;
+}
+
+.boom:hover #w24{
+	transform: translate(-500pt,244pt); 
+	font-size: 20pt;
+	transition: 0.3s ease;
+}
+
+.boom:hover #w25{
+	transform: translate(300pt,-258pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w26{
+	transform: translate(-300pt,143pt); 
+	font-size: 20pt;
+	transition: 0.4s ease;
+}
+
+.boom:hover #w27{
+	transform: translate(-400pt,5pt); 
+	font-size: 20pt;
+	transition: 0.5s ease;
+}
+
+.boom:hover #w28{
+	transform: translate(-400pt,-130pt); 
+	font-size: 20pt;
+	transition: 0.7s ease;
+}
+
+.boom:hover #w29{
+	transform: translate(396pt,270pt); 
+	font-size: 20pt;
+	transition: 0.3s ease;
+}
+
+.boom:hover{
+	cursor: none;
+}
+
