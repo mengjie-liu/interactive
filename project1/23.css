@@ -1,0 +1,70 @@
+@font-face{
+    font-family: haha;
+    src:url(VOIR48.otf);
+}
+
+@font-face{
+    font-family: lala;
+    src:url(GillSans.otf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: -1pt;
+}
+
+div{
+    position: absolute;
+    padding: 18pt;
+    padding-top: 6pt;
+    font-size: 61.5pt;
+    line-height: 87%;
+    font-family: lala;
+    color: #005CAF;
+}
+
+div span{
+    font-family: haha;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    text-decoration: underline solid #FFC408;
+    /*color: #CC543A;
+    text-decoration: underline solid #FFC408;*/
+    color: white;
+}
+
+.xie{
+    text-decoration: none;
+    visibility: visible;
+    color: #CC543A;
+}
+
+#sea:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='65' height='78' viewport='0 0 100 100' style='fill:black;font-size:39px;'><text y='50%'>🐢</text></svg>") 16 0,auto; /*emojicursor.app*/
+}
+
+#sea:active{
+    color: #CC543A;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
