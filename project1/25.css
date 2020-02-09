@@ -1,0 +1,708 @@
+@font-face{
+	font-family: yo;
+	src:url(ADegaSerifRegular.otf);
+}
+
+body{
+	padding:0;
+	margin: 0;
+	background-color: #566C73;
+	overflow: hidden;
+}
+
+div{
+	position: absolute;
+	left: 0pt;
+	writing-mode: vertical-rl;
+	font-family: yo;
+	font-size: 15pt;
+	color: white;
+}
+
+#w1 {
+  animation-name: raina;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 390pt;
+  opacity: 1;
+  top: -100pt;
+}
+
+@keyframes raina {
+  0% {
+    left: 390pt;
+    opacity: 0.9;
+    top: -100pt;
+  }
+  100% {
+    opacity: 0;
+    top: 550pt;
+  }
+}
+
+#w2 {
+  animation-name: rainb;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 900pt;
+  opacity: 1;
+  top: -60pt;
+}
+
+@keyframes rainb {
+  0% {
+    left: 900pt;
+    opacity: 0.9;
+    top: -60pt;
+  }
+  100% {
+    opacity: 0;
+    top: 550pt;
+  }
+}
+
+#w3 {
+  animation-name: rainc;
+  animation-delay: -1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1102pt;
+  opacity: 1;
+  top: -40pt;
+}
+
+@keyframes rainc {
+  0% {
+    left: 1102pt;
+    opacity: 0.9;
+    top: -40pt;
+  }
+  100% {
+    opacity: 0;
+    top: 560pt;
+  }
+}
+
+#w4 {
+  animation-name: raind;
+  animation-delay: -2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 750pt;
+  opacity: 1;
+  top: -90pt;
+}
+
+@keyframes raind {
+  0% {
+    left: 750pt;
+    opacity: 0.9;
+    top: -90pt;
+  }
+  100% {
+    opacity: 0;
+    top: 580pt;
+  }
+}
+
+#w5 {
+  animation-name: raine;
+  animation-delay: -4s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 10pt;
+  opacity: 1;
+  top: -120pt;
+}
+
+@keyframes raine {
+  0% {
+    left: 10pt;
+    opacity: 0.9;
+    top: -120pt;
+  }
+  100% {
+    opacity: 0;
+    top: 600pt;
+  }
+}
+
+#w6 {
+  animation-name: rainf;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 130pt;
+  opacity: 1;
+  top: -100pt;
+}
+
+@keyframes rainf {
+  0% {
+    left: 130pt;
+    opacity: 0.9;
+    top: -100pt;
+  }
+  100% {
+    opacity: 0;
+    top: 550pt;
+  }
+}
+
+#w7 {
+  animation-name: raing;
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 610pt;
+  opacity: 1;
+  top: -70pt;
+}
+
+@keyframes raing {
+  0% {
+    left: 610pt;
+    opacity: 0.9;
+    top: -70pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w8 {
+  animation-name: rainh;
+  animation-delay: 6s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 820pt;
+  opacity: 1;
+  top: -90pt;
+}
+
+@keyframes rainh {
+  0% {
+    left: 820pt;
+    opacity: 0.9;
+    top: -90pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w9 {
+  animation-name: raini;
+  animation-delay: 8s;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 520pt;
+  opacity: 1;
+  top: -90pt;
+}
+
+@keyframes raini {
+  0% {
+    left: 520pt;
+    opacity: 0.9;
+    top: -90pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w10 {
+  animation-name: rainj;
+  animation-delay: 2s;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1180pt;
+  opacity: 1;
+  top: -130pt;
+}
+
+@keyframes rainj {
+  0% {
+    left: 1180pt;
+    opacity: 0.9;
+    top: -130pt;
+  }
+  100% {
+    opacity: 0;
+    top: 540pt;
+  }
+}
+
+#w11 {
+  animation-name: raink;
+  animation-delay: 1s;
+  animation-duration: 3.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 912pt;
+  opacity: 1;
+  top: -120pt;
+}
+
+@keyframes raink {
+  0% {
+    left: 912pt;
+    opacity: 0.9;
+    top: -120pt;
+  }
+  100% {
+    opacity: 0;
+    top: 520pt;
+  }
+}
+
+#w12 {
+  animation-name: rainl;
+  animation-delay: 7s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 63pt;
+  opacity: 1;
+  top: -180pt;
+}
+
+@keyframes rainl {
+  0% {
+    left: 63pt;
+    opacity: 0.9;
+    top: -180pt;
+  }
+  100% {
+    opacity: 0;
+    top: 480pt;
+  }
+}
+
+#w13 {
+  animation-name: rainm;
+  animation-delay: 9s;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 407pt;
+  opacity: 1;
+  top: -120pt;
+}
+
+@keyframes rainm {
+  0% {
+    left: 407pt;
+    opacity: 0.9;
+    top: -120pt;
+  }
+  100% {
+    opacity: 0;
+    top: 530pt;
+  }
+}
+
+#w14 {
+  animation-name: rainn;
+  animation-delay: 11s;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 275pt;
+  opacity: 1;
+  top: -120pt;
+}
+
+@keyframes rainn {
+  0% {
+    left: 275pt;
+    opacity: 0.9;
+    top: -120pt;
+  }
+  100% {
+    opacity: 0;
+    top: 550pt;
+  }
+}
+
+#w15 {
+  animation-name: raino;
+  animation-delay: 12s;
+  animation-duration: 3.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1200pt;
+  opacity: 1;
+  top: -130pt;
+}
+
+@keyframes raino {
+  0% {
+    left: 1200pt;
+    opacity: 0.9;
+    top: -130pt;
+  }
+  100% {
+    opacity: 0;
+    top: 550pt;
+  }
+}
+
+#w16 {
+  animation-name: rainp;
+  animation-delay: 7s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 320pt;
+  opacity: 1;
+  top: -180pt;
+}
+
+@keyframes rainp {
+  0% {
+    left: 320pt;
+    opacity: 0.9;
+    top: -180pt;
+  }
+  100% {
+    opacity: 0;
+    top: 420pt;
+  }
+}
+
+#w17 {
+  animation-name: rainq;
+  animation-delay: 8s;
+  animation-duration: 4.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1010pt;
+  opacity: 1;
+  top: -180pt;
+}
+
+@keyframes rainq {
+  0% {
+    left: 1010pt;
+    opacity: 0.9;
+    top: -180pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w18 {
+  animation-name: rainr;
+  animation-delay: -5s;
+  animation-duration: 5.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 120pt;
+  opacity: 1;
+  top: -150pt;
+}
+
+@keyframes rainr {
+  0% {
+    left: 120pt;
+    opacity: 0.9;
+    top: -150pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w19 {
+  animation-name: rains;
+  animation-delay: -0.5s;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 80pt;
+  opacity: 1;
+  top: -100pt;
+}
+
+@keyframes rains {
+  0% {
+    left: 80pt;
+    opacity: 0.9;
+    top: -100pt;
+  }
+  100% {
+    opacity: 0;
+    top: 560pt;
+  }
+}
+
+#w20 {
+  animation-name: raint;
+  animation-delay: -2.3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 860pt;
+  opacity: 1;
+  top: -200pt;
+}
+
+@keyframes raint {
+  0% {
+    left: 860pt;
+    opacity: 0.9;
+    top: -200pt;
+  }
+  100% {
+    opacity: 0;
+    top: 513pt;
+  }
+}
+
+#w21 {
+  animation-name: rainu;
+  animation-delay: 5s;
+  animation-duration: 4.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 420pt;
+  opacity: 1;
+  top: -130pt;
+}
+
+@keyframes rainu {
+  0% {
+    left: 420pt;
+    opacity: 0.9;
+    top: -130pt;
+  }
+  100% {
+    opacity: 0;
+    top: 492pt;
+  }
+}
+
+#w22 {
+  animation-name: rainv;
+  animation-delay: 2s;
+  animation-duration: 4.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 995pt;
+  opacity: 1;
+  top: -70pt;
+}
+
+@keyframes rainv {
+  0% {
+    left: 995pt;
+    opacity: 0.9;
+    top: -70pt;
+  }
+  100% {
+    opacity: 0;
+    top: 502pt;
+  }
+}
+
+#w23 {
+  animation-name: rainx;
+  animation-delay: 7.2s;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 700pt;
+  opacity: 1;
+  top: -70pt;
+}
+
+@keyframes rainx {
+  0% {
+    left: 700pt;
+    opacity: 0.9;
+    top: -70pt;
+  }
+  100% {
+    opacity: 0;
+    top: 502pt;
+  }
+}
+
+#w24 {
+  animation-name: rainy;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 350pt;
+  opacity: 1;
+  top: -70pt;
+}
+
+@keyframes rainy {
+  0% {
+    left: 350pt;
+    opacity: 0.9;
+    top: -70pt;
+  }
+  100% {
+    opacity: 0;
+    top: 492pt;
+  }
+}
+
+#w25 {
+  animation-name: rainz;
+  animation-delay: 11.2s;
+  animation-duration: 5.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 545pt;
+  opacity: 1;
+  top: -140pt;
+}
+
+@keyframes rainz {
+  0% {
+    left: 545pt;
+    opacity: 0.9;
+    top: -140pt;
+  }
+  100% {
+    opacity: 0;
+    top: 492pt;
+  }
+}
+
+#w26 {
+  animation-name: rainaa;
+  animation-delay: 2.3s;
+  animation-duration: 7.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 840pt;
+  opacity: 1;
+  top: -250pt;
+}
+
+@keyframes rainaa {
+  0% {
+    left: 840pt;
+    opacity: 0.9;
+    top: -250pt;
+  }
+  100% {
+    opacity: 0;
+    top: 500pt;
+  }
+}
+
+#w27 {
+  animation-name: rainab;
+  animation-delay: 7s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1150pt;
+  opacity: 1;
+  top: -90pt;
+}
+
+@keyframes rainab {
+  0% {
+    left: 1150pt;
+    opacity: 0.9;
+    top: -90pt;
+  }
+  100% {
+    opacity: 0;
+    top: 490pt;
+  }
+}
+
+#w28 {
+  animation-name: rainac;
+  animation-delay: 2s;
+  animation-duration: 3.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1235pt;
+  opacity: 1;
+  top: -120pt;
+}
+
+@keyframes rainac {
+  0% {
+    left: 1235pt;
+    opacity: 0.9;
+    top: -120pt;
+  }
+  100% {
+    opacity: 0;
+    top: 450pt;
+  }
+}
+
+#w29 {
+  animation-name: rainad;
+  animation-delay: 9s;
+  animation-duration: 3.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left: 1080pt;
+  opacity: 1;
+  top: -180pt;
+}
+
+@keyframes rainad {
+  0% {
+    left: 1080pt;
+    opacity: 0.9;
+    top: -180pt;
+  }
+  100% {
+    opacity: 0;
+    top: 494pt;
+  }
+}
+
+div:hover{
+	animation-play-state: paused;
+	font-size: 18pt;
+	transition: 0.2s;
+	cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
