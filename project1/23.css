@@ -13,48 +13,226 @@ body{
     margin: 0;
     overflow: hidden;
     letter-spacing: -1pt;
+    cursor: default;
 }
 
-div{
+.text{
     position: absolute;
-    padding: 18pt;
+    padding: 25pt;
     padding-top: 6pt;
-    font-size: 61.5pt;
-    line-height: 87%;
+    font-size: 59.8pt;
+    line-height: 90%;
     font-family: lala;
     color: #005CAF;
 }
 
 div span{
     font-family: haha;
+    display: inline;
     padding-left: 5pt;
     padding-right: 5pt;
+    padding-top:0;
+    padding-bottom:0;
     text-decoration: underline solid #FFC408;
     /*color: #CC543A;
     text-decoration: underline solid #FFC408;*/
     color: white;
+    background-color: white;
 }
 
 .xie{
     text-decoration: none;
     visibility: visible;
     color: #CC543A;
+    background-color: transparent;
 }
 
-#sea:hover{
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='65' height='78' viewport='0 0 100 100' style='fill:black;font-size:39px;'><text y='50%'>🐢</text></svg>") 16 0,auto; /*emojicursor.app*/
+.emoj{
+    font-size: 55pt;
+    font-family: lala;
+    color: #005CAF;
+    background-color: transparent;
 }
 
-#sea:active{
+#t1{
+    position: absolute;
+    left: 123pt;
+    top: -3pt;
+    text-decoration: none;
+}
+
+#t2{
+    position: absolute;
+    left: 870pt;
+    top: 1pt;
+    text-decoration: none;
+}
+
+#t3{
+    position: absolute;
+    left: 1100pt;
+    top: 1pt;
+    text-decoration: none;
+}
+
+#t4{
+    position: absolute;
+    left: 465pt;
+    top: 52pt;
+    text-decoration: none;
+}
+
+#t5{
+    position: absolute;
+    left: 840pt;
+    top: 59pt;
+    text-decoration: none;
+}
+
+#t6{
+    position: absolute;
+    left: 452pt;
+    top: 117pt;
+    text-decoration: none;
+}
+
+#t7{
+    position: absolute;
+    left: 818pt;
+    top: 117pt;
+    text-decoration: none;
+}
+
+#t8{
+    position: absolute;
+    left: 237pt;
+    top: 170pt;
+    text-decoration: none;
+}
+
+#t9{
+    position: absolute;
+    left: 405pt;
+    top: 175pt;
+    text-decoration: none;
+}
+
+#t10{
+    position: absolute;
+    left: 633pt;
+    top: 173pt;
+    text-decoration: none;
+}
+
+#t11{
+    position: absolute;
+    left: 97pt;
+    top: 230pt;
+    text-decoration: none;
+}
+
+#t12{
+    position: absolute;
+    left: 1015pt;
+    top: 231pt;
+    text-decoration: none;
+}
+
+#t13{
+    position: absolute;
+    left: 1070pt;
+    top: 288pt;
+    text-decoration: none;
+}
+
+#t14{
+    position: absolute;
+    left: 77pt;
+    top: 344pt;
+    text-decoration: none;
+}
+
+#t15{
+    position: absolute;
+    left: 45pt;
+    top: 405pt;
+    text-decoration: none;
+}
+
+#t16{
+    position: absolute;
+    font-size: 54pt;
+    left: 462pt;
+    top: 402pt;
+    text-decoration: none;
+}
+
+#t17{
+    position: absolute;
+    left: 80pt;
+    top: 463pt;
+    text-decoration: none;
+}
+
+#t18{
+    position: absolute;
+    left: 455pt;
+    top: 460pt;
+    text-decoration: none;
+}
+
+#t19{
+    position: absolute;
+    left: 730pt;
+    top: 460pt;
+    text-decoration: none;
+}
+
+#t20{
+    position: absolute;
+    left: 28pt;
+    top: 522pt;
+    text-decoration: none;
+}
+
+#t21{
+    position: absolute;
+    left: 595pt;
+    top: 520pt;
+    text-decoration: none;
+}
+
+#t22{
+    position: absolute;
+    left: 743pt;
+    top: 520pt;
+    text-decoration: none;
+}
+
+#t23{
+    position: absolute;
+    left: 217pt;
+    top: 572pt;
+    text-decoration: none;
+}
+
+#t24{
+    position: absolute;
+    left: 934pt;
+    top: 576pt;
+    text-decoration: none;
+}
+
+.sea:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sea:active{
+    opacity: 1;
     color: #CC543A;
     transition: 0.5s;
 }
-
-
-
-
-
-
 
 
 
