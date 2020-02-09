@@ -1,0 +1,239 @@
+@font-face{
+	font-family: xixi;
+	src: url('ADegaSerifRegular.otf');				
+}
+
+body {
+	padding:0pt;
+	margin:0pt;
+	border:0pt;
+	display: inline;
+	overflow-x: hidden; 
+}
+
+.name {
+	position: absolute;
+	height: 60pt;
+	width: 1300pt;
+	text-align: center;
+	font-family: xixi;
+	font-size: 12pt;
+	line-height: 330%;
+	letter-spacing: 60pt;
+	color: white;
+}
+
+.cl1:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+
+.cl2:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl3:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl4:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl5:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl6:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl7:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl8:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl9:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+
+.cl1:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl10:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl11:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl12:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl13:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl14:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+
+.cl15:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl16:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl17:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl18:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl19:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl20:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+
+.cl21:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl22:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl23:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl24:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl25:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl26:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl27:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl28:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+.cl29:hover{
+	letter-spacing: 1pt;
+	transition: 0.6s;
+}
+
+
+
+.cl1{
+	background-color: #593D78
+}
+.cl2{
+	background-color: #59447A
+}
+.cl3{
+	background-color: #5A4C7C
+}
+.cl4{
+	background-color: #5A537F
+}
+.cl5{
+	background-color: #5B5A81
+}
+.cl6{
+	background-color: #5B6283
+}
+.cl7{
+	background-color: #5C6985
+}
+.cl8{
+	background-color: #5C7187
+}
+.cl9{
+	background-color: #5D7889
+}
+.cl10{
+	background-color: #5D7F8C
+}
+.cl11{
+	background-color: #5E878E
+}
+.cl12{
+	background-color: #5E8E90
+}
+.cl13{
+	background-color: #688C87
+}
+.cl14{
+	background-color: #728A7E
+}
+.cl15{
+	background-color: #7C8874
+}
+.cl16{
+	background-color: #86866B
+}
+.cl17{
+	background-color: #908462
+}
+.cl18{
+	background-color: #9A8359
+}
+.cl19{
+	background-color: #A48150
+}
+.cl20{
+	background-color: #AE7F47
+}
+.cl21{
+	background-color: #B87D3D
+}
+.cl22{
+	background-color: #C27B34
+}
+.cl23{
+	background-color: #CC792B
+}
+.cl24{
+	background-color: #BE722A
+}
+.cl25{
+	background-color: #B06A29
+}
+.cl26{
+	background-color: #A36328
+}
+.cl27{
+	background-color: #955B27
+}
+.cl28{
+	background-color: #875426
+}
+.cl29{
+	background-color: #794C25
+}
