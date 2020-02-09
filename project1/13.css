@@ -9,6 +9,7 @@ body {
 	border:0pt;
 	display: inline;
 	overflow-x: hidden; 
+	cursor: default;
 }
 
 .name {
@@ -151,89 +152,118 @@ body {
 
 
 .cl1{
-	background-color: #593D78
+	background-color: #593D78;
+	transition: letter-spacing 1.2s;
 }
 .cl2{
-	background-color: #59447A
+	background-color: #59447A;
+	transition: letter-spacing 1.2s;
 }
 .cl3{
+	transition: letter-spacing 1.2s;
 	background-color: #5A4C7C
 }
 .cl4{
+	transition: letter-spacing 1.2s;
 	background-color: #5A537F
 }
 .cl5{
+	transition: letter-spacing 1.2s;
 	background-color: #5B5A81
 }
 .cl6{
+	transition: letter-spacing 1.2s;
 	background-color: #5B6283
 }
 .cl7{
+	transition: letter-spacing 1.2s;
 	background-color: #5C6985
 }
 .cl8{
+	transition: letter-spacing 1.2s;
 	background-color: #5C7187
 }
 .cl9{
+	transition: letter-spacing 1.2s;
 	background-color: #5D7889
 }
 .cl10{
+	transition: letter-spacing 1.2s;
 	background-color: #5D7F8C
 }
 .cl11{
+	transition: letter-spacing 1.2s;
 	background-color: #5E878E
 }
 .cl12{
+	transition: letter-spacing 1.2s;
 	background-color: #5E8E90
 }
 .cl13{
+	transition: letter-spacing 1.2s;
 	background-color: #688C87
 }
 .cl14{
+	transition: letter-spacing 1.2s;
 	background-color: #728A7E
 }
 .cl15{
+	transition: letter-spacing 1.2s;
 	background-color: #7C8874
 }
 .cl16{
+	transition: letter-spacing 1.2s;
 	background-color: #86866B
 }
 .cl17{
+	transition: letter-spacing 1.2s;
 	background-color: #908462
 }
 .cl18{
+	transition: letter-spacing 1.2s;
 	background-color: #9A8359
 }
 .cl19{
+	transition: letter-spacing 1.2s;
 	background-color: #A48150
 }
 .cl20{
+	transition: letter-spacing 1.2s;
 	background-color: #AE7F47
 }
 .cl21{
+	transition: letter-spacing 1.2s;
 	background-color: #B87D3D
 }
 .cl22{
+	transition: letter-spacing 1.2s;
 	background-color: #C27B34
 }
 .cl23{
+	transition: letter-spacing 1.2s;
 	background-color: #CC792B
 }
 .cl24{
+	transition: letter-spacing 1.2s;
 	background-color: #BE722A
 }
 .cl25{
+	transition: letter-spacing 1.2s;
 	background-color: #B06A29
 }
 .cl26{
+	transition: letter-spacing 1.2s;
 	background-color: #A36328
 }
 .cl27{
+	transition: letter-spacing 1.2s;
 	background-color: #955B27
 }
 .cl28{
+	transition: letter-spacing 1.2s;
 	background-color: #875426
 }
 .cl29{
+	transition: letter-spacing 1.2s;
 	background-color: #794C25
 }
