@@ -1,0 +1,70 @@
+@font-face{
+	font-family: xixi;
+	src:url(NeueHaasGrotDispRD-15xxThin.otf);
+}
+
+body{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+.ha{
+	position: absolute;
+	text-align: center;
+	writing-mode: vertical-rl;
+	font-family: xixi;
+	font-size: 15pt;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.xi{
+	letter-spacing: 0pt;
+	line-height: 100%;
+	transition-delay: 0.35s;
+	transition: letter-spacing 4s, color 4s, line-height 2s, word-spacing 2s;
+	
+}
+
+.xi:hover {
+	letter-spacing: 47pt;
+	line-height: 170%;
+	word-spacing: 10pt;
+	transition: letter-spacing 2s, filter 4s, line-height 1s, word-spacing 1s, color 2s;
+	transition-duration: 5s;
+	cursor: default;
+	filter: blur(1.5pt);
+	color: #DBDBDB
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
