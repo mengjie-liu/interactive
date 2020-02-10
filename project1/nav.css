@@ -1,7 +1,17 @@
-.ot{
-	filter: blur(15pt);
+body{
+	overflow: hidden;
 }
 
-.ot:hover {
-	filter: blur(0pt);
+img{
+	width: 100%;
+	position: relative;
+	top: -15pt;
+}
+
+a{
+	position: absolute;
+	width: 78pt;
+	height: 50pt;
+	left: 591pt;
+	top: 318pt;
 }
