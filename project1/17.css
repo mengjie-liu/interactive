@@ -1,3 +1,6 @@
+body{
+	overflow-y: hidden;
+}
 
 .back{
 	background-color: black;
@@ -171,7 +174,7 @@ h4{
 
 
 div.b1,.b2a,.b2,.b3,.b3a,.b4,.b4a,.b5,.b5a,.b6,.b6a,.b7,.b7a,.b8,.b8a,.b9,.b10,.b10a,.b11,.b11a,.b12,.b12a,.b13,.b13a,.b14,.b14a,.b15,.b15a,.b16,.b16a,.b17,.b17a,.b18,.b18a,.b19,.b19a,.b20,.b20a,.b21,.b21a,
-.b22,.b22a,.b23,.b23a,.b24,.b24a,.b25,.b25a,.b26,.b26a,.b27,.b27a,.b28,.b28a,.b29,.b29a,.b30,.b30a,.b31,.b31a,.b32,.b32a{
+.b22,.b22a,.b23,.b23a,.b24,.b24a,.b25,.b25a,.b26,.b26a,.b27,.b27a,.b28,.b28a,.b29,.b29a,.b30,.b30a,.b31,.b31a,.b32,.b32a,.b33{
 	position: fixed;
 	background-color: black;
 	height: 20pt;
@@ -510,8 +513,11 @@ div.b1,.b2a,.b2,.b3,.b3a,.b4,.b4a,.b5,.b5a,.b6,.b6a,.b7,.b7a,.b8,.b8a,.b9,.b10,.
 	left: 550pt;
 }
 
-
-
+.b33{
+	top: 640pt;
+	width: 1400pt;
+	left: 0pt;
+}
 
 
 
