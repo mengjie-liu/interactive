@@ -10,6 +10,7 @@ body{
 	background-color: black;
 	margin:0pt;
 	padding: 0pt;
+	cursor: default;
 }
 
 /*kaichang*/
@@ -496,4 +497,7 @@ a:hover +.level{
 	opacity: 1;
 	filter: none;
 	transition: 0.4s;
+}
+a:hover{
+	cursor: pointer;
 }
