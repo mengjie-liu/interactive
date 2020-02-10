@@ -187,11 +187,15 @@ body{
 		top: -2pt;
 	}
 
-a:hover +span{
-	opacity: 1;
-	filter: none;
-	transition: 0.4s;
-}
+/*	.level{
+		opacity: 0;
+		position: relative;
+		top: -30pt;
+		left: 20pt;
+		color: yellow;
+		filter: blur(5pt);
+		background-color: black;
+	}*/
 
 /*level1*/
 	.l1s{
@@ -207,7 +211,7 @@ a:hover +span{
 	#l12{
 		position: absolute;
 		left: 572pt;
-		top: 341pt;
+		top: 441pt;
 	}
 
 	#l13{
@@ -224,7 +228,7 @@ a:hover +span{
 
 	#l15{
 		position: absolute;
-		left: 1132pt;
+		left: 1082pt;
 		top: 402pt;
 	}
 
@@ -260,7 +264,7 @@ a:hover +span{
 	#l25{
 		position: absolute;
 		left: 512pt;
-		top: 312pt;
+		top: 272pt;
 	}
 
 /*level3*/
@@ -276,7 +280,7 @@ a:hover +span{
 
 	#l32{
 		position: absolute;
-		left: 1172pt;
+		left: 1152pt;
 		top: 112pt;
 	}
 
@@ -365,29 +369,131 @@ a:hover +span{
 
 	#l55{
 		position: absolute;
-		left: 1154pt;
+		left: 1144pt;
 		top: 482pt;
 	}
 
+/*about*/
+	.about{
+		position: absolute;
+		background-color: black;
+		border:1.1pt solid white;
+		border-radius: 5pt;
+		left: -75.5pt;
+		top: -50pt;
+		width: 135pt;
+		padding-left: 25pt;
+		padding-right: 15pt;
+		padding-top: 8pt;
+		padding-bottom: 8pt;
+		display: none;
+	}
 
+	span.text{
+		letter-spacing: 0.6pt;
+		opacity: 1;
+		filter: none;
+		display: inline;
+		color: white;
+		font-family: bt;
+		font-size: 12pt;
+		background-color: transparent;
+		line-height: 200%;
+		padding-left: 15pt;
+		vertical-align: baseline;
+	}
 
+	.blank{
+		position: absolute;
+		border:0.5pt dashed yellow;
+		border-radius: 5pt;
+		left: -60pt;
+		top: -58pt;
+		width: 135pt;
+		height: 120pt;
+		padding-left: 25pt;
+		padding-right: 15pt;
+		padding-top: 8pt;
+		padding-bottom: 8pt;
+		display: none;
+	}
 
+	#lss1{
+		width: 7pt;
+		position: relative;
+		left: 2pt;
+	}
+	#lss2{
+		width:11pt;
+		position: relative;
+		left: 0.5pt;
+		top: 0.5pt;
+	}
+	#lss3{
+		width: 12pt;
+		position: relative;
+		top: 1pt;
+	}
+	#lss4{
+		width: 15pt;
+		position: relative;
+		top: 2pt;
+		left: -0.5pt;
+	}
+	#lss5{
+		width: 14pt;
+		position: relative;
+		top: 1pt;
+		left: -0.3pt;
+	}
+	.circle{
+			position: absolute;
+			width: 50pt;
+			height: 50pt;
+			left: 50%;
+			top: 50%;
+			transform: translate(-25pt,-25pt);
+			border-radius: 60pt;
+			background-color: yellow;
+		}
 
+		.circle:hover .about{
+			display: block;
+		}
+		.circle:hover .blank{
+			display: block;
+		}
 
+		.circle{
+			animation-name: fllkaa;
+			animation-iteration-count: infinite;
+			animation-duration: 7s;
+			opacity: 0.7;
+		}
+		@keyframes fllkaa{
+			0%{opacity: 0.7;}
+			50%{opacity: 1;}
+			100%{opacity: 0.7;}
+		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#imd{
-
+		#about{
+			font-family: bt;
+			font-size: 10pt;
+			color: white;
+			letter-spacing: 17pt;
+			position: absolute;
+			left: -25pt;
+			top: 20pt;
+			text-shadow: 1pt 1pt 1pt black;
+		}
+	
+a:hover +span{
+	opacity: 1;
+	filter: none;
+	transition: 0.4s;
+}
+a:hover +.level{
+	opacity: 1;
+	filter: none;
+	transition: 0.4s;
 }
