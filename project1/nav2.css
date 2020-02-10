@@ -3,7 +3,6 @@
 	src:url(NeueHaasGrotDispRD-Light.otf);
 }
 
-
 body{
 	width: 100%;
 	height: 100%;
@@ -13,32 +12,51 @@ body{
 	padding: 0pt;
 }
 
-#black{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 2000pt;
-	height: 1000pt;
-	background-color: black;
-	opacity: 0;
-	animation-name: disa;
-	animation-duration: 4s;
-	animation-iteration-count: 1: 
-}
-
-@keyframes disa{
-	0%{opacity: 1;}
-	100%{opacity: 0;}
-}
+/*kaichang*/
+	#black{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 2000pt;
+		height: 1000pt;
+		background-color: black;
+		opacity: 0;
+		animation-name: disa;
+		animation-duration: 4s;
+		animation-iteration-count: 1: 
+	}
+	@keyframes disa{
+		0%{opacity: 1;}
+		100%{opacity: 0;}
+	}
+	.l1,.l2,.l3,.l4,.l5{
+			color: white;
+			font-family: bt;
+			font-size: 14pt;
+			letter-spacing: 1pt;
+			animation-name: app;
+			animation-duration: 5s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in;
+			opacity: 1;
+		}
+		@keyframes app{
+			0%{opacity: 0;
+				filter: blur(2pt);
+			}
+			100%{opacity: 1;
+				filter: none;
+			}
+		}
 
 /*img*/
-#star1, #star2{
-		display: inline;
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-}
+	#star1, #star2{
+			display: inline;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+	}
 
 	#star1{
 				animation-name: flic;
@@ -50,7 +68,7 @@ body{
 	}
 	@keyframes flic{
 				0% {opacity: 0;}
-				60%{opacity: 0.6;}
+				60%{opacity: 0.5;}
 				100%{opacity: 0;}
 	}
 
@@ -59,39 +77,88 @@ body{
 				animation-iteration-count: infinite;
 				animation-delay: 3.5s;
 				animation-duration: 10s;
-				opacity: 0.6;
+				opacity: 0.5;
 				filter: blur(0.1pt);
 	}
 	@keyframes flicb{
-				0% {opacity: 0.6;}
+				0% {opacity: 0.5;}
 				40%{opacity: 0;}
-				100%{opacity: 0.6;}
+				100%{opacity: 0.5;}
 	}
 
-.l1,.l2,.l3,.l4,.l5{
-	color: white;
-	font-family: bt;
-	font-size: 14pt;
-	letter-spacing: 1pt;
-	animation-name: app;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	opacity: 1;
-}
-@keyframes app{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
+/*rotate*/
+	.l5s{
+		animation-name: rota;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	@keyframes rota{
+		0%{transform: rotate(0deg);}
+		100%{transform: rotate(360deg);}
+	}
 
-.l1s{
+	.l1s{
+		animation-name: fllka;
+		animation-duration: 4.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	@keyframes fllka{
+		0%{opacity: 1;}
+		50%{opacity: 0.2}
+		100%{opacity: 1}
+	}
 
-}
+	.l2s{
+		animation-name: fllka;
+		animation-duration: 4.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-delay: -1.5s;
+	}
+	@keyframes fllka{
+		0%{opacity: 1;}
+		50%{opacity: 0.2}
+		100%{opacity: 1}
+	}
+
+	.l3s{
+		animation-name: fllka;
+		animation-duration: 4.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-delay: -2.7s;
+	}
+	@keyframes fllka{
+		0%{opacity: 1;}
+		50%{opacity: 0.2}
+		100%{opacity: 1}
+	}
+
+	.l4s{
+		animation-name: fllka;
+		animation-duration: 4.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-delay: -0.67s;
+	}
+	@keyframes fllka{
+		0%{opacity: 1;}
+		50%{opacity: 0.2}
+		100%{opacity: 1}
+	}
 
 /*text*/
 	span{
 		opacity: 0;
 		position: relative;
+		background-color: yellow;
+		border-radius: 4pt;
+		color: black;
+		padding: 4pt;
+		padding-left: 8pt;
+		padding-right: 8pt;
 		filter: blur(5pt);
 	}
 
@@ -123,7 +190,7 @@ body{
 a:hover +span{
 	opacity: 1;
 	filter: none;
-	transition: 0.3s;
+	transition: 0.4s;
 }
 
 /*level1*/
