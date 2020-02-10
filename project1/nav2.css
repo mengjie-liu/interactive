@@ -13,6 +13,24 @@ body{
 	padding: 0pt;
 }
 
+#black{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2000pt;
+	height: 1000pt;
+	background-color: black;
+	opacity: 0;
+	animation-name: disa;
+	animation-duration: 4s;
+	animation-iteration-count: 1: 
+}
+
+@keyframes disa{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
 /*img*/
 #star1, #star2{
 		display: inline;
@@ -25,6 +43,7 @@ body{
 	#star1{
 				animation-name: flic;
 				animation-iteration-count: infinite;
+				animation-delay: 2s;
 				animation-duration: 10s;
 				opacity: 0;
 				filter: blur(0.1pt);
@@ -38,7 +57,7 @@ body{
 	#star2{
 				animation-name: flicb;
 				animation-iteration-count: infinite;
-				animation-delay: 1.5s;
+				animation-delay: 3.5s;
 				animation-duration: 10s;
 				opacity: 0.6;
 				filter: blur(0.1pt);
@@ -54,10 +73,19 @@ body{
 	font-family: bt;
 	font-size: 14pt;
 	letter-spacing: 1pt;
+	animation-name: app;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	opacity: 1;
+}
+@keyframes app{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
-#l1s{
-	
+.l1s{
+
 }
 
 /*text*/
