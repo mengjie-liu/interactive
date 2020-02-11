@@ -5,6 +5,48 @@
 			Guess What
 		</title>
 		<link rel="stylesheet" type="text/css" href="23.css">
+		<style type="text/css">
+			@font-face{
+				font-family: ty;
+				src:url(NeueHaasGrotDispRD-Light.otf);
+			}
+
+			body{
+				overflow-x: hidden;
+			}
+
+			img{
+				width: 15pt;
+			}
+			#back{
+				font-family: ty;
+				font-size: 15pt;
+				position: absolute;
+				background-color: black;
+				/*padding: 30pt;*/
+				padding-top: 10pt;
+				padding-bottom: 10pt;
+				left: 0;
+				top: 650pt;
+				text-align: center;
+				transform: translate(-40pt);
+				width: 1400pt;
+			}
+			#bacc{
+				opacity: 0;
+				position: relative;
+				top: -2pt;
+				padding: 7pt;
+				color: white;
+				letter-spacing: 2pt;
+				background-color: transparent;
+				text-decoration: none;
+				font-family: ty;
+			}
+			#baa:hover +#bacc{
+				opacity: 1;
+			}
+		</style>
 	</head>
 	<body>
 		<div>
@@ -47,8 +89,10 @@
 				<span class="sea">red</span>&nbsp;&nbsp;<span class="xie">/</span>&nbsp;&nbsp;silhouette&nbsp;&nbsp;<span class="xie">/</span>&nbsp;&nbsp;<span class="sea">clock</span>&nbsp;<span class="sea">runs</span>&nbsp;backwords 
 				high&nbsp;<span class="sea">school</span>&nbsp;reunion&nbsp;&nbsp;<span class="xie">/</span>&nbsp;&nbsp;deja&nbsp;vu&nbsp;&nbsp;<span class="xie">/</span>&nbsp;&nbsp;<span class="sea">sun</span>light
 			</div>
-			
 		</div>
-			
+	<div id="back">
+		<a id="baa" href="nav2.html"><img src="img/st5.png"></a>
+		<span id="bacc">BACK</span>
+	</div>
 	</body>
 </html>

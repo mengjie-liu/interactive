@@ -5,6 +5,43 @@
 		It Rains
 	</title>
 	<link rel="stylesheet" type="text/css" href="25.css">
+	<style type="text/css">
+			@font-face{
+				font-family: ty;
+				src:url(NeueHaasGrotDispRD-Light.otf);
+			}
+
+			img{
+				width: 15pt;
+			}
+			#back{
+				font-family: ty;
+				font-size: 15pt;
+				position: absolute;
+				background-color: black;
+				/*padding: 30pt;*/
+				padding-top: 10pt;
+				padding-bottom: 10pt;
+				left: 0;
+				top: 607pt;
+				text-align: center;
+				transform: translate(-40pt);
+				width: 1400pt;
+				writing-mode: horizontal-tb;
+			}
+			#bacc{
+				opacity: 0;
+				position: relative;
+				top: -2pt;
+				padding: 7pt;
+				color: white;
+				letter-spacing: 2pt;
+				writing-mode: horizontal-tb;
+			}
+			#baa:hover +#bacc{
+				opacity: 1;
+			}
+		</style>
 </head>
 <body>
 	<div>
@@ -37,6 +74,10 @@
 		<div id="w27">I&nbsp;miss&nbsp;them</div>
 		<div id="w28">high&nbsp;school&nbsp;reunion</div>
 		<div id="w29">dragonfly&nbsp;with&nbsp;clear&nbsp;wings</div>
+	</div>
+	<div id="back">
+		<a id="baa" href="nav2.html"><img src="img/st5.png"></a>
+		<span id="bacc">BACK</span>
 	</div>
 </body>
 </html>

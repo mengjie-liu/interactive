@@ -5,6 +5,45 @@
 			Drag it!
 		</title>
 		<link rel="stylesheet" type="text/css" href="19.css">
+		<style type="text/css">
+			@font-face{
+				font-family: ty;
+				src:url(NeueHaasGrotDispRD-Light.otf);
+			}
+
+			body{
+				overflow-x: hidden;
+			}
+
+			img{
+				width: 15pt;
+			}
+			#back{
+				font-family: ty;
+				font-size: 15pt;
+				position: absolute;
+				background-color: black;
+				/*padding: 30pt;*/
+				padding-top: 10pt;
+				padding-bottom: 10pt;
+				left: 0;
+				top: 642pt;
+				text-align: center;
+				transform: translate(-40pt);
+				width: 1400pt;
+			}
+			span{
+				opacity: 0;
+				position: relative;
+				top: -2.5pt;
+				padding: 7pt;
+				color: white;
+				letter-spacing: 2pt;
+			}
+			a:hover +span{
+				opacity: 1;
+			}
+		</style>
 	</head>
 	<body>
 		<div>
@@ -50,5 +89,9 @@
 		<div class="drag">
 			↤&nbsp;drag&nbsp;the&nbsp;window&nbsp;↦
 		</div>
+	<div id="back">
+		<a href="nav2.html"><img src="img/st4.png"></a>
+		<span>BACK</span>
+	</div>
 	</body>
 </html>

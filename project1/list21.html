@@ -5,9 +5,50 @@
 			the Invisible
 		</title>
 		<link rel="stylesheet" type="text/css" href="21.css">
+		<style type="text/css">
+			@font-face{
+				font-family: ty;
+				src:url(NeueHaasGrotDispRD-Light.otf);
+			}
+
+			body{
+				overflow-x: hidden;
+			}
+
+			img{
+				width: 15pt;
+			}
+			#back{
+				font-family: ty;
+				font-size: 15pt;
+				position: absolute;
+				background-color: black;
+				/*padding: 30pt;*/
+				padding-top: 10pt;
+				padding-bottom: 10pt;
+				left: 0;
+				top: 650pt;
+				text-align: center;
+				transform: translate(-40pt);
+				width: 1400pt;
+				cursor: default;
+			}
+			span{
+				opacity: 0;
+				position: relative;
+				top: -2pt;
+				padding: 7pt;
+				color: white;
+				letter-spacing: 2pt;
+			}
+			a:hover +span{
+				cursor: pointer;
+				opacity: 1;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="back"></div>
+	<div class="back"></div>
 		<div class="sol">
 			<div id="te">tears,<br>but&nbsp;not&nbsp;salty</div>
 			<div id="sw">sweetness</div>
@@ -41,21 +82,10 @@
 			<div id="clo">clock&nbsp;runs<br>backwards</div>
 			<div id="tse">the&nbsp;sea&nbsp;has&nbsp;no&nbsp;end</div>
 		</div>
-		<a href="project1.html">
-			back
-		</a>
-
-
-
-
-
-
-
-
-
-
-
-
 	</div> 
+	<div id="back">
+		<a href="nav2.html"><img src="img/st5.png"></a>
+		<span>BACK</span>
+	</div>
 	</body>
 </html>

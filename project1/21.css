@@ -9,7 +9,7 @@ body{
     cursor: none;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -343,12 +343,12 @@ div{
     transition: 0.70s;
 }
 
-a{
+/*a{
     position: absolute;
     left: 1200pt;
     top: 620pt;
     font-size: 20pt;
-}
+}*/
 
 
 

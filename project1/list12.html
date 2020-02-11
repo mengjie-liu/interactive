@@ -14,6 +14,48 @@
 				padding: 0;
 				display: inline;
 			}
+
+			@font-face{
+				font-family: ty;
+				src:url(NeueHaasGrotDispRD-Light.otf);
+			}
+
+			body{
+				overflow-y: hidden;
+			}
+
+			img{
+				width: 15pt;
+			}
+			#back{
+				writing-mode: vertical-rl;
+				font-family: ty;
+				font-size: 15pt;
+				position: absolute;
+				background-color: black;
+				/*padding: 30pt;*/
+				padding-top: 10pt;
+				padding-bottom: 10pt;
+				padding-right: 15pt;
+				padding-left: 15pt;
+				left: 0;
+				top: 0pt;
+				text-align: center;
+				transform: translate(-40pt);
+				width: 60pt;
+				height: 700pt;
+			}
+			span{
+				opacity: 0;
+				position: relative;
+				top: -2.5pt;
+				padding: 7pt;
+				color: white;
+				letter-spacing: 2pt;
+			}
+			a:hover +span{
+				opacity: 1;
+			}
 		</style>
 	</head>
 	<body>
@@ -488,43 +530,12 @@
 				}
 			</style>
 		</div>
+		<br><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div id="back">
+		<a href="nav2.html"><img src="img/st3.png"></a>
+		<span>BACK</span>
+	</div>
 
 	</body>
 </html>

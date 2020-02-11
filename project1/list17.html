@@ -5,8 +5,58 @@
 			from Sunlight to Silhouette
 		</title>
 		<link rel="stylesheet" type="text/css" href="17.css">
+		<style type="text/css">
+			@font-face{
+					font-family: ty;
+					src:url(NeueHaasGrotDispRD-Light.otf);
+				}
+
+				body{
+					overflow-y: hidden;
+				}
+
+				img{
+					width: 15pt;
+				}
+				#back{
+					writing-mode: vertical-rl;
+					font-family: ty;
+					font-size: 15pt;
+					position: absolute;
+					background-color: black;
+					/*padding: 30pt;*/
+					padding-top: 10pt;
+					padding-bottom: 10pt;
+					padding-right: 15pt;
+					padding-left: 15pt;
+					left: 0;
+					top: 0pt;
+					text-align: center;
+					transform: translate(-40pt);
+					width: 60pt;
+					height: 700pt;
+				}
+				span{
+					opacity: 0;
+					position: relative;
+					top: -2.5pt;
+					padding: 7pt;
+					color: white;
+					letter-spacing: 2pt;
+				}
+				a:hover +span{
+					opacity: 1;
+				}
+
+/*				.lala{
+					position: relative;
+					left: 45pt;
+					top: -10pt;
+				}*/
+		</style>
 	</head>
 	<body>
+	<div id="lala">
 		<div class="back"></div>
 		 <div>
 			<h4 class="w1">
@@ -133,23 +183,11 @@
 			<div class="b32"></div>
 			<div class="b32a"></div>
 			<div class="b33"></div>
-
-
-
-
-
-
-
-
-
-			<!-- 
-			<div class="b33"></div>
-			<div class="b34"></div>
-			<div class="b35"></div>
-			<div class="b36"></div>
-			<div class="b37"></div>
-			<div class="b38"></div>
- -->
 		</div>
+	</div>
+	<div id="back">
+		<a href="nav2.html"><img src="img/st3.png"></a>
+		<span>BACK</span>
+	</div>
 	</body>
 </html>

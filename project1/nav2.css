@@ -383,11 +383,13 @@ body{
 		left: -75.5pt;
 		top: -50pt;
 		width: 135pt;
+		height: 118pt;
 		padding-left: 25pt;
 		padding-right: 15pt;
 		padding-top: 8pt;
 		padding-bottom: 8pt;
 		display: none;
+		overflow: scroll;
 	}
 
 	span.text{
@@ -402,6 +404,7 @@ body{
 		line-height: 200%;
 		padding-left: 15pt;
 		vertical-align: baseline;
+		overflow: scroll;
 	}
 
 	.blank{
@@ -449,11 +452,11 @@ body{
 	}
 	.circle{
 			position: absolute;
-			width: 50pt;
-			height: 50pt;
+			width: 40pt;
+			height: 40pt;
 			left: 50%;
 			top: 50%;
-			transform: translate(-25pt,-25pt);
+			transform: translate(-20pt,-20pt);
 			border-radius: 60pt;
 			background-color: yellow;
 		}
@@ -481,11 +484,21 @@ body{
 			font-family: bt;
 			font-size: 10pt;
 			color: white;
-			letter-spacing: 17pt;
+			letter-spacing: 14pt;
 			position: absolute;
-			left: -25pt;
-			top: 20pt;
+			left: -24pt;
+			top: 14.5pt;
 			text-shadow: 1pt 1pt 1pt black;
+		}
+
+		#texta{
+			color: yellow;
+			font-family: bt;
+			font-size: 11pt;
+			padding-top: 5pt;
+			padding-left: -20pt;
+			letter-spacing: 0.75pt;
+			line-height: 110%;
 		}
 	
 a:hover +span{
