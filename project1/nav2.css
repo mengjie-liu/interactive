@@ -388,7 +388,7 @@ body{
 		padding-right: 15pt;
 		padding-top: 8pt;
 		padding-bottom: 8pt;
-		display: none;
+		opacity: 0;
 		overflow: scroll;
 	}
 
@@ -404,7 +404,6 @@ body{
 		line-height: 200%;
 		padding-left: 15pt;
 		vertical-align: baseline;
-		overflow: scroll;
 	}
 
 	.blank{
@@ -419,7 +418,7 @@ body{
 		padding-right: 15pt;
 		padding-top: 8pt;
 		padding-bottom: 8pt;
-		display: none;
+		opacity: 0;
 	}
 
 	#lss1{
@@ -462,10 +461,16 @@ body{
 		}
 
 		.circle:hover .about{
-			display: block;
+			opacity: 1;
+			transition: 0.3s;
 		}
 		.circle:hover .blank{
-			display: block;
+			opacity: 1;
+			transition: 0.3s;
+		}
+		.circle:hover #about{
+			opacity: 0;
+			transition: 0.3s;
 		}
 
 		.circle{
@@ -486,19 +491,21 @@ body{
 			color: white;
 			letter-spacing: 14pt;
 			position: absolute;
-			left: -24pt;
+			left: -90pt;
 			top: 14.5pt;
 			text-shadow: 1pt 1pt 1pt black;
+			transition: opacity 0.3s;
 		}
 
 		#texta{
 			color: yellow;
 			font-family: bt;
 			font-size: 11pt;
-			padding-top: 5pt;
+			padding-top: 8pt;
 			padding-left: -20pt;
+			padding-bottom: 5pt;
 			letter-spacing: 0.75pt;
-			line-height: 110%;
+			line-height: 120%;
 		}
 	
 a:hover +span{
