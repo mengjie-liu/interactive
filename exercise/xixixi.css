@@ -1,0 +1,153 @@
+@font-face{
+	font-family: haha;
+	src:url(NeueHaas25xThin.otf);
+}
+
+body{
+	overflow: hidden;
+	display: inline;
+	position: absolute;
+}
+
+img{
+	z-index: 1000;
+}
+
+/*stapler*/
+	#stp{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 365pt;
+		height: 273pt;
+		border: 0.5pt dashed black;
+	}
+	#st{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		top: 110pt;
+		left: 121pt;
+	}
+	#stapler{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		width: 365pt;
+	}
+
+/*id*/
+	#iddd{
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 0.5pt dashed black;
+		width: 460pt;
+		height: 693.6pt;
+	}
+
+	#idddd{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		left: 142pt;
+		top: 327pt;
+	}
+
+	#idd{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 460pt;
+		opacity: 0;
+	}
+
+/*pencase*/
+	#case{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 810.5pt;
+		height: 261pt;
+		border: 0.5pt dashed black;
+	}
+
+	#pc{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		left: 323pt;
+		top: 102.5pt;
+	}
+
+	#pencase{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		width: 810pt;
+	}
+
+#sci{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 370pt;
+	height: 543pt;
+	border: 0.5pt dashed black;
+}
+
+#scis{
+	position: absolute;
+	font-size: 45pt;
+	font-family: haha;
+	letter-spacing: 1pt;
+	left: 109pt;
+	top: 244pt;
+}
+
+#scissors{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: 370pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 371pt) and (max-width: 378pt) and (min-height: 283pt) and (max-height: 285pt){
+	#stapler{
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 471pt) and (max-width: 474pt) and (min-height: 705pt) and (max-height: 708pt){
+	#idd{
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 822pt) and (max-width: 824pt) and (min-height: 272pt) and (max-height: 275pt){
+	#pencase{
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 382pt) and (max-width: 384pt) and (min-height: 555pt) and (max-height: 557pt){
+	#scissors{
+		opacity: 1;
+	}
+}
