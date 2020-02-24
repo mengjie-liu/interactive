@@ -196,31 +196,32 @@ img{
 		width: 850pt;
 	}
 
-#ct{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 620pt;
-	height: 220pt;
-	border: 0.5pt dashed black;
-}
+/*cutter*/
+	#ct{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 620pt;
+		height: 220pt;
+		border: 0.5pt dashed black;
+	}
 
-#cut{
-	position: absolute;
-	font-size: 45pt;
-	font-family: haha;
-	letter-spacing: 1pt;
-	left: 260pt;
-	top: 85pt;
-}
+	#cut{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		left: 260pt;
+		top: 85pt;
+	}
 
-#cutter{
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	width: 620pt;
-}
+	#cutter{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		width: 620pt;
+	}
 
 @media screen and (min-width: 375pt) and (max-width: 378pt) and (min-height: 283pt) and (max-height: 285pt){
 	#stapler{
