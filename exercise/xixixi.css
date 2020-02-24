@@ -92,35 +92,81 @@ img{
 		width: 810pt;
 	}
 
-#sci{
+/*scissors*/
+	#sci{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 370pt;
+		height: 543pt;
+		border: 0.5pt dashed black;
+	}
+	#scis{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		left: 109pt;
+		top: 244pt;
+	}
+	#scissors{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		width: 370pt;
+	}
+
+/*umbrella*/
+	#umb{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1000pt;
+		height: 358pt;
+		border: 0.5pt dashed black;
+	}
+	#umbr{
+		position: absolute;
+		font-size: 45pt;
+		font-family: haha;
+		letter-spacing: 1pt;
+		left: 423pt;
+		top: 158pt;
+	}
+	#umbrella{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		width: 1000pt;
+	}
+
+#bt{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 370pt;
-	height: 543pt;
+	width: 600.5pt;
+	height: 395pt;
 	border: 0.5pt dashed black;
 }
 
-#scis{
+#hdp{
 	position: absolute;
 	font-size: 45pt;
 	font-family: haha;
 	letter-spacing: 1pt;
-	left: 109pt;
-	top: 244pt;
+	left: 200pt;
+	top: 175pt;
 }
 
-#scissors{
+#head{
 	position: absolute;
 	left: 0;
 	top: 0;
 	opacity: 0;
-	width: 370pt;
+	width: 600pt;
 }
-
-
-
-
 
 
 
@@ -133,21 +179,28 @@ img{
 		opacity: 1;
 	}
 }
-
 @media screen and (min-width: 471pt) and (max-width: 474pt) and (min-height: 705pt) and (max-height: 708pt){
 	#idd{
 		opacity: 1;
 	}
 }
-
 @media screen and (min-width: 822pt) and (max-width: 824pt) and (min-height: 272pt) and (max-height: 275pt){
 	#pencase{
 		opacity: 1;
 	}
 }
-
 @media screen and (min-width: 382pt) and (max-width: 384pt) and (min-height: 555pt) and (max-height: 557pt){
 	#scissors{
+		opacity: 1;
+	}
+}
+@media screen and (min-width: 1010pt) and (max-width: 1013pt) and (min-height: 370pt) and (max-height: 373pt){
+	#umbrella{
+		opacity: 1;
+	}
+}
+@media screen and (min-width: 612pt) and (max-width: 614pt) and (min-height: 406pt) and (max-height: 409pt){
+	#head{
 		opacity: 1;
 	}
 }
