@@ -18,10 +18,11 @@ canvas{
 
 .black{
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 2000pt;
-	height: 1200pt;
+	left: 50%;
+	top: 50%;
+	transform: translate(-100%,-100%);
+	width: 0.45pt;
+	height: 0.45pt;
 	background-color: black;
 	opacity: 0;
 	animation-name: dissa;
@@ -30,15 +31,13 @@ canvas{
 
 @keyframes dissa{
 	0% {opacity: 1;
-		z-index: 10;
+		transform: scale(1000,1000);
 	}
-	40% {opacity: 1;
-		z-index: 10;
+	60% {opacity: 1;
+		transform: scale(1000,1000);
 	}
-	/*90% {opacity: 0;
-		z-index: 10;
-	}*/
 	100% {opacity: 0;
-		z-index: -10;}
+		transform: scale(0,0);;
+		}
 }
 
