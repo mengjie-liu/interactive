@@ -284,17 +284,17 @@ body{
 	animation-duration: 90s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-delay: -1s;
+	/*animation-delay: -1s;*/
 }
 @keyframes app{
 	0%{
-		background-color: none;
+		background-color: #DFF2F7;
 	}
 	50%{
 		background-color: #006284;
 	}
 	100%{
-		background-color: none;
+		background-color: #DFF2F7;
 	}
 }
 

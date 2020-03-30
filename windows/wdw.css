@@ -1,0 +1,615 @@
+/*body{
+	margin:0;
+	overflow-x: hidden;
+}
+
+.draggable{
+	position: absolute;
+	margin: .25em;
+	background-color: red;
+}
+
+#ins{
+	width: 28.25%;
+}*/
+
+
+
+/*@font-face {
+  font-family: 'SuisseIntl-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://files.cargocollective.com/c27001/SuisseIntl-Regular-WebS.woff') format('woff');
+}
+
+*{
+    font-family: "SuisseIntl-Regular";
+
+    
+}*/
+
+.draggable {
+    width: 21.3%;
+    margin: .25em;
+    position: absolute;
+    /*cursor: url('/img/allScrollBlack.png'), all-scroll;*/
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}   
+
+
+.resize {
+  width:100%;
+  min-width:115px;
+  height:auto;
+}
+
+.draggable.switch-bg {
+  width: 50%;
+}
+
+html{
+    height: 100%;
+    /*cursor: url('/img/bigPointer.png'), default;*/
+}
+
+body{
+    height: 100%;
+    -webkit-text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+    margin:0;
+}
+
+
+
+/******************** for mobile only ********************/
+
+/*@media only screen and (max-width: 450px) {
+     h1{
+        font-size: 18pt;
+        position: relative;
+        display: inline-block;
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 1rem;
+        -webkit-margin-end: 1rem;
+        font-weight: normal;
+        z-index: 5;
+    }
+        #swaplink {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: orangered;
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 1rem;
+        -webkit-margin-end: 1rem;
+        font-size: 18pt;
+        font-weight: normal;
+        z-index: 100;
+    }    
+    
+    #drag-1{
+        top: 78%;
+        left: 39%;
+    }
+    
+    #drag-2{
+        top: 64%;
+        left: 10%;
+    }
+
+    #drag-3{
+        top: 13%;
+        left: 33%;
+    }
+
+    #drag-4{
+        top: 30%;
+        left: 11%;
+    }
+    
+    #drag-5{
+        top: 50%;
+        left: 46%;
+    }
+
+    /* APPLICABLE ONLY TO ABOUT PAGE */
+    #info-box {
+        width: 100%;
+    }
+    #workInfo {
+         position: relative;
+        font-size: 16pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #workInfoSmall {
+         position: relative;
+        font-size: 16pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #blogEntry {
+         position: relative;
+        font-size: 12pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #info {
+        
+        position: relative;
+        font-size: 16pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 5;
+    }
+    
+    #myPhoto {
+        padding: 0rem 1rem 1rem 1rem;
+
+    }
+    
+    #linky, #linkySmall{
+        font-size: 16pt;
+        color: blue;
+        font-weight: normal;
+        padding-bottom: 1rem;
+    }
+    
+    
+    .works{
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    float: left;
+    box-sizing: border-box; 
+    }
+    
+    .worksResize{
+      width:100%;
+      min-width: 200px;
+      height:auto;
+    padding: 1rem 0rem 0rem 0rem;
+    }
+    
+    .worksResizeFirst{
+      width:100%;
+      min-width: 200px;
+      height:auto;
+    	padding: 0rem;
+    }
+    
+    #centreText{
+        font-size: 14pt;
+        width: 100%;
+        top: 90%;
+        text-align: center;
+        position: absolute;
+        color: silver;
+    }
+    
+    
+    #cv-mobile {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 13pt;
+        padding: 0.5rem 1rem 1rem 1rem;
+        
+    }
+    
+    #category {
+        color: orangered;
+        font-size: 13pt;
+    }
+    
+    
+    #cv-left {
+        display: none;
+    }
+    
+    #cv-right {
+        display:none;
+    }
+    
+    #cv-linky{
+        color: blue;
+        font-weight: normal;
+        padding: 0;
+    }
+}
+
+/*************** for tablets ****************/
+
+@media only screen and (min-width: 450px) {
+    h1{
+        font-size: 25pt;
+        position: relative;
+        display: inline-block;
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 1rem;
+        -webkit-margin-end: 1rem;
+        font-weight: normal;
+        z-index: 5;
+    }
+        #swaplink {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: orangered;
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 1rem;
+        -webkit-margin-end: 1rem;
+        font-size: 25pt;
+        font-weight: normal;
+        z-index: 100;
+    }    
+    */
+/*
+    #drag-1{
+        top: 72%;
+        left: 51%;
+    }
+
+    #drag-2{
+        top: 46%;
+        left: 55%;
+    }
+    
+    #drag-3{
+        top: 14%;
+        left: 57%;
+    }
+
+    #drag-4{
+        top: 23%;
+        left: 34%;
+    }
+    
+    #drag-5{
+        top: 50%;
+        left: 14%;
+    }
+*/
+
+    /* APPLICABLE ONLY TO ABOUT PAGE */
+/*    #info-box {
+        width: 100%;
+    }
+    #workInfo {
+        position: relative;
+        font-size: 20pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #workInfoSmall{
+        position: relative;
+        font-size: 20pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+    }
+    
+    #info {
+        
+        position: relative;
+        font-size: 20pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 5;
+    }
+    
+    #blogEntry {
+        position: relative;
+        font-size: 16pt;
+    
+        padding: 0rem 1rem 1rem 1rem;
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #myPhoto {
+        padding: 0rem 1rem 1rem 1rem;
+
+    }
+    
+    #linky, #linkySmall{
+        color: blue;
+        font-size: 20pt;
+        font-weight: normal;
+        padding-bottom: 1.5rem;
+    }
+    
+    .works{
+        width: 100%;
+        padding: 0rem 1rem 1rem 1rem;
+        float: left;
+        box-sizing: border-box; 
+    }
+    
+    .worksResize{
+        width:100%;
+        min-width: 200px;
+        height:auto;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    
+    .worksResizeFirst{
+        width:100%;
+        min-width: 200px;
+        height:auto;
+        padding: 0rem;
+    }
+    
+    #centreText{
+        font-size: 16pt;
+        width: 100%;
+        top: 90%;
+        text-align: center;
+        position: absolute;
+        color: silver;
+    }
+    
+    
+    #cv-left {
+        width: 30%;
+        box-sizing: border-box;
+        float: left; 
+        color: orangered;
+    }
+    
+    #cv-right {
+        width: 70%;
+        box-sizing: border-box;
+        float: right;
+        padding: 0rem 1rem;
+    }
+    
+     #cv-info {
+        font-size: 2.5vw;
+        padding: 0rem 1rem;
+/*        font-weight: normal;*/
+        
+    }
+    
+    #cv-linky{
+        color: blue;
+        font-weight: normal;
+        padding: 0;
+    }
+    
+    #cv-mobile{
+        display: none;
+    }
+}*/
+
+
+/*************** for desktop ****************/
+
+@media only screen and (min-width: 770px) {
+    h1{    
+        
+        font-size: 4.7vw;
+        display: inline-block;
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 2rem;
+        -webkit-margin-end: 2rem;
+        font-weight: normal;
+        z-index: 5;
+    }
+
+    #swaplink {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: orangered;   
+        -webkit-margin-before: 1rem;
+        -webkit-margin-after: 1rem;
+        -webkit-margin-start: 2rem;
+        -webkit-margin-end: 2rem;
+        font-size: 4.7vw;               
+        font-weight: normal;
+        z-index: 6;
+        
+    }
+    
+    #centreText{
+        font-size: 2.5vw;
+        width: 100%;
+        top: 91%;
+        text-align: center;
+        position: absolute;
+        color: silver;
+        
+    }
+    
+
+    /* APPLICABLE ONLY TO ABOUT PAGE */
+    #topbit{
+        
+        width: 100%;
+    }
+
+    #info-box {
+        width: 50%;
+        box-sizing: border-box;
+        float: left; 
+    }
+
+    #info {
+        font-size: 3.25vw;
+        padding: 0rem 2rem;
+        font-weight: normal;
+        
+    }
+
+    #myPhoto {
+        width: 50%;
+        box-sizing: border-box; 
+        float: right;
+        padding-right: 2rem;
+        padding-top: 0.5rem;     
+    }
+    
+    #linky{
+        color: blue;
+        font-size: 3.25vw;
+        font-weight: normal;
+        padding-bottom: 2rem;
+    }
+    
+    #linkySmall{
+        color: blue;
+        font-size: 2.75vw;
+        font-weight: normal;
+        padding-bottom: 2rem;
+    }
+    
+    /* APPLICABLE ONLY TO WORKS PAGES */
+    
+    #workInfo {
+        font-size: 3.25vw;
+        padding: 0rem 2rem;
+        font-weight: normal;
+        
+    }
+    
+    #workInfoSmall {
+        font-size: 2.75vw;
+        padding: 0rem 2rem;
+        font-weight: normal;
+    }
+    
+    #blogEntry {
+        font-size: 20pt;
+        padding: 0rem 2rem;
+        font-weight: normal;
+        
+    }
+    
+    .works{
+        width: 100%;
+        padding: 2rem 2rem 2rem 2rem;
+        float: left;
+        box-sizing: border-box; 
+    }
+    
+    .worksResize{
+        width:100%;
+        min-width: 200px;
+        height:auto;
+        padding: 1.5rem 0em 0em 0em;
+    }
+    
+    .worksResizeFirst{
+        width:100%;
+        min-width: 200px;
+        height:auto;
+        padding: 0rem;
+    }
+    
+        #cv-left {
+        width: 30%;
+        box-sizing: border-box;
+        float: left; 
+        color: orangered;
+    }
+    
+    #cv-right {
+        width: 70%;
+        box-sizing: border-box;
+        float: right;
+        padding: 0rem 2rem;
+    }
+    
+     #cv-info {
+        font-size: 2.5vw;
+        padding: 0rem 2rem;
+        
+    }
+    
+    #cv-linky{
+        color: blue;
+        font-weight: normal;
+        padding: 0;
+    }
+    
+    #cv-mobile{
+        display: none;
+    }
+}
+
+
+/*******************************************************/
+
+/*a{
+    text-decoration: none;
+    cursor: url('/img/bigHand.png'), pointer;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: inherit;
+}
+
+*::selection {
+    color: orangered;
+    background-color: pink;
+    -webkit-text-stroke: 0px;
+}
+
+#Nav-link {
+    color: blue;
+}
+
+#Nav-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+h1:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#about {
+    color: blue;
+}
+
+ul{
+    list-style: none;
+    font-size: 30pt;
+    padding-left:0rem;
+    -webkit-margin-before: 0.5rem;
+    -webkit-margin-after: 0.5rem;
+    -webkit-margin-start: 0rem;
+    -webkit-margin-end: 0rem;
+} */*/
