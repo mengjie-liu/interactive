@@ -7,9 +7,12 @@
 	src:url(l.otf);
 }
 
+html{
+	cursor: url('cz.png'),pointer;
+}
+
 body{
 	background-color: black;
-	cursor: url('cz.png'),pointer;
 	overflow: hidden;
 	font-family: ha;
 	margin: 0;
