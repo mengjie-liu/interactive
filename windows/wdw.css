@@ -1,45 +1,84 @@
-/*body{
-	margin:0;
-	overflow-x: hidden;
+@font-face{
+	font-family: xi;
+	src: url(SwedenSans.otf);
 }
 
-.draggable{
+#win{
+	margin: 0;
+	font-family: xi;
+	font-size: 34pt;
 	position: absolute;
-	margin: .25em;
-	background-color: red;
+	left: 25pt;
+	top: 20pt;
+	letter-spacing: 1pt;
+	z-index: 100;
 }
-
-#ins{
-	width: 28.25%;
-}*/
-
-
-
-/*@font-face {
-  font-family: 'SuisseIntl-Regular';
-  font-weight: normal;
-  font-style: normal;
-  src: url('https://files.cargocollective.com/c27001/SuisseIntl-Regular-WebS.woff') format('woff');
-}
-
-*{
-    font-family: "SuisseIntl-Regular";
-
-    
-}*/
 
 .draggable {
-    width: 21.3%;
+    /*width: 21.3%;*/
     margin: .25em;
     position: absolute;
     /*cursor: url('/img/allScrollBlack.png'), all-scroll;*/
 
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
-}   
+}
+#drag-1{
+	width: 21.3%;
+}
+#drag-2{
+	width: 21.3%;
+}
 
+#drag-3{
+	width: 44.5%;
+}
+#drag-4{
+	width: 14.2%;
+}
+#drag-5{
+	width: 71.8%;
+}
+#drag-6{
+	width: 20%;
+}
+#drag-7{
+	width: 37.5%;
+}
+#drag-8{
+	width: 18%;
+}
+#drag-9{
+	width: 30.6%;
+}
+#drag-10{
+	width: 21.3%;
+}
+
+.img{
+	position: absolute;
+	min-width:115px;
+	height:auto;
+	display: none;
+}
+
+#tb1{
+	width:86%;
+	left:13.65%;
+	top: 10%;
+}
+#yt1{
+	width:100%;
+	left:0;
+	top: 0;
+}
+
+#bg{
+	width: 100%;
+}
 
 .resize {
+	position: absolute;
   width:100%;
   min-width:115px;
   height:auto;
@@ -49,8 +88,12 @@
   width: 50%;
 }
 
+.draggable:active .img{
+	display: inline;
+}
+
 html{
-    height: 100%;
+    height: 300%;
     /*cursor: url('/img/bigPointer.png'), default;*/
 }
 
@@ -59,6 +102,7 @@ body{
     -webkit-text-size-adjust:100%;
     -webkit-font-smoothing: antialiased;
     margin:0;
+    overflow-x: hidden;
 }
 
 
@@ -117,7 +161,7 @@ body{
     }
 
     /* APPLICABLE ONLY TO ABOUT PAGE */
-    #info-box {
+   /* #info-box {
         width: 100%;
     }
     #workInfo {
@@ -231,11 +275,11 @@ body{
         font-weight: normal;
         padding: 0;
     }
-}
+}*/
 
 /*************** for tablets ****************/
 
-@media only screen and (min-width: 450px) {
+/*@media only screen and (min-width: 450px) {
     h1{
         font-size: 25pt;
         position: relative;
@@ -393,7 +437,7 @@ body{
         padding: 0rem 1rem;
 /*        font-weight: normal;*/
         
-    }
+/*    }
     
     #cv-linky{
         color: blue;
@@ -409,7 +453,7 @@ body{
 
 /*************** for desktop ****************/
 
-@media only screen and (min-width: 770px) {
+/*@media only screen and (min-width: 770px) {
     h1{    
         
         font-size: 4.7vw;
@@ -446,10 +490,10 @@ body{
         color: silver;
         
     }
-    
+    */
 
     /* APPLICABLE ONLY TO ABOUT PAGE */
-    #topbit{
+/*    #topbit{
         
         width: 100%;
     }
@@ -487,11 +531,11 @@ body{
         font-size: 2.75vw;
         font-weight: normal;
         padding-bottom: 2rem;
-    }
+    }*/
     
     /* APPLICABLE ONLY TO WORKS PAGES */
     
-    #workInfo {
+/*    #workInfo {
         font-size: 3.25vw;
         padding: 0rem 2rem;
         font-weight: normal;
@@ -561,7 +605,7 @@ body{
     #cv-mobile{
         display: none;
     }
-}
+}*/
 
 
 /*******************************************************/
@@ -612,4 +656,4 @@ ul{
     -webkit-margin-after: 0.5rem;
     -webkit-margin-start: 0rem;
     -webkit-margin-end: 0rem;
-} */*/
+} */
