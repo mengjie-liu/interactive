@@ -70,31 +70,9 @@ mtlLoader1.load('day.mtl', function (materials) {
         object.scale.set(objectScale, objectScale, objectScale);
         scene.add(object);
     });
-    /*objLoader.load('day.obj', function (object) {
-        object.position.y -= 80;
-        object.scale.set(objectScale, objectScale, objectScale);
-        scene.add(object);
-    });
-    objLoader.load('month.obj', function (object) {
-        object.position.y -= 80;
-        object.scale.set(objectScale, objectScale, objectScale);
-        scene.add(object);
-    });
-    objLoader.load('year.obj', function (object) {
-        object.position.y -= 80;
-        object.scale.set(objectScale, objectScale, objectScale);
-        scene.add(object);
-    });
-    objLoader.load('ring.obj', function (object) {
-        object.position.y -= 80;
-        object.scale.set(objectScale, objectScale, objectScale);
-        scene.add(object);
-    });*/
 });
 
 function rotate(){
-    /*time = clock.getElapsedTime();
-    delta = clock.getDelta();*/
     HObject.rotation.y += 0.35 * Math.PI / 180;
     DObject.rotation.y += 0.35 * Math.PI / 180 / 12;
     MObject.rotation.y += 0.35 * Math.PI / 180 / 12 / 4;
