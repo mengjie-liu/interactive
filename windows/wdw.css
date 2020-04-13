@@ -6,16 +6,18 @@
 #win{
 	margin: 0;
 	font-family: xi;
-	font-size: 34pt;
+	font-size: 13pt;
 	position: absolute;
-	left: 25pt;
-	top: 20pt;
-	letter-spacing: 1pt;
+	/*left: 25pt;*/
+	top: 15pt;
+    left: 50%;
+    transform: translateX(-50%);
+	/*letter-spacing: 1pt;*/
+    letter-spacing: 14vw;
 	z-index: 100;
 }
 
 .draggable {
-    /*width: 21.3%;*/
     margin: .25em;
     position: absolute;
     /*cursor: url('/img/allScrollBlack.png'), all-scroll;*/
@@ -23,54 +25,75 @@
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
 }
-#drag-1{
-	width: 21.3%;
-}
-#drag-2{
-	width: 21.3%;
-}
-
-#drag-3{
-	width: 44.5%;
-}
-#drag-4{
-	width: 14.2%;
-}
-#drag-5{
-	width: 71.8%;
-}
-#drag-6{
-	width: 20%;
-}
-#drag-7{
-	width: 37.5%;
-}
-#drag-8{
-	width: 18%;
-}
-#drag-9{
-	width: 30.6%;
-}
-#drag-10{
-	width: 21.3%;
+.time{
+    font-family: xi;
+    font-size: 12.5pt;
+    position: absolute;
+    letter-spacing: 0.5pt;
+    top: 4pt;
+    left: 8pt;
 }
 
-.img{
-	position: absolute;
-	min-width:115px;
-	height:auto;
-	display: none;
+/*img k*/
+    #drag-1{
+    	width: 21.3%;
+    }
+    #drag-2{
+    	width: 21.3%;
+    }
+    #drag-3{
+    	width: 44.5%;
+    }
+    #drag-4{
+    	width: 14.2%;
+    }
+    #drag-5{
+    	width: 71.8%;
+    }
+    #drag-6{
+    	width: 20%;
+    }
+    #drag-7{
+    	width: 37.5%;
+    }
+    #drag-8{
+    	width: 18%;
+    }
+    #drag-9{
+    	width: 30.6%;
+    }
+    #drag-10{
+    	width: 21.3%;
+    }
+    .img{
+    	position: absolute;
+    	min-width:115px;
+    	height:auto;
+    	visibility: hidden;
+    }
+
+#d-1{
+    top: 20%;
+}
+#d-7{
+    left: 14%;
+    top: 30%;
 }
 
 #tb1{
-	width:86%;
-	left:13.65%;
+	width: 86.1%;
+	left: 13.67%;
 	top: 10%;
 }
 #yt1{
-	width:100%;
-	left:0;
+	width: 100%;
+	left: 0;
 	top: 0;
+}
+#tic{
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 #bg{
@@ -89,7 +112,7 @@
 }
 
 .draggable:active .img{
-	display: inline;
+	visibility: visible;
 }
 
 html{

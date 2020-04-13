@@ -27,7 +27,7 @@ scene.add(backLight);
 
 var objectScale = 0.375;
 
-var HObject, DObject, MObject, YObject;
+var DObject, WObject, MObject, YObject, rings;
 
 var clock = new THREE.Clock();
 
@@ -45,13 +45,13 @@ mtlLoader1.load('day.mtl', function (materials) {
         object.position.y -= 90;
         object.scale.set(objectScale, objectScale, objectScale);
         scene.add(object);
-        HObject = object;
+        DObject = object;
     });
     objLoader.load('day.obj', function (object) {
         object.position.y -= 90;
         object.scale.set(objectScale, objectScale, objectScale);
         scene.add(object);
-        DObject = object;
+        WObject = object;
     });
     objLoader.load('month.obj', function (object) {
         object.position.y -= 90;
@@ -73,8 +73,8 @@ mtlLoader1.load('day.mtl', function (materials) {
 });
 
 function rotate(){
-    HObject.rotation.y += 0.35 * Math.PI / 180;
-    DObject.rotation.y += 0.35 * Math.PI / 180 / 12;
+    DObject.rotation.y += 0.35 * Math.PI / 180;
+    WObject.rotation.y += 0.35 * Math.PI / 180 / 12;
     MObject.rotation.y += 0.35 * Math.PI / 180 / 12 / 4;
     YObject.rotation.y += 0.35 * Math.PI / 180 / 12 / 4 / 7;
     }

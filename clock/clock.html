@@ -13,6 +13,10 @@
 	<script src="MTLLoader.js"></script>
 </head>
 <body>
+	<iframe src="music.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+	<audio autoplay loop id="iframeAudio">
+		<source src="music.mp3" type="audio/mpeg">
+	</audio>
 	<div id="bb"></div>
 	<script src="scripts.js"></script>
 	<div class="ab">
@@ -28,8 +32,16 @@
 			the shape of <span id="green">time</span>...
 		</div>
 	</div>
+	
 	<script src="pointer.js"></script>
 	<script>
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  		if (!isChrome){
+     		$('#iframeAudio').remove()
+  		}
+  		else {
+      		$('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+ 		}
 		init_pointer({
             pointerColor: "white",
 			ringSize: 8,
