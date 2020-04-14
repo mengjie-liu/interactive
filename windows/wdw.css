@@ -7,14 +7,32 @@
 	margin: 0;
 	font-family: xi;
 	font-size: 13pt;
-	position: absolute;
+	position: fixed;
 	/*left: 25pt;*/
 	top: 15pt;
     left: 50%;
     transform: translateX(-50%);
 	/*letter-spacing: 1pt;*/
     letter-spacing: 14vw;
-	z-index: 100;
+	z-index: 110;
+}
+
+.load{
+    margin: 0;
+    font-family: xi;
+    font-size: 9.5pt;
+    position: fixed;
+    left: 50%;
+    top: 96%;
+    transform: translate(-50%);
+    letter-spacing: 1pt;
+    z-index: 111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hidea{
+    visibility: hidden;
+    z-index: 111;
 }
 
 .draggable {
@@ -32,38 +50,50 @@
     letter-spacing: 0.5pt;
     top: 4pt;
     left: 8pt;
+    opacity: 30%;
 }
 
 /*img k*/
-    #drag-1{
-    	width: 21.3%;
-    }
+
     #drag-2{
+        top: 9%;
     	width: 21.3%;
-    }
-    #drag-3{
-    	width: 44.5%;
-    }
-    #drag-4{
-    	width: 14.2%;
-    }
-    #drag-5{
-    	width: 71.8%;
-    }
-    #drag-6{
-    	width: 20%;
     }
     #drag-7{
-    	width: 37.5%;
-    }
-    #drag-8{
-    	width: 18%;
+        top: 29%;
+    	width: 37.6%;
     }
     #drag-9{
+        top: 53%;
     	width: 30.6%;
     }
+    #drag-4{
+        top: 85%;
+        width: 14.2%;
+    }
+    #drag-3{
+        top: 113%;
+        width: 44.5%;
+    }
+    #drag-5{
+        top: 144%;
+        width: 71.8%;
+    }
+    #drag-6{
+        top: 181%;
+        width: 20%;
+    }
     #drag-10{
+        top: 212%;
     	width: 21.3%;
+    }
+    #drag-8{
+        top: 230%;
+        width: 18%;
+    }
+    #drag-1{
+        top: 262%;
+        width: 21.3%;
     }
     .img{
     	position: absolute;
@@ -73,11 +103,28 @@
     }
 
 #d-1{
-    top: 20%;
+    top: 44pt;
 }
 #d-7{
-    left: 14%;
-    top: 30%;
+    left: 15%;
+    top: 38pt;
+}
+#d-8{
+    top: 51pt;
+    line-height: 15.5pt;
+}
+#d-3{
+    left: 13.5%;
+    top: 62pt;
+    line-height: 15.5pt;
+}
+#d-9{
+    top: 105pt;
+    line-height: 15.5pt;
+}
+#d-10{
+    left: 17%;
+    top: 44pt;
 }
 
 #tb1{
@@ -95,28 +142,59 @@
     left: 0;
     top: 0;
 }
-
 #bg{
 	width: 100%;
 }
+#tbb1{
+    width: 100%;
+}
+#ins1{
+    width: 100%;
+}
+#wx1{
+    left: 14.2%;
+    width: 60%;
+    top: 10.4%;
+}
+#ytt{
+    width: 100%;
+}
+#fb1{
+    width: 100%;
+}
+#tw1{
+    width: 87%;
+    left: 12%
+}
+#yttt{
+    width: 99.7%;
+    left: 0.09%;
+}
+#pin1{
+    width: 100%;
+}
+
 
 .resize {
-	position: absolute;
-  width:100%;
-  min-width:115px;
-  height:auto;
+    position: absolute;
+    width:100%;
+    min-width:115px;
+    height:auto;
 }
 
 .draggable.switch-bg {
-  width: 50%;
+    width: 50%;
 }
 
-.draggable:active .img{
+/*.draggable:active .img{
 	visibility: visible;
+}*/
+.draggable:active {
+    z-index: 100;
 }
 
 html{
-    height: 300%;
+    height: 350%;
     /*cursor: url('/img/bigPointer.png'), default;*/
 }
 
