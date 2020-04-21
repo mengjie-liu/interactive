@@ -79,22 +79,54 @@
         top: 144%;
         width: 71.8%;
     }
-    #drag-6{
+    #drag-12{
         top: 181%;
+        width: 21.3%;
+    }
+    #drag-6{
+        top: 212%;
         width: 20%;
     }
     #drag-10{
-        top: 212%;
+        top: 241%;
     	width: 21.3%;
     }
     #drag-8{
-        top: 230%;
+        top: 272%;
         width: 18%;
     }
-    #drag-1{
-        top: 262%;
+    #drag-17{
+        top: 305%;
+        width: 37.8%;
+    }
+    #drag-13{
+        top: 338%;
         width: 21.3%;
     }
+    #drag-1{
+        top: 359%;
+        width: 21.3%;
+    }
+    #drag-14{
+        top: 391%;
+        width: 30.6%;
+    }
+    #drag-16{
+        top: 426%;
+        width: 21.3%;
+    }
+    #drag-15{
+        top: 457%;
+        width: 18%;
+    }
+    #drag-11{
+        top: 481%;
+        width: 25%;
+    }
+
+
+
+
     .img{
     	position: absolute;
     	min-width:115px;
@@ -102,30 +134,56 @@
     	visibility: hidden;
     }
 
-#d-1{
-    top: 44pt;
-}
-#d-7{
-    left: 15%;
-    top: 38pt;
-}
-#d-8{
-    top: 51pt;
-    line-height: 15.5pt;
-}
-#d-3{
-    left: 13.5%;
-    top: 62pt;
-    line-height: 15.5pt;
-}
-#d-9{
-    top: 105pt;
-    line-height: 15.5pt;
-}
-#d-10{
-    left: 17%;
-    top: 44pt;
-}
+
+    #d-1{
+        top: 44pt;
+    }
+    #d-7{
+        left: 15%;
+        top: 38pt;
+    }
+    #d-8{
+        top: 50pt;
+        line-height: 15.5pt;
+    }
+    #d-3{
+        left: 13.5%;
+        top: 62pt;
+        line-height: 15.5pt;
+    }
+    #d-9{
+        top: 105pt;
+        line-height: 15.5pt;
+    }
+    #d-10{
+        left: 17%;
+        top: 44pt;
+    }
+    #d-11{
+        left: 5.4%;
+        top: 88pt;
+    }
+    #d-12{
+        top: 42pt;
+        line-height: 15.5pt;
+    }
+    #d-13{
+        left: 6.2%;
+        top: 81pt;
+        line-height: 15.5pt;
+    }
+    #d-14{
+        top: 90pt;
+    }
+    #d-15{
+        top: 50pt;
+    }
+    #d-17{
+        left: 15%;
+        top: 38pt;
+    }
+
+
 
 #tb1{
 	width: 86.1%;
@@ -173,6 +231,29 @@
 #pin1{
     width: 100%;
 }
+#fb2{
+    width: 100%;
+}
+#inss{
+    width: 100%;
+}
+#wb{
+    width: 66%;
+}
+#ffb{
+    width: 100%;
+}
+#ttb{
+    width: 100%;
+}
+#ticc{
+    width: 100%;
+}
+#ttbb{
+    width: 86.1%;
+    left: 13.67%;
+    top: 10%;
+}
 
 
 .resize {
@@ -194,7 +275,7 @@
 }
 
 html{
-    height: 350%;
+    height: 550%;
     /*cursor: url('/img/bigPointer.png'), default;*/
 }
 

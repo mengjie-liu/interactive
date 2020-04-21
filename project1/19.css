@@ -36,10 +36,10 @@ div{
 .drag{
 	font-family: hiahia;
 	position: absolute;
-	text-align: center;
 	border-top: 1pt solid black;
 	border-bottom: 1pt solid black;
-	left: 0pt;
+	left: 50%;
+	transform: translate(-50%);
 	top: 15pt;
 	width: 1260pt;
 	height: 20pt;

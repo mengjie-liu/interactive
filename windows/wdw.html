@@ -122,6 +122,76 @@
             <img id="fb1" class="img" src="assets/3-23fb.png">
             <img class="resize" id="r9" src="assets/fb.png">
         </div>
+
+        <div id="drag-11" class="draggable">
+            <span id="d-11" class="time">
+                04/19/2020<br>
+                RED
+            </span>
+            <img id="fb2" class="img" src="assets/4-19fb.png">
+            <img class="resize" id="r11" src="assets/fbb.png">
+        </div>
+
+        <div id="drag-12" class="draggable">
+            <span id="d-12" class="time">
+                03/30/2020<br>
+                yum-yum🐿
+            </span>
+            <video loop autoplay muted id="inss" class="img">
+                <source src="assets/3-30inss.mp4" type="video/mp4">
+            </video>
+            <img class="resize" id="r12" src="assets/inss.png">
+        </div>
+
+        <div id="drag-13" class="draggable">
+            <span id="d-13" class="time">
+                04/09/2020<br>
+                kinda cool🕶
+            </span>
+            <img id="wb" class="img" src="assets/4-9wb.png">
+            <img class="resize" id="r13" src="assets/wb.png">
+        </div>
+        
+        <div id="drag-14" class="draggable">
+            <span id="d-14" class="time">
+                04/15/2020<br>
+                the door and its shadow
+            </span>
+            <img id="ffb" class="img" src="assets/4-15fb.png">
+            <img class="resize" id="r14" src="assets/ffb.png">
+        </div>
+
+        <div id="drag-15" class="draggable">
+            <span id="d-15" class="time">
+                04/18/2020<br>
+                outside...
+            </span>
+            <img id="ttb" class="img" src="assets/4-18tb.png">
+            <img class="resize" id="r15" src="assets/ttb.png">
+        </div>
+        
+        <div id="drag-16" class="draggable">
+            <span id="d-16" class="time">
+                04/16/2020<br>
+                okay, guess that's what I need
+            </span>
+            <video loop autoplay muted id="ticc" class="img">
+                <source src="assets/4-16tic.mp4" type="video/mp4">
+            </video>
+            <img class="resize" id="r16" src="assets/tic.png">
+        </div>
+
+        <div id="drag-17" class="draggable">
+            <span id="d-17" class="time">
+                04/10/2020<br>
+                I need wine
+            </span>
+            <img id="ttbb" class="img" src="assets/4-10tb.png">
+            <img class="resize" id="r17" src="assets/ttbb.png">
+        </div>
+
+
+
     <div class="load" id="showa">
         SHOW ALL
     </div>
@@ -163,6 +233,28 @@
                 $('#drag-10').click(function(){
                     $(this).fadeOut(200);
                 });
+                $('#drag-11').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-12').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-13').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-14').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-15').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-16').click(function(){
+                    $(this).fadeOut(200);
+                });
+                $('#drag-17').click(function(){
+                    $(this).fadeOut(200);
+                });
+
 
             $('#showa').mouseenter(function(){
                 /*$(this).css('visibility','hidden');
@@ -229,6 +321,41 @@
                 $('#wx1').css('visibility','visible');
             }).mouseleave(function(){
                 $('#wx1').css('visibility','hidden');
+            })
+            $('#r11').mouseenter(function(){
+                $('#fb2').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#fb2').css('visibility','hidden');
+            })
+            $('#r12').mouseenter(function(){
+                $('#inss').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#inss').css('visibility','hidden');
+            })
+            $('#r13').mouseenter(function(){
+                $('#wb').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#wb').css('visibility','hidden');
+            })
+            $('#r14').mouseenter(function(){
+                $('#ffb').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#ffb').css('visibility','hidden');
+            })
+            $('#r15').mouseenter(function(){
+                $('#ttb').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#ttb').css('visibility','hidden');
+            })
+            $('#r16').mouseenter(function(){
+                $('#ticc').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#ticc').css('visibility','hidden');
+            })
+            $('#r17').mouseenter(function(){
+                $('#ttbb').css('visibility','visible');
+            }).mouseleave(function(){
+                $('#ttbb').css('visibility','hidden');
             })
 
         });
