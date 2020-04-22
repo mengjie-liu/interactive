@@ -3,13 +3,18 @@
 	src:url(font.otf);
 }
 
-html{
-	cursor: none;
+*{
+	cursor: none !important;
 }
 
 body{
 	margin: 0;
 	overflow: hidden;
+	cursor: none !important;
+}
+
+html{
+	cursor: none !important;
 }
 
 canvas{
