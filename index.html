@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Mengjie Liu</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="assets/main.css" type="text/css" />
+  <title>
+    ～swimming～
+  </title>
 </head>
-
+<link rel="icon" href="fish1.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="ss.css">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <body>
+  <div class="backkk"></div>
+  <div>
+    <img id="fa" class="fish" src="fish.png">
+    <img id="fb" class="fish" src="fish.png">
+    <img id="fc" class="fish" src="fish.png">
+    <img id="fd" class="fish" src="fish.png">
+    <img id="fe" class="fish" src="fish.png">
+    <img id="ff" class="fish" src="fish.png">
+    <img id="fg" class="fish" src="fish.png">
+    <img id="fh" class="fish" src="fish.png">
+    <img id="fi" class="fish" src="fish.png">
+    <img id="fj" class="fish" src="fish.png">
+    <img id="fk" class="fish" src="fish.png">
+  </div>
+  <div id="head">MENGJIE'S CLASS WEBSITE</div>
+  <div class="exec">
+    <span id="exe">EXERCISES</span>
+    <span id="lx">
+      <a href="markup-exercise.html">HTML TYPESETTING</a><br>
+      <a href="exercise/show.html">WEBSITE AS...</a><br>
+      <a href="exercise/ss.html">AMBIENT WEBPAGE</a><br>
+      <a href="exercise/xixixi.html">MEDIA QUERIES</a>
+    </span>
+  </div>
 
-  <h1>Mengjie Liu</h1>
-<a href="ss.html">ss</a>
-  <h2>Exercises</h2>
-  <ol>
-  	<li><a href="markup-exercise.html">Typesetting in HTML</a></li>
-    <li><a href="exercise/show.html">WEBSITE AS...</a></li>
-    <li><a href="exercise/ss.html">~swimming~</a></li>
-    <li><a href="exercise/xixixi.html">Find the Missing...</a></li>
-  </ol>
+  <a href="project1/nav.html" class="text" id="list">THE LIST</a>
+  <a href="clock/clock.html" class="text" id="cloc">THE CLOCK</a>
+  <a href="windows/wdw.html" class="text" id="win">WINDOWS</a>
+  
+  <div id="fffish">
+    <img id="fff" src="fish2.png">
+    <span id="fishh">WATCH SOME FISH</span>
+  </div>
 
-  <h2>Projects</h2>
-  <ol>
-  	<li><a href="project1/nav.html">The list</a></li>
-    <li><a href="clock/clock.html">The clock</a></li>
-    <li><a href="windows/wdw.html">WINDOWS</a></li>
-  </ol>
+  <a href="ADG/web.html" id="ar">ALL RIGHT</a>
+    
+  </div>
 
-  <h2>Other</h2>
-  <ol>
-    <li><a href="ADG/web.html">All Right</a></li>
-  </ol>
+  <script>
+
+    var exercise = true;
+
+    function changeExec(){
+      if (exercise == true) {
+        $('#lx').fadeIn('slow');
+        $('#lx').css('visibility','visible');
+        $('.text').fadeOut(100);
+        exercise = false;
+      }
+      else{
+        $('#lx').fadeOut(100);
+        $('#lx').css('visibility','hidden');
+        $('.text').fadeIn('slow');
+        exercise = true;
+      }
+    }
+
+    function showFish(){
+      $('#fffish').mouseenter(function(){
+        $('.fish').css('filter','blur(0)');
+        $('.text').css('visibility','hidden');
+        $('#exe').css('visibility','hidden');
+      }).mouseleave(function(){
+        $('.fish').css('filter','blur(13.5px)');
+        $('#exe').css('visibility','visible');
+        $('.text').css('visibility','visible');
+      });
+    }
+
+    $(document).ready(function(){
+      showFish();
+      $('#exe').click(function(){
+        changeExec();
+      })
+    })
+  </script>
 
 </body>
-	
 </html>
