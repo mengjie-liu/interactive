@@ -17,22 +17,32 @@
 	z-index: 110;
 }
 
-.load{
+#showa{
     margin: 0;
     font-family: xi;
     font-size: 9.5pt;
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 96%;
+    top: 546%;
     transform: translate(-50%);
     letter-spacing: 1pt;
     z-index: 111;
     text-decoration: underline;
     cursor: pointer;
 }
-#hidea{
-    visibility: hidden;
+#showb{
+    margin: 0;
+    font-family: xi;
+    font-size: 9.5pt;
+    position: fixed;
+    left: 50%;
+    top: 95.9%;
+    transform: translate(-50%);
+    letter-spacing: 1pt;
     z-index: 111;
+    text-decoration: underline;
+    cursor: pointer;
+    visibility: hidden;
 }
 
 .draggable {

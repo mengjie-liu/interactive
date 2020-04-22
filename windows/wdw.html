@@ -7,6 +7,7 @@
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'UA-111282437-1');
+      
 	</script>
 	<link rel="stylesheet" type="text/css" href="wdw.css">
 	<!-- <meta charset="UTF-8">
@@ -195,8 +196,8 @@
     <div class="load" id="showa">
         SHOW ALL
     </div>
-    <div class="load" id="hidea">
-        HIDE ALL
+    <div class="load" id="showb">
+        SHOW ALL
     </div>
     
     <script src="randomisePosition.js"></script>
@@ -257,12 +258,21 @@
 
 
             $('#showa').mouseenter(function(){
-                /*$(this).css('visibility','hidden');
-                $('#hidea').css('visibility','visible');*/
+                $(this).css('visibility','hidden');
+                $('#showb').css('visibility','visible');
+                $('.draggable').fadeIn(200);
+                $('.img').css('visibility','visible');
+            })/*.mouseleave(function(){
+                $('.img').css('visibility','hidden');
+            })*/
+            $('#showb').mouseenter(function(){
+                
                 $('.draggable').fadeIn(200);
                 $('.img').css('visibility','visible');
             }).mouseleave(function(){
+                $(this).css('visibility','hidden');
                 $('.img').css('visibility','hidden');
+                $('#showa').css('visibility','visible');
             })
             /*$('#hidea').click(function(){
                 // location.reload(true);
