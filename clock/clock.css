@@ -60,7 +60,7 @@ canvas{
 	background-color: black;
 	opacity: 0;
 	animation-name: dissa;
-	animation-duration: 7s;
+	animation-duration: 7.5s;
 }
 @keyframes dissa{
 	0% {opacity: 1;
