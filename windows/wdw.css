@@ -277,9 +277,6 @@
     width: 50%;
 }
 
-/*.draggable:active .img{
-	visibility: visible;
-}*/
 .draggable:active {
     z-index: 100;
 }

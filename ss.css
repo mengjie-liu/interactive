@@ -6,6 +6,20 @@
 body{
 	overflow: hidden;
 	margin: 0;
+	cursor: url('1.png'),none;
+}
+
+/*html{
+	cursor: url('1.png'),none;
+}*/
+
+.backkk{
+	background-color: white;
+	margin: 0;
+	left: 0;
+	top: 0;
+	width: 1500pt;
+	height: 1000pt;
 }
 
 .fish{
