@@ -342,6 +342,13 @@ div{
     transition: 0.70s;
 }
 
+.sol:hover{
+    cursor: none;
+}
+.sha:hover{
+    cursor: none;
+}
+
 /*a{
     position: absolute;
     left: 1200pt;
