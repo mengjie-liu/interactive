@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>
     MENGJIE'S CLASS WEBSITE
@@ -8,6 +9,7 @@
 <link rel="icon" href="fish1.png" type="image/png">
 <link rel="stylesheet" type="text/css" href="ss.css">
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
 <body>
   <div class="backkk"></div>
   <div>
@@ -37,54 +39,56 @@
   <a href="project1/nav.html" class="text" id="list">THE LIST</a>
   <a href="clock/clock.html" class="text" id="cloc">THE CLOCK</a>
   <a href="windows/wdw.html" class="text" id="win">WINDOWS</a>
-  
+
   <div id="fffish">
     <img id="fff" src="fish2.png">
     <span id="fishh">WATCH SOME FISH</span>
   </div>
 
   <a href="ADG/web.html" id="ar">ALL RIGHT</a>
-    
+  <a href="1year/index.html" id="ar">WFH</a>
+
   </div>
 
   <script>
 
     var exercise = true;
 
-    function changeExec(){
+    function changeExec() {
       if (exercise == true) {
         $('#lx').fadeIn('slow');
-        $('#lx').css('visibility','visible');
+        $('#lx').css('visibility', 'visible');
         $('.text').fadeOut(100);
         exercise = false;
       }
-      else{
+      else {
         $('#lx').fadeOut(100);
-        $('#lx').css('visibility','hidden');
+        $('#lx').css('visibility', 'hidden');
         $('.text').fadeIn('slow');
         exercise = true;
       }
     }
 
-    function showFish(){
-      $('#fffish').mouseenter(function(){
-        $('.fish').css('filter','blur(0)');
-        $('.text').css('visibility','hidden');
-        $('#exe').css('visibility','hidden');
-      }).mouseleave(function(){
-        $('.fish').css('filter','blur(13.5px)');
-        $('#exe').css('visibility','visible');
-        $('.text').css('visibility','visible');
+    function showFish() {
+      $('#fffish').mouseenter(function () {
+        $('.fish').css('filter', 'blur(0)');
+        $('.text').css('visibility', 'hidden');
+        $('#exe').css('visibility', 'hidden');
+      }).mouseleave(function () {
+        $('.fish').css('filter', 'blur(13.5px)');
+        $('#exe').css('visibility', 'visible');
+        $('.text').css('visibility', 'visible');
       });
     }
 
-    $(document).ready(function(){
+    $(document).ready(function () {
       showFish();
-      $('#exe').click(function(){
+      $('#exe').click(function () {
         changeExec();
       })
     })
   </script>
 
 </body>
+
 </html>
