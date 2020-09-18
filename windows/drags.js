@@ -21,29 +21,29 @@ interact('.draggable')
       textEl && (textEl.textContent =
         'moved a distance of '
         + (Math.sqrt(event.dx * event.dx +
-                     event.dy * event.dy)|0) + 'px');
+          event.dy * event.dy) | 0) + 'px');
     }
   });
 
-  function dragMoveListener (event) {
-    var target = event.target,
-        // keep the dragged position in the data-x/data-y attributes
-        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+function dragMoveListener(event) {
+  var target = event.target,
+    // keep the dragged position in the data-x/data-y attributes
+    x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+    y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-    // translate the element
-    target.style.webkitTransform =
+  // translate the element
+  target.style.webkitTransform =
     target.style.transform =
-      'translate(' + x + 'px, ' + y + 'px)';
+    'translate(' + x + 'px, ' + y + 'px)';
 
-    // update the posiion attributes
-    target.setAttribute('data-x', x);
-    target.setAttribute('data-y', y);
-    
-  }
+  // update the posiion attributes
+  target.setAttribute('data-x', x);
+  target.setAttribute('data-y', y);
 
-  // this is used later in the resizing and gesture demos
-  window.dragMoveListener = dragMoveListener;
+}
+
+// this is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener;
 
 
 // interact('#drag-1')
