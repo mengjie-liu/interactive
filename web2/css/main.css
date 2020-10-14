@@ -316,26 +316,21 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: white;
   z-index: 1005;
 }
 
 #selected {
   position: relative;
-  width: auto;
-  height: 100%;
-  left: 50vw;
-  transform: translate(-50%);
 }
-#mag {
+/* #mag {
   width: 100px;
   height: 100px;
   position: absolute;
-  /* background-image: url(img/sky-big.jpg); */
   background-repeat: no-repeat;
   border: 1px solid #000;
   box-sizing: border-box;
-}
+} */
 
 #back {
   position: fixed;
@@ -347,6 +342,13 @@ body {
 #backI {
   position: absolute;
   filter: invert(1);
+  right: 1.5vw;
+  top: 2.5vh;
+  /* display: none; */
+}
+#backW {
+  position: fixed;
+  /* filter: invert(1); */
   right: 1.5vw;
   top: 2.5vh;
   /* display: none; */
@@ -370,18 +372,18 @@ body {
 
 #capt {
   position: absolute;
-  /* left: 50%;
-  transform: translateX(-50%); */
-  opacity: 0.9;
+  left: 50%;
+  transform: translateX(-50%);
   letter-spacing: 0.25pt;
   bottom: 1.5vh;
   right: 1.5vw;
-  max-width: 30vw;
-  font-family: "fontI";
+  max-width: 55vw;
+  font-family: "fontN";
   font-size: 18px;
+  text-align: center;
   color: black;
   z-index: 1100;
-  text-shadow: 0 0 2pt rgba(255, 255, 255, 0.9);
+  /* text-shadow: 0 0 2pt rgba(255, 255, 255, 0.9); */
   filter: invert(1);
 }
 
@@ -400,23 +402,20 @@ body {
   /* display: none; */
 }
 
-#banas .para,
-#question .para,
-#derive #detext1,
-#derive #detext2,
-#deto #dettext1,
-#deto #dettext2,
-#capti #catext1,
-#capti #catext2,
-#urban .para {
+#banas #batext,
+#question #quetext,
+#derive #detext,
+#deto #dettext,
+#capti #catext,
+#urban #urtext {
   position: relative;
   display: inline-block;
   font-family: "fontN";
   left: 0;
   top: 0;
   text-align: left;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   margin-left: 4.62vw;
   margin-right: 1vw;
   cursor: default;
@@ -434,211 +433,102 @@ body {
   display: block;
   width: 100%;
   top: 22vh;
-  line-height: 24pt;
-  font-size: 17pt;
+  line-height: 31pt;
+  font-size: 26pt;
   margin-bottom: 5vh;
   letter-spacing: 0.5pt;
 }
 
-#banas .para {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  top: 21vh;
-  width: 2.72%;
+#banas #batext {
+  width: 60%;
+  left: 13.9vw;
 }
-#banas h2 {
+#banal,
+#der,
+#det,
+#cap,
+#urb,
+#que {
+  color: black;
   position: absolute;
-  line-height: 30pt;
-  font-size: 22pt;
-}
-#banas p {
-  top: 5vh;
-}
-#banal {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
+  top: 2.7vh;
+  left: 18.7vw;
   font-size: 26pt;
   letter-spacing: 1.2pt;
 }
-#underl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
+#underl,
+#dunderl,
+#dtunderl,
+#cunderl,
+#uunderl,
+#qunderl {
+  background-color: black;
+  position: absolute;
+  top: 7.1vh;
+  left: 18.7vw;
   width: 48.5vw;
-  height: 0.85pt;
+  height: 1.5pt;
 }
 
-#derive #detext1 {
-  width: 30%;
-  height: 605vh;
-}
-#derive #detext2 {
-  margin-left: 3vw;
-  width: 30%;
-  height: 605vh;
-}
-#dblack {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 22vh;
-  background-color: black;
-}
-#der {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
-  font-size: 26pt;
-  letter-spacing: 1.2pt;
+#derive #detext {
+  width: 60%;
+  left: 13.9vw;
 }
 #dunderl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
   width: 50vw;
-  height: 0.85pt;
 }
 
-#deto #dettext1 {
-  width: 30%;
+#deto #dettext {
+  width: 60%;
   height: 215vh;
-}
-#deto #dettext2 {
-  margin-left: 3vw;
-  width: 30%;
-  height: 215vh;
-}
-#det {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
-  font-size: 26pt;
-  letter-spacing: 1.2pt;
+  left: 13.9vw;
 }
 #dtunderl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
   width: 58vw;
-  height: 0.85pt;
 }
 
-#capti #catext1 {
-  width: 30%;
+#capti #catext {
+  width: 60%;
   height: 770vh;
-}
-#capti #catext2 {
-  margin-left: 3vw;
-  width: 30%;
-  height: 770vh;
-}
-#cap {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
-  font-size: 26pt;
-  letter-spacing: 1.2pt;
+  left: 13.9vw;
 }
 #cunderl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
   width: 49vw;
-  height: 0.85pt;
 }
 
-#urban .para {
-  margin-right: 0;
-  overflow-y: scroll;
-  top: 20.7vh;
-  width: 8.38%;
-  height: 79.3vh;
-}
-#urban b {
-  position: absolute;
-  top: 5vh;
-  font-size: 17pt;
-  line-height: 25pt;
-  letter-spacing: 1.7pt;
+#urban #urtext {
+  width: 60%;
+  left: 13.9vw;
 }
 #urban p {
-  top: 18.2vh;
-}
-#urb {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
-  font-size: 26pt;
-  line-height: 38pt;
-  letter-spacing: 1.2pt;
+  top: 25.5vh;
 }
 #uunderl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
   width: 63.5vw;
-  height: 0.85pt;
+}
+#urb {
+  line-height: 36pt;
 }
 #urunderl {
-  background-color: white;
-  position: fixed;
-  top: 12.9vh;
-  left: 4.5vw;
+  background-color: black;
+  position: absolute;
+  top: 12.3vh;
+  left: 18.7vw;
   width: 46.5vw;
-  height: 0.85pt;
+  height: 1.5pt;
 }
 
-#question .para {
-  margin-right: 0;
-  overflow-y: scroll;
-  top: 20.7vh;
-  width: 5.6%;
-  height: 79.3vh;
-}
-#question b {
-  text-transform: uppercase;
-  position: absolute;
-  top: 5vh;
-  font-size: 17pt;
-  line-height: 25pt;
-  letter-spacing: 1.7pt;
-}
-#question p {
-  top: 18.7vh;
-}
-#que {
-  color: white;
-  position: fixed;
-  top: 2.5vh;
-  left: 4.5vw;
-  font-size: 26pt;
-  line-height: 38pt;
-  letter-spacing: 1.2pt;
+#question #quetext {
+  width: 60%;
+  left: 13.9vw;
 }
 #qunderl {
-  background-color: white;
-  position: fixed;
-  top: 7.2vh;
-  left: 4.5vw;
   width: 26vw;
-  height: 0.85pt;
 }
 
 .grid-sizer,
 .grid-item {
-  width: 170px;
+  width: 252px;
   padding-bottom: 0.2vh;
   margin: 0.55vh;
   margin-bottom: 0.5vh;
@@ -659,70 +549,6 @@ body {
 .indimg:hover {
   cursor: pointer;
 }
-
-/* .ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-} */
-
-/* ==========================================================================
-      EXAMPLE Media Queries for Responsive Design.
-      These examples override the primary ('mobile first') styles.
-      Modify as content requires.
-      ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
