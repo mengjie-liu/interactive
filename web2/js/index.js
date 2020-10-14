@@ -88,6 +88,7 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -132,6 +133,7 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -223,6 +225,8 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
+        $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -456,6 +460,8 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowX", "hidden");
         $("body").css("overflowY", "scroll");
+        $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
 
@@ -624,6 +630,7 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -664,7 +671,7 @@ $(function () {
                     <div id="cunderl"></div>
               </div>`;
     });
-    $("#backgW").css("height", "774vh");
+    $("#backgW").css("height", "771vh");
     if ($("#idd a").css("visibility") === "visible") {
       $("#back").on("click", function () {});
     } else {
@@ -672,6 +679,8 @@ $(function () {
         $("body").css("overflowY", "scroll");
         e.preventDefault();
         $("#backgW").remove();
+        $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -902,8 +911,6 @@ $(function () {
                       </div>
                    </div>`;
     });
-    // var ht = $(".grid").height;
-    // $("#backg").css("height", ht);
 
     var angder = $("#index #nderive a").rotationInfo();
     $("#index #nderive a").animateRotate(angder.deg);
@@ -989,6 +996,7 @@ $(function () {
     }
     $(".indimg").click(function () {
       $("body,html").animate({ scrollTop: 0 }, 1);
+      $("body,html").animate({ scrollLeft: 0 }, 1);
       $("body").css("overflow", "hidden");
       $("#backg").css("height", "100%");
       $("#backg").css("overflow", "hidden");
@@ -1117,6 +1125,8 @@ $(function () {
         $("body").css("overflow", "scroll");
         $("#backg").css("overflow", "scroll");
         $("#nav").css("overflow", "scroll");
+        $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
       });
 
       if (filepath == "img/allwor") {
@@ -2070,7 +2080,8 @@ $(function () {
 
     $("#wrapper").after(function () {
       return `<div id='backgI'>
-                            <img id='selected' src='${src}'>
+      <img id='selected' src='${src}'>
+                            <div id='mag'></div>
                             <a href="" id='back'>
                                 <img src='img/back.png'>
                             </a>
@@ -2085,8 +2096,20 @@ $(function () {
                             </div>
                         </div>`;
     });
-    $("#backgI").css("height", "100%");
-    // console.log(filepath)
+    $("#selected").css("height", "100%");
+    $("#mag").css("background-image", "url(" + `${src}` + ")");
+
+    if ($("#idd a").css("visibility") === "visible") {
+      $("#back").on("click", function () {});
+    } else {
+      $("#back").on("click", function (e) {
+        $("body").css("overflowY", "scroll");
+        e.preventDefault();
+        $("#backgW").remove();
+        $("body,html").animate({ scrollTop: 0 }, 1);
+        $("body,html").animate({ scrollLeft: 0 }, 1);
+      });
+    }
 
     if (filepath == "img/allwor") {
       $("#selected")
@@ -3045,6 +3068,5 @@ $(function () {
       .click(function (e) {
         e.preventDefault();
       });
-    // $("#idd a").click();
   });
 });
