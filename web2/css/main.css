@@ -1,0 +1,808 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #1a1a1a;
+}
+
+body {
+  overflow: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "fontN";
+  src: url("../font/Univers.otf");
+}
+@font-face {
+  font-family: "fontI";
+  src: url("../font/UniversI.otf");
+}
+@font-face {
+  font-family: "fontB";
+  src: url("../font/UniversBold.otf");
+}
+@font-face {
+  font-family: "fontBI";
+  src: url("../font/UniversBoldI.otf");
+}
+
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+}
+
+/* nav */
+#nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+#nav a {
+  visibility: hidden;
+  text-indent: 100%;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  height: 23px;
+}
+
+/* wrapper */
+#index #wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+/* nav */
+#index #nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+#index #nav a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1004;
+  margin: 0;
+  padding: 0;
+  height: 37px;
+  filter: contrast(2);
+}
+#index #nav a:visited {
+  outline: none;
+}
+#index #nderive a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 0 no-repeat;
+  width: 430px;
+}
+#index #nderive a:hover,
+#index #nderives a:active {
+  background-position: 0 -38px;
+}
+
+#index #ndeto a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -76px no-repeat;
+  width: 820px;
+}
+#index #ndeto a:hover,
+#index #ndeto a:active {
+  background-position: 0 -114px;
+}
+
+#index #nurban a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -152px no-repeat;
+  width: 1020px;
+}
+#index #nurban a:hover,
+#index #nurban a:active {
+  background-position: 0 -190px;
+}
+
+#index #nbana a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -228px no-repeat;
+  width: 340px;
+}
+#index #nbana a:hover,
+#index #nbana a:active {
+  background-position: 0 -266px;
+}
+
+#index #nques a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -304px no-repeat;
+  width: 300px;
+}
+#index #nques a:hover,
+#index #nques a:active {
+  background-position: 0 -342px;
+}
+
+#index #nword a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -380px no-repeat;
+  width: 305px;
+}
+#index #nword a:hover,
+#index #nword a:active {
+  background-position: 0 -418px;
+}
+
+#index #ncine a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -456px no-repeat;
+  width: 435px;
+}
+#index #ncine a:hover,
+#index #ncine a:active {
+  background-position: 0 -494px;
+}
+
+#index #idd a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -533px no-repeat;
+  width: 120px;
+}
+#index #idd a:hover,
+#index #idd a:active {
+  background-position: 0 -571px;
+}
+
+#index #sit a {
+  display: block;
+  background: transparent url(../img/sprite.png) 0 -611px no-repeat;
+  width: 203px;
+  z-index: 1002;
+}
+#index #sit a:hover,
+#index #sit a:active {
+  background-position: 0 -649px;
+}
+
+#index #nderive a {
+  margin: 0;
+}
+#index #ndeto a {
+  margin: 0;
+}
+#index #nurban a {
+  margin: 0;
+}
+#index #nbana a {
+  margin: 0;
+}
+#index #nques a {
+  margin: 0;
+}
+#index #nword a {
+  left: 0;
+  bottom: 0;
+}
+#index #ncine a {
+  left: 0;
+  bottom: 0;
+}
+#index #idd a {
+  left: 0;
+  bottom: 0;
+}
+
+/* items */
+#index #items {
+  margin: 0;
+  padding: 0;
+}
+#index #items .item .product {
+  display: block;
+  position: absolute;
+}
+#index #items .item .product img {
+  display: block;
+}
+
+#backg {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  background-color: white;
+  z-index: 1000;
+}
+#backgI {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1005;
+}
+#backgW {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1005;
+}
+
+#selected {
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%);
+}
+#back {
+  position: fixed;
+  filter: invert(1);
+  right: 1.5vw;
+  top: 2.5vh;
+  /* display: none; */
+}
+#backI {
+  position: absolute;
+  filter: invert(1);
+  right: 1.5vw;
+  top: 2.5vh;
+  /* display: none; */
+}
+
+#left {
+  position: absolute;
+  filter: invert(1);
+  left: 1.5vw;
+  top: 49vh;
+  display: none;
+  z-index: 1015;
+}
+#right {
+  position: absolute;
+  filter: invert(1);
+  right: 1.5vw;
+  top: 49vh;
+  z-index: 1015;
+}
+
+#capt {
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  opacity: 0.9;
+  letter-spacing: 0.25pt;
+  bottom: 1.5vh;
+  right: 1.5vw;
+  max-width: 30vw;
+  font-family: "fontI";
+  font-size: 18px;
+  color: black;
+  z-index: 1100;
+  text-shadow: 0 0 2pt rgba(255, 255, 255, 0.9);
+  filter: invert(1);
+}
+
+#left1 {
+  position: absolute;
+  filter: invert(1);
+  left: 1.5vw;
+  top: 49vh;
+  display: none;
+}
+#right1 {
+  position: absolute;
+  filter: invert(1);
+  right: 1.5vw;
+  top: 49vh;
+  /* display: none; */
+}
+
+#banas .para,
+#question .para,
+#derive #detext1,
+#derive #detext2,
+#deto #dettext1,
+#deto #dettext2,
+#capti #catext1,
+#capti #catext2,
+#urban .para {
+  position: relative;
+  display: inline-block;
+  font-family: "fontN";
+  left: 0;
+  top: 0;
+  text-align: left;
+  color: white;
+  background-color: black;
+  margin-left: 4.62vw;
+  margin-right: 1vw;
+  cursor: default;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  height: 86vh;
+}
+#banas .para {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 21vh;
+  width: 2.72%;
+}
+#banas h2 {
+  position: absolute;
+  line-height: 30pt;
+  font-size: 22pt;
+}
+#banas p,
+#question p,
+#deto p,
+#derive p,
+#urban p,
+#capti p {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 22vh;
+  line-height: 24pt;
+  font-size: 17pt;
+  margin-bottom: 5vh;
+  letter-spacing: 0.5pt;
+}
+#banas p {
+  top: 5vh;
+}
+#banal {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  letter-spacing: 1.2pt;
+}
+#underl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 48.5vw;
+  height: 0.85pt;
+}
+
+#derive #detext1 {
+  width: 30%;
+  height: 605vh;
+}
+#derive #detext2 {
+  margin-left: 3vw;
+  width: 30%;
+  height: 605vh;
+}
+#dblack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22vh;
+  background-color: black;
+}
+#der {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  letter-spacing: 1.2pt;
+}
+#dunderl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 50vw;
+  height: 0.85pt;
+}
+
+#deto #dettext1 {
+  width: 30%;
+  height: 215vh;
+}
+#deto #dettext2 {
+  margin-left: 3vw;
+  width: 30%;
+  height: 215vh;
+}
+#det {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  letter-spacing: 1.2pt;
+}
+#dtunderl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 58vw;
+  height: 0.85pt;
+}
+
+#capti #catext1 {
+  width: 30%;
+  height: 773vh;
+}
+#capti #catext2 {
+  margin-left: 3vw;
+  width: 30%;
+  height: 773vh;
+}
+#cap {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  letter-spacing: 1.2pt;
+}
+#cunderl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 49vw;
+  height: 0.85pt;
+}
+
+#urban .para {
+  margin-right: 0;
+  overflow-y: scroll;
+  top: 20.7vh;
+  width: 8.38%;
+  height: 79.3vh;
+}
+#urban b {
+  position: absolute;
+  top: 5vh;
+  font-size: 17pt;
+  line-height: 25pt;
+  letter-spacing: 1.7pt;
+}
+#urban p {
+  top: 18.2vh;
+}
+#urb {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  line-height: 38pt;
+  letter-spacing: 1.2pt;
+}
+#uunderl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 63.5vw;
+  height: 0.85pt;
+}
+#urunderl {
+  background-color: white;
+  position: fixed;
+  top: 12.9vh;
+  left: 4.5vw;
+  width: 46.5vw;
+  height: 0.85pt;
+}
+
+#question .para {
+  margin-right: 0;
+  overflow-y: scroll;
+  top: 20.7vh;
+  width: 5.6%;
+  height: 79.3vh;
+}
+#question b {
+  text-transform: uppercase;
+  position: absolute;
+  top: 5vh;
+  font-size: 17pt;
+  line-height: 25pt;
+  letter-spacing: 1.7pt;
+}
+#question p {
+  top: 18.7vh;
+}
+#que {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 4.5vw;
+  font-size: 26pt;
+  line-height: 38pt;
+  letter-spacing: 1.2pt;
+}
+#qunderl {
+  background-color: white;
+  position: fixed;
+  top: 7.2vh;
+  left: 4.5vw;
+  width: 26vw;
+  height: 0.85pt;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 170px;
+  padding-bottom: 0.2vh;
+  margin: 0.55vh;
+  margin-bottom: 0.5vh;
+}
+.grid {
+  margin-left: 1vw;
+  /* margin-right: 0.7vw; */
+  margin-top: 40vh;
+  margin-bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: hidden;
+  /* margin-left: 11.5vh; */
+}
+.indimg {
+  width: 100%;
+}
+.indimg:hover {
+  cursor: pointer;
+}
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+    * For IE 6/7 only
+    * Include this rule to trigger hasLayout and contain floats.
+    */
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+      ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+      Print styles.
+      Inlined to avoid required HTTP connection: h5bp.com/r
+      ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+        * Don't show links for images, or javascript/internal links
+        */
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
