@@ -18,6 +18,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.85) 0 0 30px;
   background-repeat: no-repeat;
   background-size: 100vw;
+  cursor: url("img/move.png") 50 50, move;
   /* z-index: 90; */
 }
 /* .draggable:active {
@@ -312,22 +313,25 @@ body {
 }
 
 #back {
-  width: 2.5vw;
+  width: 3vw;
   position: absolute;
   margin: 0.5vh;
   cursor: pointer;
-  /* filter: invert(1); */
+  filter: invert(1);
+  opacity: 0.85;
   /* z-index: 1500; */
 }
 #back img {
   width: 100%;
 }
 #up {
-  width: 2.3vw;
+  width: 2.8vw;
   position: absolute;
   margin: 0.5vh;
-  margin-top: 0.15vh;
+  margin-top: 0.1vh;
   cursor: pointer;
+  filter: invert(1);
+  opacity: 0.85;
 }
 #up img {
   width: 100%;
@@ -374,119 +378,8 @@ body {
   vertical-align: center;
 }
 
-/* .text{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.88);
-    font-family: lala;
-    font-size: 30pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 88.5%;
-    width: 100%;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 5pt;
-    z-index: 10000;
-} */
-
-/* #s{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.85);
-    font-family: lala;
-    font-size: 200pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 23.5%;
-    left: 6%;
-}
-#i{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.85);
-    font-family: lala;
-    font-size: 200pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 33.5%;
-    left: 19%;
-}
-#g{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.85);
-    font-family: lala;
-    font-size: 200pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 53.5%;
-    left: 39%;
-}
-#h{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.85);
-    font-family: lala;
-    font-size: 200pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 33.5%;
-    left: 55%;
-}
-#t{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.85);
-    font-family: lala;
-    font-size: 200pt;
-    font-variant: small-caps;
-    text-shadow: 0 0 6pt rgba(0, 0, 0, 0.95);
-    top: 13.5%;
-    left: 89%;
-} */
-
-/* .textc{
-    font-family: xixi;
-} */
-
-/* #stre{
-    display: inline-block;
-    cursor: pointer;
-    margin: 5.5%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#rive{
-    display: inline-block;
-    cursor: pointer;
-    margin: 4.5%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#moun{
-    display: inline-block;
-    cursor: pointer;
-    margin: 3.5%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#hom{
-    display: inline-block;
-    cursor: pointer;
-    margin: 5.5%;
-    margin-top: 0;
-    margin-bottom: 0;
-} */
-
-/* #streetc{
-    display: inline;
-    margin: 4%;
-
-}
-#riverc{
-    display: inline;
-    margin: 10%;
-
-}
-#mountainc{
-    display: inline;
-    margin: 3%;
+/* #river > .draggable {
+  border-radius: 1500px;
 } */
 
 #nhs1 {

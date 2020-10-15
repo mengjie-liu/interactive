@@ -37,24 +37,35 @@ $(function () {
         .css("z-index", z + 1);
     });
   });
-  $(".draggable").resizable();
+  $(".draggable").resizable({
+    handles: "se",
+    create: function (event, ui) {
+      $(".ui-resizable-se").css("cursor", "url(img/ribo.png) 40 38, se-resize");
+    },
+  });
 
   $(".icon").click(function () {
     $(".start").fadeOut("slow");
   });
   $("#str").click(function () {
     $("#street")
-      .fadeIn("slow")
+      .fadeIn(1600)
+      .removeClass("hide")
+      .addClass("current")
       .siblings("div")
+      .fadeOut(1500)
       .removeClass("current")
-      .fadeOut("slow");
+      .addClass("hide");
   });
   $("#riv").click(function () {
     $("#river")
-      .fadeIn("slow")
+      .fadeIn(1600)
+      .removeClass("hide")
+      .addClass("current")
       .siblings("div")
+      .fadeOut(1500)
       .removeClass("current")
-      .fadeOut("slow");
+      .addClass("hide");
   });
   $("#home").click(function () {
     location.reload();
