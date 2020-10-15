@@ -31,6 +31,7 @@ $(function () {
       }
     );
   };
+  $("#selected").off("dblclick");
 
   // #nderive
   $("#nderive").on("click", function () {
@@ -845,8 +846,7 @@ $(function () {
       } else if (filepath == "img/com/") {
         txt = "Adresse à Tous les Travailleurs, 1968";
       } else if (filepath == "img/dec/") {
-        txt =
-          "Déclaration sur les Procès Contre l'Internationale Situationniste en Allemagne Fédérale, 1962";
+        txt = "Déclaration, 1962";
       } else if (filepath == "img/fin/") {
         txt = "Fin de Copenhague, 1957";
       } else if (filepath == "img/nich/") {
@@ -938,9 +938,10 @@ $(function () {
           .css("transform", "translate(-50%,-50%)");
       } else {
         $("#selected")
-          .css("height", "95vh")
+          .css("height", "92vh")
           .css("left", "50vw")
-          .css("transform", "translate(-50%)");
+          .css("top", "50vh")
+          .css("transform", "translate(-50%,-51%)");
       }
 
       if (filepath == "img/memo/") {
@@ -1819,8 +1820,7 @@ $(function () {
     } else if (filepath == "img/com/") {
       txt = "Adresse à Tous les Travailleurs, 1968";
     } else if (filepath == "img/dec/") {
-      txt =
-        "Déclaration sur les Procès Contre l'Internationale Situationniste en Allemagne Fédérale, 1962";
+      txt = "Déclaration, 1962";
     } else if (filepath == "img/fin/") {
       txt = "Fin de Copenhague, 1957";
     } else if (filepath == "img/nich/") {
@@ -1918,9 +1918,10 @@ $(function () {
         .css("transform", "translate(-50%,-50%)");
     } else {
       $("#selected")
-        .css("height", "95vh")
+        .css("height", "92vh")
         .css("left", "50vw")
-        .css("transform", "translate(-50%)");
+        .css("top", "50vh")
+        .css("transform", "translate(-50%,-51%)");
     }
 
     if (filepath == "img/memo/") {

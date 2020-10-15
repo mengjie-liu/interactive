@@ -243,7 +243,7 @@ body {
 #index #sit a {
   display: block;
   background: transparent url(../img/sprite.png) 0 -611px no-repeat;
-  width: 203px;
+  width: 155px;
   z-index: 1002;
 }
 #index #sit a:hover,
@@ -307,7 +307,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: white;
   z-index: 1005;
 }
 #backgW {
@@ -323,25 +323,17 @@ body {
 #selected {
   position: relative;
 }
-/* #mag {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-repeat: no-repeat;
-  border: 1px solid #000;
-  box-sizing: border-box;
-} */
 
 #back {
   position: fixed;
-  filter: invert(1);
+  /* filter: invert(1); */
   right: 1.5vw;
   top: 2.5vh;
   /* display: none; */
 }
 #backI {
   position: absolute;
-  filter: invert(1);
+  /* filter: invert(1); */
   right: 1.5vw;
   top: 2.5vh;
   /* display: none; */
@@ -356,7 +348,7 @@ body {
 
 #left {
   position: absolute;
-  filter: invert(1);
+  /* filter: invert(1); */
   left: 1.5vw;
   top: 49vh;
   display: none;
@@ -364,7 +356,7 @@ body {
 }
 #right {
   position: absolute;
-  filter: invert(1);
+  /* filter: invert(1); */
   right: 1.5vw;
   top: 49vh;
   z-index: 1015;
@@ -375,28 +367,28 @@ body {
   left: 50%;
   transform: translateX(-50%);
   letter-spacing: 0.25pt;
-  bottom: 1.5vh;
+  bottom: 1.4vh;
   right: 1.5vw;
-  max-width: 55vw;
+  /* max-width: 70vw; */
   font-family: "fontN";
   font-size: 18px;
   text-align: center;
   color: black;
   z-index: 1100;
   /* text-shadow: 0 0 2pt rgba(255, 255, 255, 0.9); */
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 
 #left1 {
   position: absolute;
-  filter: invert(1);
+  /* filter: invert(1); */
   left: 1.5vw;
   top: 49vh;
   display: none;
 }
 #right1 {
   position: absolute;
-  filter: invert(1);
+  /* filter: invert(1); */
   right: 1.5vw;
   top: 49vh;
   /* display: none; */
@@ -432,7 +424,7 @@ body {
   position: absolute;
   display: block;
   width: 100%;
-  top: 22vh;
+  top: 14.2vh;
   line-height: 31pt;
   font-size: 26pt;
   margin-bottom: 5vh;
@@ -480,7 +472,7 @@ body {
 
 #deto #dettext {
   width: 60%;
-  height: 215vh;
+  /* height: 215vh; */
   left: 13.9vw;
 }
 #dtunderl {
@@ -489,7 +481,7 @@ body {
 
 #capti #catext {
   width: 60%;
-  height: 770vh;
+  /* height: 770vh; */
   left: 13.9vw;
 }
 #cunderl {
@@ -501,7 +493,7 @@ body {
   left: 13.9vw;
 }
 #urban p {
-  top: 25.5vh;
+  top: 19vh;
 }
 #uunderl {
   width: 63.5vw;
@@ -528,18 +520,20 @@ body {
 
 .grid-sizer,
 .grid-item {
-  width: 252px;
-  padding-bottom: 0.2vh;
-  margin: 0.55vh;
-  margin-bottom: 0.5vh;
+  width: 250px;
+  padding-bottom: 0.3vh;
+  margin: 1.175vh;
+  margin-left: 1.33vw;
+  margin-right: 0vw;
+  margin-bottom: 0.8vh;
 }
 .grid {
-  margin-left: 1vw;
+  margin-left: 0.4vw;
   /* margin-right: 0.7vw; */
   margin-top: 40vh;
   margin-bottom: 1vh;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   display: hidden;
   /* margin-left: 11.5vh; */
 }
