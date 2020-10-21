@@ -317,7 +317,9 @@ body {
   position: absolute;
   margin: 0.5vh;
   cursor: pointer;
-  filter: invert(1);
+  mix-blend-mode: difference;
+
+  /* filter: invert(1); */
   opacity: 0.85;
   /* z-index: 1500; */
 }
@@ -330,10 +332,23 @@ body {
   margin: 0.5vh;
   margin-top: 0.1vh;
   cursor: pointer;
-  filter: invert(1);
+  /* filter: invert(1); */
   opacity: 0.85;
+  mix-blend-mode: difference;
 }
 #up img {
+  width: 100%;
+}
+
+#drag {
+  width: 1.5vw;
+  position: absolute;
+  margin-right: -0.4vh;
+  margin-bottom: -0.9vh;
+  mix-blend-mode: difference;
+  opacity: 0.95;
+}
+#drag img {
   width: 100%;
 }
 
