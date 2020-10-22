@@ -106,7 +106,8 @@ $(function () {
       $(this).find("#back").remove();
       $(this).find("#up").remove();
       $(this).find("#drag").remove();
-      $(this).addClass("selected").siblings().css({
+      $(this).css("z-index",2000)
+      .siblings().css({
         filter: "blur(9px)",
         opacity: "0.75",
       });
@@ -236,7 +237,7 @@ $(function () {
           .parent(".draggable")
           .css("z-index", z + 1);
       });
-      $(this).removeClass("selected").siblings().css({
+      $(this).css("z-index","auto").siblings().css({
         filter: "blur(0px)",
         opacity: "1",
       });
