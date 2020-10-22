@@ -1,7 +1,7 @@
 $(function () {
   $.fn.disap = function () {
     var el = $(this);
-    el.fadeOut(800000);
+    el.fadeOut(300000);
   };
   $.fn.stopDisap = function () {
     var el = $(this);
