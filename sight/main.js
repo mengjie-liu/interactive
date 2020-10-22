@@ -93,10 +93,10 @@ $(function () {
     });
   });
   $(".draggable").resizable({
-    handles: "se",
-    create: function (event, ui) {
-      $(".ui-resizable-se").css("cursor", "url(img/ribo.png) 40 38, se-resize");
-    },
+    // handles: "se",
+    // create: function (event, ui) {
+    //   $(".ui-resizable-se").css("cursor", "url(img/ribo.png) 40 38, se-resize");
+    // },
   });
   $(".draggable").draggable({
     containment: "window",
