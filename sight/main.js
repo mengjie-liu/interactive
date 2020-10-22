@@ -1,4 +1,45 @@
 $(function () {
+  $.fn.disap = function () {
+    var el = $(this);
+    el.fadeOut(800000);
+  };
+  $.fn.stopDisap = function () {
+    var el = $(this);
+    el.stop().fadeIn(300);
+  };
+  // var dragarr = $(".draggable");
+  $(".start").on("load", function () {
+    $(this).css("dispale", "block");
+  });
+
+  $("#str").click(function () {
+    // rand();
+    $(this).fadeOut("slow");
+    $("#home").fadeIn("slow");
+    $(".start").fadeOut("slow");
+    $("#street")
+      .fadeIn(1600)
+      .removeClass("hide")
+      .addClass("current")
+      .siblings("div")
+      .fadeOut(1500)
+      .removeClass("current")
+      .addClass("hide");
+    $(".draggable").disap();
+  });
+  $("#home").click(function () {
+    $(".start")
+      .fadeIn(1600)
+      .removeClass("hide")
+      .addClass("current")
+      .siblings("div")
+      .fadeOut(1500)
+      .removeClass("current")
+      .addClass("hide");
+    $(this).fadeOut(1500);
+    $("#str").fadeIn(1600);
+  });
+
   $(".draggable").on("mouseenter", function () {
     if ($(this).find("#back")) {
       $(this).find("#back").remove();
@@ -37,13 +78,14 @@ $(function () {
       bottom: 0,
     });
     $("#back").on("click", function () {
-      $(this).parent(".draggable").fadeOut("slow");
+      $(this).parent(".draggable").stop().fadeOut("slow");
     });
     $("#up").on("click", function () {
       let z = $(this).parent(".draggable").css("z-index");
-      //console.log(z);
       if (z === "auto") {
-        z = 90;
+        z = 1;
+      } else {
+        z = parseInt(z);
       }
       $(this)
         .parent(".draggable")
@@ -56,38 +98,11 @@ $(function () {
       $(".ui-resizable-se").css("cursor", "url(img/ribo.png) 40 38, se-resize");
     },
   });
-
-  $(".icon").click(function () {
-    $(".start").fadeOut("slow");
-  });
-  $("#str").click(function () {
-    $("#street")
-      .fadeIn(1600)
-      .removeClass("hide")
-      .addClass("current")
-      .siblings("div")
-      .fadeOut(1500)
-      .removeClass("current")
-      .addClass("hide");
-  });
-  $("#riv").click(function () {
-    $("#river")
-      .fadeIn(1600)
-      .removeClass("hide")
-      .addClass("current")
-      .siblings("div")
-      .fadeOut(1500)
-      .removeClass("current")
-      .addClass("hide");
-  });
-  $("#home").click(function () {
-    location.reload();
-  });
-
   $(".draggable").draggable({
     containment: "window",
     scroll: false,
     start: function (e, o) {
+      $(this).stopDisap();
       $(this).find("#back").remove();
       $(this).find("#up").remove();
       $(this).find("#drag").remove();
@@ -96,6 +111,59 @@ $(function () {
         opacity: "0.75",
       });
       $(".icon").fadeOut();
+
+      var srcname = $(this).attr("id");
+      var idname = `${srcname}mv`;
+      // var col;
+      // if (srcname.match("^sh")) {
+      //   col = "#4c754c";
+      // } else if (srcname.match("^bj")) {
+      //   col = "#5e5743";
+      // } else if (srcname.match("^kt")) {
+      //   col = "#404e63";
+      // } else {
+      //   col = "";
+      // }
+
+      var left = $(this).css("background-position-x");
+      var top = $(this).css("background-position-y");
+
+      if (this.querySelector(".mv")) {
+        this.querySelector(".mv").play();
+        // $(this).find(".colorb").fadeOut("fast");
+        // if (!srcname.match("^nh")) {
+        //   $(this).find(".mv").css({
+        //     filter: "grayscale(0) brightness(95%)",
+        //   });
+        // }
+      } else {
+        $(this).append(function () {
+          return `
+        <video class="mv" id="${idname}">
+        <source src="img/${srcname}.mp4" type="video/mp4">
+        </video>
+       `;
+        });
+        $(this).find(".mv").css({
+          left: left,
+          top: top,
+          display: "none",
+        });
+        $(this).find(".mv").fadeIn("slow");
+        this.querySelector(".mv").play();
+        // $(this)
+        //   .find(".colorb")
+        //   .css({
+        //     "background-color": `${col}`,
+        //     "mix-blend-mode": "overlay",
+        //     display: "none",
+        //   });
+        // if (!srcname.match("^nh")) {
+        //   $(this).find(".mv").css({
+        //     filter: "grayscale(0) brightness(95%)",
+        //   });
+        // }
+      }
     },
 
     drag: function (e, o) {
@@ -106,6 +174,15 @@ $(function () {
       }
       $(this).css("background-position-x", -o.offset.left + "px");
       $(this).css("background-position-y", -o.offset.top + "px");
+      $(this)
+        .find(".mv")
+        .css({
+          left: -o.offset.left + "px",
+          top: -o.offset.top + "px",
+        });
+      this.querySelector(".mv").onended = (event) => {
+        $(this).fadeOut("slow");
+      };
     },
 
     stop: function (e, o) {
@@ -146,12 +223,14 @@ $(function () {
         bottom: 0,
       });
       $("#back").on("click", function () {
-        $(this).parent(".draggable").fadeOut("slow");
+        $(this).parent(".draggable").stop().fadeOut("slow");
       });
       $("#up").on("click", function () {
         let z = $(this).parent(".draggable").css("z-index");
         if (z === "auto") {
-          z = 90;
+          z = 1;
+        } else {
+          z = parseInt(z);
         }
         $(this)
           .parent(".draggable")
@@ -161,7 +240,27 @@ $(function () {
         filter: "blur(0px)",
         opacity: "1",
       });
+      // $(this).find(".colorb").fadeIn("fast");
+
+      this.querySelector(".mv").pause();
+      this.querySelector(".mv").onended = (event) => {
+        $(this).fadeOut("slow");
+      };
       $(".icon").fadeIn();
+      $(this).disap();
+      // if (!srcname.match("^nh")) {
+      //   $(this).find(".mv").css("filter", "grayscale(75%) brightness(95%)");
+      // }
     },
   });
+
+  var rand = function () {
+    const shuffled = dragarr.sort(() => 0.5 - Math.random());
+    let selected = shuffled.slice(0, 8);
+    $(selected).fadeIn("slow");
+    if (selected.length > 8) {
+      selected = selected.slice(selected.length - 8, selected.length);
+    }
+    return selected;
+  };
 });

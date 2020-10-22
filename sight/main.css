@@ -7,29 +7,32 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  /* cursor: url("img/move.png") 50 50, move !important; */
 }
 
 .selected {
-  z-index: 999;
+  /* filter: saturate(0.75); */
+  z-index: 20000;
 }
 
 .draggable {
   position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.85) 0 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.85) 0 0 35px;
   background-repeat: no-repeat;
   background-size: 100vw;
-  cursor: url("img/move.png") 50 50, move;
-  /* z-index: 90; */
+  cursor: url("img/move.png") 50 50, move !important;
+  filter: saturate(0.75);
+  overflow: hidden;
+  transition: filter ease-out 0.25s;
+  /* transform: scale(0.85); */
 }
-/* .draggable:active {
-  z-index: 9999;
-} */
 
 .simg {
   position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.75) 0 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.85) 0 0 25px;
   background-repeat: no-repeat;
   background-size: 100vw;
+  filter: saturate(0.75);
 }
 
 #shb1 {
@@ -37,7 +40,7 @@ body {
   top: 0;
   width: 100vw;
   height: 10vh;
-  background-image: url(img/sh1.png);
+  background-image: url(img/sh2.png);
   background-position-x: 0;
   background-position-y: 0;
 }
@@ -91,7 +94,7 @@ body {
   top: 0;
   width: 10vh;
   height: 100vh;
-  background-image: url(img/sh6.png);
+  background-image: url(img/sh1.png);
   background-position-x: -80vh;
   background-position-y: 0;
 }
@@ -118,7 +121,7 @@ body {
   top: 0;
   width: 10vh;
   height: 100vh;
-  background-image: url(img/sh5.png);
+  background-image: url(img/sh4.png);
   background-position-x: -160vh;
   background-position-y: 0;
 }
@@ -128,7 +131,7 @@ body {
   top: 20vh;
   width: 100vw;
   height: 10vh;
-  background-image: url(img/bj2.png);
+  background-image: url(img/bj4.png);
   background-position-x: 0;
   background-position-y: -20vh;
 }
@@ -164,7 +167,7 @@ body {
   top: 0;
   width: 10vh;
   height: 100vh;
-  background-image: url(img/bj6.png);
+  background-image: url(img/bj1.png);
   background-position-x: -60vh;
   background-position-y: 0;
 }
@@ -173,7 +176,7 @@ body {
   top: 0;
   width: 10vh;
   height: 100vh;
-  background-image: url(img/bj3.png);
+  background-image: url(img/bj2.png);
   background-position-x: -90vh;
   background-position-y: 0;
 }
@@ -191,7 +194,7 @@ body {
   top: 0;
   width: 10vh;
   height: 100vh;
-  background-image: url(img/bj5.png);
+  background-image: url(img/bj3.png);
   background-position-x: -170vh;
   background-position-y: 0;
 }
@@ -210,7 +213,7 @@ body {
   height: 10vh;
   left: 0;
   top: 70vh;
-  background-image: url(img/kt6.png);
+  background-image: url(img/kt3.png);
   background-position-x: 0;
   background-position-y: -70vh;
 }
@@ -288,14 +291,6 @@ body {
   background-position-y: 0;
 }
 
-.simg:hover {
-  z-index: 100;
-}
-
-/* #street{
-    display: none;
-} */
-
 .current {
   display: block;
 }
@@ -318,10 +313,7 @@ body {
   margin: 0.5vh;
   cursor: pointer;
   mix-blend-mode: difference;
-
-  /* filter: invert(1); */
-  opacity: 0.85;
-  /* z-index: 1500; */
+  opacity: 0.95;
 }
 #back img {
   width: 100%;
@@ -332,14 +324,12 @@ body {
   margin: 0.5vh;
   margin-top: 0.1vh;
   cursor: pointer;
-  /* filter: invert(1); */
-  opacity: 0.85;
   mix-blend-mode: difference;
+  opacity: 0.95;
 }
 #up img {
   width: 100%;
 }
-
 #drag {
   width: 1.5vw;
   position: absolute;
@@ -352,20 +342,31 @@ body {
   width: 100%;
 }
 
+.draggable .mv {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+}
+
+.draggable .colorb {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
 .icon {
   position: absolute;
   top: 91.5vh;
-  width: 100vw;
-  height: 12vh;
-  left: 50%;
   transform: translateX(-50%);
   z-index: 10000;
   vertical-align: center;
   opacity: 0.85;
 }
+
 #str,
-#riv,
-#mon,
 #home {
   position: absolute;
   display: inline-block;
@@ -375,29 +376,21 @@ body {
   z-index: 1010;
 }
 #str {
-  left: 11vw;
+  left: 50vw;
+  transform: translate(-50%);
 }
-#riv {
-  left: 39vw;
-}
-#mon {
-  left: 65vw;
-}
+
 #home {
-  left: 88.25vw;
-  top: 0.5vh;
-  width: 2.5vw;
+  left: 50vw;
+  transform: translate(-50%);
+  display: none;
 }
 .icon img {
   width: 100%;
   vertical-align: center;
 }
 
-/* #river > .draggable {
-  border-radius: 1500px;
-} */
-
-#nhs1 {
+#nh1 {
   width: 40vw;
   height: 42vh;
   left: 54vw;
@@ -406,26 +399,26 @@ body {
   background-position-x: -54vw;
   background-position-y: 1vh;
 }
-#nhs2 {
+#nh2 {
   width: 34vw;
   height: 30vh;
   left: 59.5vw;
   top: 68vh;
-  background-image: url(img/nh1.png);
+  background-image: url(img/nh2.png);
   background-position-x: -59.5vw;
   background-position-y: -68vh;
 }
-#nhs3 {
+#nh3 {
   width: 33vw;
   height: 45vh;
   left: 13vw;
   top: 20vh;
-  background-image: url(img/nh1.png);
+  background-image: url(img/nh3.png);
   background-position-x: -13vw;
   background-position-y: -20vh;
 }
 
-#bjs1 {
+#bj1 {
   width: 16vw;
   height: 58vh;
   left: 16vw;
@@ -434,7 +427,7 @@ body {
   background-position-x: -16vw;
   background-position-y: -24vh;
 }
-#bjs2 {
+#bj2 {
   width: 37vw;
   height: 28vh;
   left: 2vw;
@@ -443,63 +436,63 @@ body {
   background-position-x: -2vw;
   background-position-y: -72vh;
 }
-#bjs3 {
+#bj3 {
   width: 35vw;
   height: 30vh;
   left: 63vw;
   top: 51.5vh;
-  background-image: url(img/bj1.png);
+  background-image: url(img/bj3.png);
   background-position-x: -63vw;
   background-position-y: -51.5vh;
 }
-#bjs4 {
+#bj4 {
   width: 22vw;
   height: 45vh;
-  left: 52vw;
+  left: 55vw;
   top: 23.5vh;
-  background-image: url(img/bj2.png);
+  background-image: url(img/bj4.png);
   background-position-x: -52vw;
   background-position-y: -23.5vh;
 }
 
-#shs1 {
+#sh1 {
   width: 40vw;
   height: 45vh;
   left: 30vw;
   top: 42vh;
-  background-image: url(img/sh2.png);
+  background-image: url(img/sh1.png);
   background-position-x: -30vw;
   background-position-y: -42vh;
 }
-#shs2 {
+#sh2 {
   width: 39.5vw;
   height: 47vh;
   left: 0;
   top: 0;
-  background-image: url(img/sh1.png);
+  background-image: url(img/sh2.png);
   background-position-x: 0;
   background-position-y: 0;
 }
-#shs3 {
+#sh3 {
   width: 16vw;
   height: 65vh;
   left: 84vw;
   top: 5vh;
-  background-image: url(img/sh2.png);
+  background-image: url(img/sh3.png);
   background-position-x: -84vw;
   background-position-y: -5vh;
 }
-#shs4 {
+#sh4 {
   width: 15.5vw;
   height: 32vh;
   left: 72vw;
   top: 13vh;
-  background-image: url(img/sh1.png);
+  background-image: url(img/sh4.png);
   background-position-x: -72vw;
   background-position-y: -13vh;
 }
 
-#kts1 {
+#kt1 {
   width: 12vw;
   height: 37vh;
   left: 31vw;
@@ -508,187 +501,39 @@ body {
   background-position-x: -31vw;
   background-position-y: -38vh;
 }
-#kts2 {
+#kt2 {
   width: 16vw;
   height: 49vh;
   left: 45vw;
   top: 1.5vh;
-  background-image: url(img/kt1.png);
+  background-image: url(img/kt2.png);
   background-position-x: -45vw;
   background-position-y: -1.5vh;
 }
-#kts3 {
+#kt3 {
   width: 13vw;
   height: 33vh;
   left: 5vw;
   top: 51vh;
-  background-image: url(img/kt2.png);
+  background-image: url(img/kt3.png);
   background-position-x: -5vw;
   background-position-y: -51vh;
 }
-#kts4 {
+#kt4 {
   width: 12vw;
   height: 16vh;
   left: 75vw;
-  top: 37vh;
-  background-image: url(img/kt2.png);
+  top: 48vh;
+  background-image: url(img/kt4.png);
   background-position-x: -75vw;
   background-position-y: -37vh;
 }
-#kts5 {
+#kt5 {
   width: 19.5vw;
   height: 22vh;
   left: 39vw;
   top: 73.5vh;
-  background-image: url(img/kt2.png);
+  background-image: url(img/kt5.png);
   background-position-x: -39vw;
   background-position-y: -73.5vh;
-}
-
-#nhr1 {
-  width: 37vw;
-  height: 42vh;
-  left: 63vw;
-  top: 5.5vh;
-  background-image: url(img/nh2.png);
-  background-position-x: -63vw;
-  background-position-y: -5.5vh;
-}
-#nhr2 {
-  width: 42vw;
-  height: 30vh;
-  left: 52.85vw;
-  top: 69vh;
-  background-image: url(img/nh2.png);
-  background-position-x: -52.85vw;
-  background-position-y: -69vh;
-}
-#nhr3 {
-  width: 33vw;
-  height: 59vh;
-  left: 3.4vw;
-  top: 3.2vh;
-  background-image: url(img/nh2.png);
-  background-position-x: -3.4vw;
-  background-position-y: -3.2vh;
-}
-
-#bjr1 {
-  width: 20vw;
-  height: 57vh;
-  left: 18vw;
-  top: 26vh;
-  background-image: url(img/bj3.png);
-  background-position-x: -18vw;
-  background-position-y: -26vh;
-}
-#bjr2 {
-  width: 12vw;
-  height: 43vh;
-  left: 0.6vw;
-  top: 35.6vh;
-  background-image: url(img/bj4.png);
-  background-position-x: -0.6vw;
-  background-position-y: -35.6vh;
-}
-#bjr3 {
-  width: 24.2vw;
-  height: 58vh;
-  left: 75.8vw;
-  top: 28vh;
-  background-image: url(img/bj3.png);
-  background-position-x: -75.8vw;
-  background-position-y: -28vh;
-}
-#bjr4 {
-  width: 31vw;
-  height: 23.8vh;
-  left: 48vw;
-  top: 69vh;
-  background-image: url(img/bj4.png);
-  background-position-x: -48vw;
-  background-position-y: -69vh;
-}
-
-#shr1 {
-  width: 28.9vw;
-  height: 54vh;
-  left: 32vw;
-  top: 0;
-  background-image: url(img/sh4.png);
-  background-position-x: -32vw;
-  background-position-y: 0;
-}
-#shr2 {
-  width: 42.5vw;
-  height: 40vh;
-  left: 6.5vw;
-  top: 60vh;
-  background-image: url(img/sh3.png);
-  background-position-x: -6.5vw;
-  background-position-y: -60vh;
-}
-#shr3 {
-  width: 18vw;
-  height: 21.4vh;
-  left: 70.5vw;
-  top: 4vh;
-  background-image: url(img/sh4.png);
-  background-position-x: -70.5vw;
-  background-position-y: -4vh;
-}
-#shr4 {
-  width: 17.75vw;
-  height: 38vh;
-  left: 59vw;
-  top: 22vh;
-  background-image: url(img/sh3.png);
-  background-position-x: -59vw;
-  background-position-y: -22vh;
-}
-
-#ktr1 {
-  width: 31vw;
-  height: 30vh;
-  left: 0;
-  top: 66vh;
-  background-image: url(img/kt3.png);
-  background-position-x: 0;
-  background-position-y: -66vh;
-}
-#ktr2 {
-  width: 18vw;
-  height: 35.2vh;
-  left: 64vw;
-  top: 44.2vh;
-  background-image: url(img/kt3.png);
-  background-position-x: -64vw;
-  background-position-y: -44.2vh;
-}
-#ktr3 {
-  width: 13vw;
-  height: 39vh;
-  left: 11vw;
-  top: 16vh;
-  background-image: url(img/kt4.png);
-  background-position-x: -11vw;
-  background-position-y: -16vh;
-}
-#ktr4 {
-  width: 32vw;
-  height: 44vh;
-  left: 35vw;
-  top: 41vh;
-  background-image: url(img/kt4.png);
-  background-position-x: -35vw;
-  background-position-y: -41vh;
-}
-#ktr5 {
-  width: 15.85vw;
-  height: 24vh;
-  left: 58vw;
-  top: 76vh;
-  background-image: url(img/kt4.png);
-  background-position-x: -58vw;
-  background-position-y: -76vh;
 }
