@@ -8,6 +8,7 @@ $(function () {
     el.stop().fadeIn(300);
   };
   // var dragarr = $(".draggable");
+
   $(".start").on("load", function () {
     $(this).css("dispale", "block");
   });
@@ -25,7 +26,7 @@ $(function () {
       .fadeOut(1500)
       .removeClass("current")
       .addClass("hide");
-    $(".draggable").disap();
+    // $(".draggable").disap();
   });
   $("#home").click(function () {
     $(".start")
@@ -93,23 +94,25 @@ $(function () {
     });
   });
   $(".draggable").resizable({
-    // handles: "se",
-    // create: function (event, ui) {
-    //   $(".ui-resizable-se").css("cursor", "url(img/ribo.png) 40 38, se-resize");
-    // },
+    handles: "se",
+    create: function (event, ui) {
+      $(".ui-resizable-se").css(
+        "cursor",
+        "url(img/ribo.png) 35 32.5, se-resize"
+      );
+    },
   });
   $(".draggable").draggable({
     containment: "window",
     scroll: false,
     start: function (e, o) {
-      $(this).stopDisap();
+      // $(this).stopDisap();
       $(this).find("#back").remove();
       $(this).find("#up").remove();
       $(this).find("#drag").remove();
-      $(this).css("z-index",2000)
-      .siblings().css({
-        filter: "blur(9px)",
-        opacity: "0.75",
+      $(this).css("z-index", "200").siblings().css({
+        filter: "blur(8px) saturate(0.75)",
+        opacity: "0.85",
       });
       $(".icon").fadeOut();
 
@@ -152,6 +155,7 @@ $(function () {
         });
         $(this).find(".mv").fadeIn("slow");
         this.querySelector(".mv").play();
+
         // $(this)
         //   .find(".colorb")
         //   .css({
@@ -165,6 +169,7 @@ $(function () {
         //   });
         // }
       }
+      var duration = this.querySelector(".mv").duration;
     },
 
     drag: function (e, o) {
@@ -237,8 +242,8 @@ $(function () {
           .parent(".draggable")
           .css("z-index", z + 1);
       });
-      $(this).css("z-index","auto").siblings().css({
-        filter: "blur(0px)",
+      $(this).css("z-index", "auto").siblings().css({
+        filter: "blur(0px) saturate(0.75)",
         opacity: "1",
       });
       // $(this).find(".colorb").fadeIn("fast");
@@ -248,7 +253,7 @@ $(function () {
         $(this).fadeOut("slow");
       };
       $(".icon").fadeIn();
-      $(this).disap();
+      // $(this).disap();
       // if (!srcname.match("^nh")) {
       //   $(this).find(".mv").css("filter", "grayscale(75%) brightness(95%)");
       // }
