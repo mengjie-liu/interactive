@@ -8,6 +8,8 @@ $(function () {
     el.stop().fadeIn(300);
   };
   // var dragarr = $(".draggable");
+  $("#welcome").delay(1800).fadeOut(2000);
+  $("#welcome h3").css("filter", "blur(10px)");
 
   $(".start").on("load", function () {
     $(this).css("dispale", "block");
@@ -83,7 +85,7 @@ $(function () {
     });
     $("#up").on("click", function () {
       let z = $(this).parent(".draggable").css("z-index");
-      if (z === "auto") {
+      if ((z === "0") | (z === "auto")) {
         z = 1;
       } else {
         z = parseInt(z);
@@ -102,18 +104,28 @@ $(function () {
       );
     },
   });
+
+  // var a=1
   $(".draggable").draggable({
     containment: "window",
     scroll: false,
+    // zindex: 80,
+    stack: ".draggable",
     start: function (e, o) {
       // $(this).stopDisap();
       $(this).find("#back").remove();
       $(this).find("#up").remove();
       $(this).find("#drag").remove();
-      $(this).css("z-index", "200").siblings().css({
-        filter: "blur(8px) saturate(0.75)",
-        opacity: "0.85",
-      });
+      $(this)
+        .css({
+          // "z-index": a++,
+          filter: "blur(0) saturate(0.05)",
+        })
+        .siblings()
+        .css({
+          filter: "blur(8px) saturate(0.75)",
+          opacity: "0.85",
+        });
       $(".icon").fadeOut();
 
       var srcname = $(this).attr("id");
@@ -169,10 +181,12 @@ $(function () {
         //   });
         // }
       }
-      var duration = this.querySelector(".mv").duration;
     },
 
     drag: function (e, o) {
+      var dur = this.querySelector(".mv").duration;
+      var sat = $(this).css("filter");
+      console.log(sat);
       if ($(this).find("#back")) {
         $(this).find("#back").remove();
         $(this).find("#up").remove();
@@ -233,7 +247,7 @@ $(function () {
       });
       $("#up").on("click", function () {
         let z = $(this).parent(".draggable").css("z-index");
-        if (z === "auto") {
+        if ((z === "0") | (z === "auto")) {
           z = 1;
         } else {
           z = parseInt(z);
@@ -242,10 +256,17 @@ $(function () {
           .parent(".draggable")
           .css("z-index", z + 1);
       });
-      $(this).css("z-index", "auto").siblings().css({
-        filter: "blur(0px) saturate(0.75)",
-        opacity: "1",
-      });
+      $(this)
+        .css({
+          // "z-index": "auto",
+          filter: "blur(0px) saturate(0.75)",
+        })
+        .siblings()
+        .css({
+          // "z-index": "auto",
+          filter: "blur(0px) saturate(0.75)",
+          opacity: "1",
+        });
       // $(this).find(".colorb").fadeIn("fast");
 
       this.querySelector(".mv").pause();
