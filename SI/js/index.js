@@ -491,10 +491,11 @@ $(function () {
 
   // #index
   $("#idd a").on("click", function () {
+    $("#items").remove();
+    $("#nav").css("height", "1000px");
     $(this).css("visibility", "hidden");
     $("#sit a").css("visibility", "visible");
     $("#wrapper").after(function () {
-      $("body").css("overflowY", "scroll");
       return `<div id='backg'>
                       <div class="grid">
                           <div class="grid-item">
@@ -714,6 +715,10 @@ $(function () {
                           </div>
                       </div>
                    </div>`;
+    });
+    let ht = $("#backg").height();
+    $("body").css({
+      height: ht,
     });
 
     var angder = $("#index #nderive a").rotationInfo();
@@ -1778,6 +1783,10 @@ $(function () {
 
   //#item
   $("#items .item a").on("click", function () {
+    $("body,html").animate({ scrollTop: 0 }, 1);
+    $("body,html").animate({ scrollLeft: 0 }, 1);
+    $("body").css("overflowY", "hidden");
+
     var txt = "";
     var src = $(this).children("img").attr("src");
     var pos = src.lastIndexOf(".");
@@ -2689,12 +2698,12 @@ $(function () {
   function init() {
     setSize();
     setPos();
-    $(window).bind("resize", resizeHandler);
-    $("#nav, #items").css({
-      width: $(window).width(),
-      height: $(window).height(),
-      overflow: "hidden",
-    });
+    // $(window).bind("resize", resizeHandler);
+    // $("#nav, #items").css({
+    //   width: $(window).width(),
+    //   height: $(window).height() * 7.5,
+    //   overflow: "hidden",
+    // });
     shuffle();
   }
 
@@ -2703,15 +2712,15 @@ $(function () {
     return randomNum;
   }
 
-  function resizeHandler(e) {
-    setSize();
-    setPos();
-  }
+  // function resizeHandler(e) {
+  //   setSize();
+  //   setPos();
+  // }
 
   function setSize() {
     $("#nav, #items").css({
       width: $(window).width(),
-      height: $(window).height(),
+      height: $(window).height() * 7,
       overflow: "hidden",
     });
   }
@@ -2723,33 +2732,43 @@ $(function () {
       left:
         randRange(0, $(window).width() - $("#nderive a").width() / 2) + "px",
       top:
-        randRange(0, $(window).height() - $("#nderive a").height() / 2) + "px",
+        randRange(0, $(window).height() * 6.8 - $("#nderive a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
     $("#ndeto a").css({
       left: randRange(0, $(window).width() - $("#ndeto a").width() / 2) + "px",
-      top: randRange(0, $(window).height() - $("#ndeto a").height() / 2) + "px",
+      top:
+        randRange(0, $(window).height() * 6.8 - $("#ndeto a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
     $("#nurban a").css({
       left: randRange(0, $(window).width() - $("#nurban a").width() / 2) + "px",
       top:
-        randRange(0, $(window).height() - $("#nurban a").height() / 2) + "px",
+        randRange(0, $(window).height() * 6.8 - $("#nurban a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
     $("#nbana a").css({
       left: randRange(0, $(window).width() - $("#nbana a").width() / 2) + "px",
-      top: randRange(0, $(window).height() - $("#nbana a").height() / 2) + "px",
+      top:
+        randRange(0, $(window).height() * 6.8 - $("#nbana a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
     $("#nques a").css({
       left: randRange(0, $(window).width() - $("#nques a").width() / 2) + "px",
-      top: randRange(0, $(window).height() - $("#nques a").height() / 2) + "px",
+      top:
+        randRange(0, $(window).height() * 6.8 - $("#nques a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
     $("#nword a").css({
       left: randRange(0, $(window).width() - $("#nword a").width() / 2) + "px",
-      top: randRange(0, $(window).height() - $("#nword a").height() / 2) + "px",
+      top:
+        randRange(0, $(window).height() * 6.8 - $("#nword a").height() / 2) +
+        "px",
       transform: "rotate(" + randRange(0, 360) + "deg)",
     });
   }
@@ -2836,7 +2855,7 @@ $(function () {
 
       iAry[i].css({
         left: randRange(0, $(window).width()) + "px",
-        top: randRange(0, $(window).height()) + "px",
+        top: randRange(0, $(window).height() * 6.8) + "px",
       });
     }
 
