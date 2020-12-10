@@ -53,30 +53,30 @@ $(function () {
       src: "Pkl6l9aie6U",
       loc: "CANADA",
     },
-    {
-      src: "bW0fJ2PyihQ",
-      loc: "CHINA",
-    },
+    // {
+    //   src: "bW0fJ2PyihQ",
+    //   loc: "CHINA",
+    // },
     // {
     //   src: "ysmmWXPtevg",
     //   loc: "CHINA",
     // },
-    {
-      src: "QImncm7lr2w",
-      loc: "CHINA",
-    },
-    {
-      src: "FPfv3-dC1Po",
-      loc: "CHINA",
-    },
-    {
-      src: "z1G5UBjrIqk",
-      loc: "CHINA",
-    },
-    {
-      src: "E1RnyWaqW0g",
-      loc: "CHINA",
-    },
+    // {
+    //   src: "QImncm7lr2w",
+    //   loc: "CHINA",
+    // },
+    // {
+    //   src: "FPfv3-dC1Po",
+    //   loc: "CHINA",
+    // },
+    // {
+    //   src: "z1G5UBjrIqk",
+    //   loc: "CHINA",
+    // },
+    // {
+    //   src: "E1RnyWaqW0g",
+    //   loc: "CHINA",
+    // },
     {
       src: "05lBVgQNKi0",
       loc: "CHILE",
@@ -393,30 +393,30 @@ $(function () {
       src: "ytPsiuXqcNY",
       loc: "UNITED KINGDOM",
     },
-    // {
-    //   src: "AQoIwfphyVo",
-    //   loc:"UNITED STATES"
-    // },
-    // {
-    //   src: "ZuoL3P2dgmg",
-    //   loc:"UNITED STATES"
-    // },
-    // {
-    //   src: "yz5Kl9nAuCc",
-    //   loc:"UNITED STATES"
-    // },
-    // {
-    //   src: "nPsaWA2HkCY",
-    //   loc:"UNITED STATES"
-    // },
-    // {
-    //   src: "5YfhVctquIU",
-    //   loc:"UNITED STATES"
-    // },
-    // {
-    //   src: "ovn3lz0iZYQ",
-    //   loc:"UNITED STATES"
-    // },
+    {
+      src: "AQoIwfphyVo",
+      loc: "UNITED STATES",
+    },
+    {
+      src: "ZuoL3P2dgmg",
+      loc: "UNITED STATES",
+    },
+    {
+      src: "yz5Kl9nAuCc",
+      loc: "UNITED STATES",
+    },
+    {
+      src: "nPsaWA2HkCY",
+      loc: "UNITED STATES",
+    },
+    {
+      src: "5YfhVctquIU",
+      loc: "UNITED STATES",
+    },
+    {
+      src: "ovn3lz0iZYQ",
+      loc: "UNITED STATES",
+    },
     {
       src: "wJku9791Jhg",
       loc: "VATICAN",
@@ -464,10 +464,7 @@ $(function () {
           "src",
           `http://www.youtube.com/embed/${src}?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&showinfo=0`
         );
-      if (src == "VYkMYtrNl1I") {
-        $("#there .skymv").css("right", "-2vw");
-      }
-      // console.log(src);
+      console.log(src);
       $(this).find("#therel").hide().html(`${loc}`);
       $(this).find("#white").show();
       $("#therew").fadeIn("slow");

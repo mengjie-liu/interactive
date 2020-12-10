@@ -87,8 +87,8 @@ iframe {
 }
 
 #here .skymv {
-  transform: scale(1.1);
-  top: 0vh;
+  transform: scale(2.75);
+  top: 80vh;
   left: -5vw;
 }
 
