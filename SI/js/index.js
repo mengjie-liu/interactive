@@ -64,7 +64,8 @@ $(function () {
                         Within architecture itself, the taste for dériving tends to promote all sorts of new forms of labyrinths made possible by modern techniques of construction. Thus in March 1955 the press reported the construction in New York of a building in which one can see the first signs of an opportunity to dérive inside an apartment:</br></br>
                         “The apartments of the helicoidal building will be shaped like slices of cake. One will be able to enlarge or reduce them by shifting movable partitions. The half-floor gradations avoid limiting the number of rooms, since the tenant can request the use of the adjacent section on either upper or lower levels. With this setup three four-room apartments can be transformed into one twelve-room apartment in less than six hours.”</br></br>
                         (To be continued.)
-                      </p>
+                        </br></br>
+                        </p>
                       </div>
                     </div>
                     <a href="" id='backW'>
@@ -76,8 +77,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.175;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.175;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
@@ -111,6 +112,7 @@ $(function () {
                         Thus the signature of the situationist movement, the sign of its presence and contestation within contemporary cultural reality (since we cannot represent any common style whatsoever), is first of all the use of détournement. Examples of our use of detourned expression include Jorn’s altered paintings; Debord and Jorn’s book Mémoires, “composed entirely of prefabricated elements,” in which the writing on each page runs in all directions and the reciprocal relations of the phrases are invariably uncompleted; Constant’s projects for detourned sculptures; and Debord’s detourned documentary film, On the Passage of a Few Persons Through a Rather Brief Unity of Time. At the stage of what the “User’s Guide” calls “ultra-détournement, that is, the tendencies for détournement to operate in everyday social life” (e.g. passwords or the wearing of disguises, belonging to the sphere of play), we might mention, at different levels, Gallizio’s industrial painting; Wyckaert’s “orchestral” project for assembly-line painting with a division of labor based on color; and numerous détournements of buildings that were at the origin of unitary urbanism. But we should also mention in this context the SI’s very forms of “organization” and propaganda.</br></br>
                       At this point in the world’s development, all forms of expression are losing their grip on reality and being reduced to self-parody. As the readers of this journal can frequently verify, present-day writing invariably has an element of parody. As the “User’s Guide” notes: “It is necessary to envisage a parodic-serious stage where the accumulation of detourned elements, far from aiming to arouse indignation or laughter by alluding to some original work, will express our indifference toward a meaningless and forgotten original, and concern itself with rendering a certain sublimity.”</br></br>
                       This combination of parody and seriousness reflects the contradictions of an era in which we find ourselves confronted with both the urgent necessity and the near impossibility of initiating and carrying out a totally innovative collective action — an era in which the most serious ventures are masked in the ambiguous interplay between art and its necessary negation, and in which the essential voyages of discovery have been undertaken by such astonishingly incapable people.
+                      </br></br>
                       </p>
                       </div>
                     </div>
@@ -123,8 +125,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.2075;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.2075;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
@@ -175,6 +177,7 @@ $(function () {
                         The situationist destruction of present conditioning is already at the same time the construction of situations. It is the liberation of the inexhaustible energies trapped within a petrified daily life. With the advent of unitary urbanism, present city planning (that geology of lies) will be replaced by a technique for defending the permanently threatened conditions of freedom, and individuals — who do not yet exist as such — will begin freely constructing their own history.<br><br>
                         10</br>END OF THE PREHISTORY OF CONDITIONING<br>
                         We are not contending that people must return to some stage previous to the era of conditioning, but rather that they must go beyond it. We have invented the architecture and the urbanism that cannot be realized without the revolution of everyday life — without the appropriation of conditioning by everyone, its endless enrichment and fulfillment.
+                        </br></br>
                         </P>
                         </div>
                     </div>
@@ -188,8 +191,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.19;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.19;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
@@ -329,6 +332,7 @@ $(function () {
                         (b) The intelligentsia is power’s hall of mirrors. Opposing power, it never offers anything but passive cathartic identification to those whose every gesture gropingly expresses real opposition. The radicalism — not of theory, obviously, but of gesture — that could be glimpsed in the “Declaration of the 121,” however, suggests some different possibilities. We are capable of precipitating this crisis, but we can do so only by entering the intelligentsia as a power against the intelligentsia. This phase — which must precede and be contained within the phase described in paragraph (a) — will put us in the perspective of the Nietzschean project. We will form a small, almost alchemical, experimental group within which the realization of the total man can be started. Nietzsche could conceive of such an undertaking only within the framework of the hierarchical principle. It is, in fact, within such a framework that we find ourselves. It is therefore of the utmost importance that we present ourselves without the slightest ambiguity (at the group level, the purification of the nucleus and the elimination of residues now seems to be completed). We accept the hierarchical framework in which we are placed only while impatiently working to abolish our domination over those whom we cannot avoid dominating on the basis of our criteria for mutual recognition.</br></br>
                         (c) Tactically our communication should be a diffusion emanating from a more or less hidden center. We will establish nonmaterialized networks (direct relationships, episodic ones, contacts without ties, development of embryonic relations based on affinity and understanding, in the manner of red agitators before the arrival of revolutionary armies). We will claim radical gestures (actions, writings, political attitudes, works) as our own by analyzing them, and we will consider that our own acts and analyses are supported by the majority of people.
                         Just as God constituted the reference point of past unitary society, we are preparing to create the central reference point for a new unitary society now possible. But this point cannot be fixed. As opposed to the ever-renewed confusion that cybernetic power draws from the inhuman past, it stands for the game that everyone will play, “the moving order of the future.”</br></br>
+                        </br></br>
                         </P>
                         </div>
                     </div>
@@ -341,8 +345,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.1;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.1;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
@@ -447,7 +451,8 @@ $(function () {
                             15</br>
                             What value can you attribute to a questionnaire? To this one?</br>
                             Questionnaires are an obvious form of the pseudodialogue that is becoming obsessively used in all the psychotechniques of integration into the spectacle so as to elicit people’s gleeful acceptance of passivity under the crude guise of “participation” and pseudoactivity. Taking such an incoherent, reified form of questioning as a point of departure, however, enables us to express precise positions. These positions are not really “answers,” because they don’t stick to the questions; they reply by posing new questions that supersede the old ones. Thus, real dialogue could begin after these responses. In the present questionnaire all the questions are false; our responses, however, are true.
-                          </p>
+                            </br></br>
+                            </p>
                         </div>
                     </div>
                     <a href="" id='backW'>
@@ -459,8 +464,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.1825;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.1825;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
@@ -500,6 +505,7 @@ $(function () {
                         Our project of liberating words is historically comparable to the Encyclopédiste enterprise. The Enlightenment’s language of “tearing apart” (to continue the Hegelian image) lacked the conscious historical dimension; it was a real critique of the decrepit feudal world, but it had no idea of what would emerge from it (none of the Encyclopédistes were republicans). It was, rather, an expression of the bourgeois thinkers’ own internal tearing apart. Our language aims first of all at a practice that tears the world apart, beginning with tearing apart the veils that cloak it. Whereas the Encyclopédistes sought a quantitative enumeration, the enthusiastic description of a world of objects in which the bourgeoisie and the commodity were already victorious, our dictionary will express the qualitative, the possible but still absent victory, the repressed of modern history (the proletariat) and the return of the repressed. We propose the real liberation of language because we propose to put it into a practice free of all constraints. We reject any authority, linguistic or otherwise: only real life allows a meaning and only praxis verifies it. Debates over the reality or unreality of the meaning of a word, isolated from practice, are purely academic. We place our dictionary in that libertarian region which is still beyond the reach of power, but which is its only possible global successor.</br></br>
                         Language remains the necessary mediation for comprehending the world of alienation (Hegel would say: the necessary alienation), the instrument of the radical theory that will eventually seize the masses because it is theirs. Only then will it find its own truth. It is thus essential that we forge our own language, the language of real life, against the ideological language of power, the terrain of justification of all the categories of the old world. From now on we must prevent the falsification or cooption of our theories. We use specific concepts already used by the specialists, but we give them a new content, turning them against the specialists that they support and against future salaried thinkers who might be tempted to besmear situationist theory with their own shit (as Claudel did with Rimbaud and Klossowski with Sade). Future revolutions must invent their own language. Concepts of radical critique will be reexamined one by one in order to rediscover their truth. The word alienation, for example, one of the key concepts for the comprehension of modern society, must be disinfected after having passed through the mouths of people like Axelos [editor of Arguments]. All words have the same relation with power as does the proletariat: they are both its present servants and the instruments and agents of future liberation from it. Poor Revel! There are no forbidden words; in language, as it will be in every other domain, everything is permitted. To deny ourselves the use of a word is to deny ourselves a weapon used by our adversaries.</br></br>
                         Our dictionary will be a sort of code book enabling one to decipher the news and rend the ideological veils that cover reality. We will give possible translations that will enable people to grasp the different aspects of the society of the spectacle, and show how the slightest signs and indications contribute to maintaining it. In a sense it will be a bilingual dictionary, since each word has an “ideological” meaning for power and a real meaning that we think corresponds to real life in the present historical phase. Thus we will be able at each step to determine the various positions of words in the social war. If the problem of ideology is how to descend from the heaven of ideas to the real world, our dictionary will be a contribution to the elaboration of the new revolutionary theory where the problem is how to effect the transition from language to life. The real appropriation of the words that work cannot be realized outside the appropriation of work itself. The inauguration of free creative activity will at the same time be the inauguration of true communication, freed at last. The transparency of human relations will replace the poverty of words under the old regime of opacity. Words will not cease to work until people do.
+                        </br></br>
                         </p>
                       </div>
                     </div>
@@ -513,8 +519,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    let ht = $("p").height() * 1.1875;
-    $("#backgW").css("height", ht + "px");
+    // let ht = $("p").height() * 1.1875;
+    // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
       overflowY: "scroll",
