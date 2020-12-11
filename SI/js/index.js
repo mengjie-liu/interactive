@@ -74,7 +74,8 @@ $(function () {
                     <div id="dunderl"></div>
               </div>`;
     });
-    $("#wrapper").hide();
+    $("#items").hide();
+    $("#nav").hide();
     let ht = $("p").height() * 1.175;
     $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -87,6 +88,7 @@ $(function () {
       $("#backW").on("click", function (e) {
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -119,7 +121,8 @@ $(function () {
                     <div id="dtunderl"></div>
               </div>`;
     });
-    $("#wrapper").hide();
+    $("#items").hide();
+    $("#nav").hide();
     let ht = $("p").height() * 1.2075;
     $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -132,6 +135,7 @@ $(function () {
       $("#backW").on("click", function (e) {
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -182,7 +186,8 @@ $(function () {
                     <div id="urunderl"></div>
                 </div>`;
     });
-    $("#wrapper").hide();
+    $("#items").hide();
+    $("#nav").hide();
     let ht = $("p").height() * 1.19;
     $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -195,6 +200,7 @@ $(function () {
       $("#backW").on("click", function (e) {
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
       });
@@ -333,8 +339,9 @@ $(function () {
                     <div id="underl"></div>
                 </div>`;
     });
-    $("#wrapper").hide();
-    let ht = $("p").height() * 1.145;
+    $("#items").hide();
+    $("#nav").hide();
+    let ht = $("p").height() * 1.1;
     $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
@@ -347,6 +354,7 @@ $(function () {
       $("#backW").on("click", function (e) {
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -449,7 +457,8 @@ $(function () {
                     <div id="qunderl"></div>
                 </div>`;
     });
-    $("#wrapper").hide();
+    $("#items").hide();
+    $("#nav").hide();
     let ht = $("p").height() * 1.1825;
     $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -462,6 +471,7 @@ $(function () {
       $("#backW").on("click", function (e) {
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -501,7 +511,8 @@ $(function () {
                     <div id="cunderl"></div>
               </div>`;
     });
-    $("#wrapper").hide();
+    $("#items").hide();
+    $("#nav").hide();
     let ht = $("p").height() * 1.1875;
     $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -515,6 +526,7 @@ $(function () {
         $("body").css("overflowY", "scroll");
         e.preventDefault();
         $("#backgW").remove();
+        $("#nav").show();
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
       });

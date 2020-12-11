@@ -414,7 +414,7 @@ body {
   cursor: default;
   /* overflow-y: scroll;
   overflow-x: hidden; */
-  height: 79vh;
+  /* height: 79vh; */
 }
 #banas p,
 #question p,
