@@ -35,7 +35,7 @@ $(function () {
 
   // #nderive
   $("#nderive").on("click", function () {
-    $("body").css("overflowY", "scroll");
+    $("body,html").animate({ scrollTop: 0 }, 1);
     $("#wrapper").after(function () {
       return `<div id='backgW'>
                     <div id='derive'>
@@ -74,7 +74,13 @@ $(function () {
                     <div id="dunderl"></div>
               </div>`;
     });
-    $("#backgW").css("height", $("p").height() + "px");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.175;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -83,14 +89,14 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
-        $("body,html").animate({ scrollLeft: 0 }, 1);
+        // $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
 
   // #ndeto
   $("#ndeto").on("click", function () {
-    $("body").css("overflowY", "scroll");
+    $("body,html").animate({ scrollTop: 0 }, 1);
     $("#wrapper").after(function () {
       return `<div id='backgW'>
                     <div id='deto'>
@@ -113,7 +119,13 @@ $(function () {
                     <div id="dtunderl"></div>
               </div>`;
     });
-    $("#backgW").css("height", $("p").height() + "px");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.2075;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -130,6 +142,7 @@ $(function () {
   // #nurban
   $("#nurban").on("click", function () {
     $("body").css("overflowY", "scroll");
+    $("body,html").animate({ scrollTop: 0 }, 1);
     $("#wrapper").after(function () {
       return `<div id='backgW'>
                     <div id='urban'>
@@ -169,8 +182,13 @@ $(function () {
                     <div id="urunderl"></div>
                 </div>`;
     });
-    $("#backgW").css("height", $("p").height() + "px");
-    $("body").css("overflowY", "scroll");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.19;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -178,7 +196,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("body,html").animate({ scrollTop: 0 }, 1);
-        $("body,html").animate({ scrollLeft: 0 }, 1);
+        // $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
   });
@@ -315,8 +333,14 @@ $(function () {
                     <div id="underl"></div>
                 </div>`;
     });
-    $("#backgW").css("height", $("p").height() + "px");
-    $("body").css("overflowY", "scroll");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.145;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
+    $("body,html").animate({ scrollTop: 0 }, 1);
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -325,7 +349,7 @@ $(function () {
         $("#backgW").remove();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
-        $("body,html").animate({ scrollLeft: 0 }, 1);
+        // $("body,html").animate({ scrollLeft: 0 }, 1);
       });
     }
 
@@ -335,21 +359,18 @@ $(function () {
       $("#right1").click(function (e) {
         e.preventDefault();
         let curtp = $(this).siblings("div").find("div")[i];
-        let ht = $(curtp).height();
-        console.log($(curtp));
-        // $("#backg").css("height", ht);
         if (i < page - 1) {
-          //console.log(curtp);
           $("#left1").fadeIn();
           $("#right1").fadeIn();
           $(curtp).css("display", "none");
-          i = i + 1;
+          i++;
         } else {
           $("#right1").fadeOut();
           curtp = $(this).siblings("div").find("div")[i];
           $(curtp).css("display", "block");
         }
       });
+
       $("#left1").click(function (e) {
         e.preventDefault();
         let curtp = $(this).siblings("div").find("div")[i - 1];
@@ -367,7 +388,7 @@ $(function () {
 
   // #nques
   $("#nques").on("click", function () {
-    $("body").css("overflowY", "scroll");
+    $("body,html").animate({ scrollTop: 0 }, 1);
     $("#wrapper").after(function () {
       return `<div id='backgW'>
                     <div id='question'>
@@ -428,8 +449,13 @@ $(function () {
                     <div id="qunderl"></div>
                 </div>`;
     });
-    $("#backgW").css("height", $("p").height() + "px");
-    $("body").css("overflowY", "scroll");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.1825;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -445,7 +471,7 @@ $(function () {
 
   // #nword
   $("#nword").on("click", function () {
-    $("body").css("overflowY", "scroll");
+    $("body,html").animate({ scrollTop: 0 }, 1);
     $("#wrapper").after(function () {
       return `<div id='backgW'>
                     <div id='capti'>
@@ -475,7 +501,13 @@ $(function () {
                     <div id="cunderl"></div>
               </div>`;
     });
-    $("#backgW").css("height", "771vh");
+    $("#wrapper").hide();
+    let ht = $("p").height() * 1.1875;
+    $("#backgW").css("height", ht + "px");
+    $("body").css({
+      height: "auto",
+      overflowY: "scroll",
+    });
     if ($("#idd a").css("visibility") === "visible") {
       $("#backW").on("click", function () {});
     } else {
@@ -492,7 +524,8 @@ $(function () {
   // #index
   $("#idd a").on("click", function () {
     $("#items").remove();
-    $("#nav").css("height", "1000px");
+    $("body").css("height", "auto");
+    $("#nav").css("height", "100vh");
     $(this).css("visibility", "hidden");
     $("#sit a").css("visibility", "visible");
     $("#wrapper").after(function () {
@@ -716,10 +749,14 @@ $(function () {
                       </div>
                    </div>`;
     });
-    let ht = $("#backg").height();
-    $("body").css({
-      height: ht,
-    });
+    // let ht = $("#backg").height();
+    // console.log(ht);
+    // setTimeout(function () {
+    //   $("body").css({
+    //     height: ht,
+    //   });
+    //   100;
+    // });
 
     var angder = $("#index #nderive a").rotationInfo();
     $("#index #nderive a").animateRotate(angder.deg);
@@ -909,20 +946,20 @@ $(function () {
       }
       $("#backg").after(function () {
         return `<div id='backgI'>
-                                  <img id='selected' src='${src}'>
-                                  <a href="" id='backI'>
-                                      <img src='img/back.png'>
-                                  </a>
-                                  <a href="" id='left'>
-                                      <img src='img/left.png'>
-                                  </a>
-                                  <a href="" id='right'>
-                                      <img src='img/right.png'>
-                                  </a>
-                                  <div id='capt'>
-                                   ${txt}
-                                  </div>
-                              </div>`;
+                  <img id='selected' src='${src}'>
+                  <a href="" id='backI'>
+                     <img src='img/back.png'>
+                  </a>
+                  <a href="" id='left'>
+                     <img src='img/left.png'>
+                  </a>
+                  <a href="" id='right'>
+                     <img src='img/right.png'>
+                  </a>
+                  <div id='capt'>
+                    ${txt}
+                  </div>
+                </div>`;
       });
       $("#backI").click(function (e) {
         let ht = $(".grid").height();
@@ -2698,12 +2735,12 @@ $(function () {
   function init() {
     setSize();
     setPos();
-    // $(window).bind("resize", resizeHandler);
-    // $("#nav, #items").css({
-    //   width: $(window).width(),
-    //   height: $(window).height() * 7.5,
-    //   overflow: "hidden",
-    // });
+    $(window).bind("resize", resizeHandler);
+    $("#nav, #items").css({
+      width: $(window).width(),
+      height: $(window).height() * 7.5,
+      overflow: "hidden",
+    });
     shuffle();
   }
 
@@ -2712,10 +2749,10 @@ $(function () {
     return randomNum;
   }
 
-  // function resizeHandler(e) {
-  //   setSize();
-  //   setPos();
-  // }
+  function resizeHandler(e) {
+    setSize();
+    setPos();
+  }
 
   function setSize() {
     $("#nav, #items").css({
