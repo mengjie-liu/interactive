@@ -77,7 +77,8 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
-    // let ht = $("p").height() * 1.175;
+    $("#backg").hide();
+    // let ht = $("p").height();
     // $("#backgW").css("height", ht + "px");
     $("body").css({
       height: "auto",
@@ -90,6 +91,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -125,6 +127,7 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
+    $("#backg").hide();
     // let ht = $("p").height() * 1.2075;
     // $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -138,6 +141,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -191,6 +195,7 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
+    $("#backg").hide();
     // let ht = $("p").height() * 1.19;
     // $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -204,6 +209,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
       });
@@ -345,6 +351,7 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
+    $("#backg").hide();
     // let ht = $("p").height() * 1.1;
     // $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -359,6 +366,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         // $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -464,6 +472,7 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
+    $("#backg").hide();
     // let ht = $("p").height() * 1.1825;
     // $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -477,6 +486,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body").css("overflowY", "scroll");
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
@@ -519,6 +529,7 @@ $(function () {
     });
     $("#items").hide();
     $("#nav").hide();
+    $("#backg").hide();
     // let ht = $("p").height() * 1.1875;
     // $("#backgW").css("height", ht + "px");
     $("body").css({
@@ -533,6 +544,7 @@ $(function () {
         e.preventDefault();
         $("#backgW").remove();
         $("#nav").show();
+        $("#backg").show();
         $("body,html").animate({ scrollTop: 0 }, 1);
         $("body,html").animate({ scrollLeft: 0 }, 1);
       });
