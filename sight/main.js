@@ -8,45 +8,56 @@ $(function () {
     el.stop().fadeIn(300);
   };
   // var dragarr = $(".draggable");
-  $("#welcome").delay(1800).fadeOut(2000);
-  $("#welcome h3").css("filter", "blur(10px)");
+  setTimeout(function () {
+    $("#welcome").fadeOut(500);
+  }, 500);
+  // setTimeout(function () {
+  //   $("#welcome h3").css("filter", "blur(7px)");
+  // }, 3000);
+  $("#welcome").delay(500).fadeOut(1000);
 
-  $(".start").on("load", function () {
-    $(this).css("dispale", "block");
+  // $(".start").on("load", function () {
+  //   $(this).fadeIn(2000);
+  //   // $(this).css("dispale", "block");
+  // });
+
+  $("#street").on("load", function () {
+    $(this).fadeIn(1500);
+    // $(this).css("dispale", "block");
   });
 
-  $("#str").click(function () {
-    // rand();
-    $(this).fadeOut("slow");
-    $("#home").fadeIn("slow");
-    $(".start").fadeOut("slow");
-    $("#street")
-      .fadeIn(1600)
-      .removeClass("hide")
-      .addClass("current")
-      .siblings("div")
-      .fadeOut(1500)
-      .removeClass("current")
-      .addClass("hide");
-    // $(".draggable").disap();
-  });
-  $("#home").click(function () {
-    $(".start")
-      .fadeIn(1600)
-      .removeClass("hide")
-      .addClass("current")
-      .siblings("div")
-      .fadeOut(1500)
-      .removeClass("current")
-      .addClass("hide");
-    $(this).fadeOut(1500);
-    $("#str").fadeIn(1600);
-  });
+  // $("#str").click(function () {
+  //   // rand();
+  //   $(this).fadeOut("slow");
+  //   $("#home").fadeIn("slow");
+  //   $(".start").fadeOut("slow");
+  //   $("#street")
+  //     .fadeIn(2000)
+  //     .removeClass("hide")
+  //     .addClass("current")
+  //     .siblings("div")
+  //     .fadeOut(2000)
+  //     .removeClass("current")
+  //     .addClass("hide");
+  //   // $(".draggable").disap();
+  // });
+  // $("#home").click(function () {
+  //   $(".start")
+  //     .fadeIn(2000)
+  //     .removeClass("hide")
+  //     .addClass("current")
+  //     .siblings("div")
+  //     .fadeOut(2000)
+  //     .removeClass("current")
+  //     .addClass("hide");
+  //   $(this).fadeOut(2000);
+  //   $("#str").fadeIn(2000);
+  // });
 
   $(".draggable").on("mouseenter", function () {
-    if ($(this).find("#back")) {
+    if ($(this).find("#drag")) {
       $(this).find("#back").remove();
-      $(this).find("#up").remove();
+      // $(this).find("#up").remove();
       $(this).find("#drag").remove();
     }
     $(this)
@@ -55,9 +66,6 @@ $(function () {
         <div id='back'>
             <img src='img/back.png'>
         </div>
-        <div id='up'>
-            <img src='img/up.png'>
-        </div>
         <div id='drag'>
             <img src='img/drag.png'>
         </div>
@@ -65,17 +73,17 @@ $(function () {
       })
       .on("mouseleave", function () {
         $("#back").remove();
-        $("#up").remove();
+        // $("#up").remove();
         $("#drag").remove();
       });
     $("#back").css({
       left: 0,
       top: 0,
     });
-    $("#up").css({
-      right: 0,
-      top: 0,
-    });
+    // $("#up").css({
+    //   right: 0,
+    //   top: 0,
+    // });
     $("#drag").css({
       right: 0,
       bottom: 0,
@@ -83,24 +91,25 @@ $(function () {
     $("#back").on("click", function () {
       $(this).parent(".draggable").stop().fadeOut("slow");
     });
-    $("#up").on("click", function () {
-      let z = $(this).parent(".draggable").css("z-index");
-      if ((z === "0") | (z === "auto")) {
-        z = 1;
-      } else {
-        z = parseInt(z);
-      }
-      $(this)
-        .parent(".draggable")
-        .css("z-index", z + 1);
-    });
+    // $("#up").on("click", function () {
+    //   let z = $(this).parent(".draggable").css("z-index");
+    //   if ((z === "0") | (z === "auto")) {
+    //     z = 1;
+    //   } else {
+    //     z = parseInt(z);
+    //   }
+    //   $(this)
+    //     .parent(".draggable")
+    //     .css("z-index", z + 1);
+    // });
   });
   $(".draggable").resizable({
     handles: "se",
     create: function (event, ui) {
       $(".ui-resizable-se").css(
         "cursor",
-        "url(img/ribo.png) 35 32.5, se-resize"
+        // "url(img/ribo.png) 35 32.5, se-resize"
+        "se-resize"
       );
     },
   });
@@ -114,7 +123,7 @@ $(function () {
     start: function (e, o) {
       // $(this).stopDisap();
       $(this).find("#back").remove();
-      $(this).find("#up").remove();
+      // $(this).find("#up").remove();
       $(this).find("#drag").remove();
       $(this)
         .css({
@@ -187,9 +196,9 @@ $(function () {
       var dur = this.querySelector(".mv").duration;
       var sat = $(this).css("filter");
       console.log(sat);
-      if ($(this).find("#back")) {
+      if ($(this).find("#drag")) {
         $(this).find("#back").remove();
-        $(this).find("#up").remove();
+        // $(this).find("#up").remove();
         $(this).find("#drag").remove();
       }
       $(this).css("background-position-x", -o.offset.left + "px");
@@ -206,20 +215,17 @@ $(function () {
     },
 
     stop: function (e, o) {
-      if ($(this).find("#back")) {
+      if ($(this).find("#drag")) {
         $(this).find("#back").remove();
-        $(this).find("#up").remove();
+        // $(this).find("#up").remove();
         $(this).find("#drag").remove();
       }
       $(this)
         .append(function () {
           return `
-        <div id='back'>
-            <img src='img/back.png'>
-        </div>
-        <div id='up'>
-            <img src='img/up.png'>
-        </div>
+          <div id='back'>
+          <img src='img/back.png'>
+      </div>
         <div id='drag'>
             <img src='img/drag.png'>
         </div>
@@ -227,17 +233,17 @@ $(function () {
         })
         .on("mouseleave", function () {
           $("#back").remove();
-          $("#up").remove();
+          // $("#up").remove();
           $("#drag").remove();
         });
       $("#back").css({
         left: 0,
         top: 0,
       });
-      $("#up").css({
-        right: 0,
-        top: 0,
-      });
+      // $("#up").css({
+      //   right: 0,
+      //   top: 0,
+      // });
       $("#drag").css({
         right: 0,
         bottom: 0,
@@ -245,17 +251,17 @@ $(function () {
       $("#back").on("click", function () {
         $(this).parent(".draggable").stop().fadeOut("slow");
       });
-      $("#up").on("click", function () {
-        let z = $(this).parent(".draggable").css("z-index");
-        if ((z === "0") | (z === "auto")) {
-          z = 1;
-        } else {
-          z = parseInt(z);
-        }
-        $(this)
-          .parent(".draggable")
-          .css("z-index", z + 1);
-      });
+      // $("#up").on("click", function () {
+      //   let z = $(this).parent(".draggable").css("z-index");
+      //   if ((z === "0") | (z === "auto")) {
+      //     z = 1;
+      //   } else {
+      //     z = parseInt(z);
+      //   }
+      //   $(this)
+      //     .parent(".draggable")
+      //     .css("z-index", z + 1);
+      // });
       $(this)
         .css({
           // "z-index": "auto",
