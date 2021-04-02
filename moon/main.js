@@ -25,7 +25,7 @@ $(function () {
               let anglea = 0;
               setInterval(function () {
                 // panglea = anglea;
-                // anglea = alpha;
+                anglea = alpha;
                 console.log(anglea);
               }, 1000);
 
