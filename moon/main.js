@@ -22,7 +22,7 @@ $(function () {
               setInterval(function () {
                 panglea = anglea;
                 anglea = alpha;
-                console.log(panglea + ";" + anglea);
+                console.log(panglea - anglea);
               }, 1000);
 
               // let angle = Math.abs(360 - alpha);
