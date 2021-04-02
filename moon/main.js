@@ -17,7 +17,8 @@ $(function () {
                 perturbance: 0.04,
               });
 
-              let panglea, anglea;
+              let panglea;
+              let anglea = 0;
               setInterval(function () {
                 panglea = anglea;
                 anglea = alpha;
