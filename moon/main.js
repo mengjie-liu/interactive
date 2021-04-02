@@ -17,16 +17,17 @@ $(function () {
                 perturbance: 0.04,
               });
 
-              let anglea;
+              let panglea, anglea;
               setInterval(function () {
+                panglea = anglea;
                 anglea = alpha;
-                console.log(alpha);
-              }, 500);
+                console.log(panglea + ";" + anglea);
+              }, 1000);
 
               // let angle = Math.abs(360 - alpha);
               // if (angle >= 2) {
               //   console.log(alpha);
-              //   $(".image").ripples("drop", 200, 0, 35, 0.5);
+              //   $(".image").ripples("drop", 200, -100, 20, 0.5);
               // }
             });
           }
