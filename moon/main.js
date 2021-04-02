@@ -16,11 +16,18 @@ $(function () {
                 dropRadius: 20,
                 perturbance: 0.04,
               });
-              let angle = Math.abs(360 - alpha);
-              if (angle >= 2) {
+
+              let anglea;
+              setInterval(function () {
+                anglea = alpha;
                 console.log(alpha);
-                $(".image").ripples("drop", 200, 0, 35, 0.5);
-              }
+              }, 500);
+
+              // let angle = Math.abs(360 - alpha);
+              // if (angle >= 2) {
+              //   console.log(alpha);
+              //   $(".image").ripples("drop", 200, 0, 35, 0.5);
+              // }
             });
           }
         })
