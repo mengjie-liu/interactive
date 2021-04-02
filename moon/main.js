@@ -1,4 +1,8 @@
 $(function () {
+  let alpha;
+  let beta;
+  let gamma;
+
   function requestDeviceOrientation() {
     if (
       typeof window.DeviceOrientationEvent !== "undefined" &&
@@ -8,21 +12,21 @@ $(function () {
         .then((permissionState) => {
           if (permissionState === "granted") {
             window.addEventListener("deviceorientation", (e) => {
-              let alpha = e.alpha;
-              let beta = e.beta;
-              let gamma = e.gamma;
+              alpha = e.alpha;
+              beta = e.beta;
+              gamma = e.gamma;
               $(".image").ripples({
                 resolution: 250,
                 dropRadius: 20,
                 perturbance: 0.04,
               });
 
-              let panglea;
+              // let panglea;
               let anglea = 0;
               setInterval(function () {
-                panglea = anglea;
-                anglea = alpha;
-                console.log(panglea - anglea);
+                // panglea = anglea;
+                // anglea = alpha;
+                console.log(anglea);
               }, 1000);
 
               // let angle = Math.abs(360 - alpha);
