@@ -27,7 +27,7 @@ $(function () {
                 // panglea = anglea;
                 anglea = alpha;
                 console.log(anglea);
-              }, 1000);
+              }, 1500);
 
               // let angle = Math.abs(360 - alpha);
               // if (angle >= 2) {
