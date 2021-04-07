@@ -94,12 +94,12 @@ function init() {
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  //renderer.setClearColor(0x000000, 0);
   container.appendChild(renderer.domElement);
 
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.addEventListener("change", render);
-
+  if (isMoblie == false) {
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.addEventListener("change", render);
+  }
   window.addEventListener("resize", onWindowResize, false);
 }
 
@@ -141,9 +141,17 @@ let bcloader = new THREE.TextureLoader();
 // <a href="https://yaleschoolofart.viewingrooms.com/">virtual studios</a>
 // </div>`);
 
-$("canvas").after(`<div id="participants">
+if (isMoblie == false) {
+  $("canvas").after(`<div id="participants">
 <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
 </div>`);
+} else {
+  $("canvas").css("z-index", "-1");
+  $("#info").append(`<div id="participants">
+  <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
+  </div>`);
+  $("#info").css("margin-bottom", "5%");
+}
 
 if (isMoblie == false) {
   $("#participants").hover(
@@ -170,7 +178,6 @@ if (isMoblie == false) {
       $(this).find(".cuty").css("visibility", "hidden");
     }
   );
-
   $(".name").hover(
     function () {
       $(".name").css("visibility", "hidden");
@@ -191,6 +198,30 @@ if (isMoblie == false) {
     }
   );
 } else {
+  $("#participants").click(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
+  $("#back").click(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
+  $("#link").click(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
   $(".name").click(
     function () {
       // $(".name").css("visibility", "hidden");
@@ -215,6 +246,7 @@ if (isMoblie == false) {
 
 $("#participants").on("click", function (e) {
   e.preventDefault();
+  $("canvas").css("z-index", "-1");
   $("#first").css("display", "none");
   $("#second").css("display", "block");
   $(this).css("display", "none");
