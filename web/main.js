@@ -10,6 +10,14 @@ var windowHalfY = window.innerHeight / 2;
 
 var object;
 
+var ratio;
+
+var isMoblie = false;
+
+if ($(window).width() <= 600) {
+  isMoblie = true;
+}
+
 init();
 animate();
 
@@ -103,6 +111,9 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
 
   renderer.setSize(window.innerWidth, window.innerHeight);
+
+  ratio = $(window).width() / $(window).height();
+  console.log(ratio);
 }
 
 function onDocumentMouseMove(event) {
@@ -134,16 +145,74 @@ $("canvas").after(`<div id="participants">
 <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
 </div>`);
 
-// var isP = false;
+if (isMoblie == false) {
+  $("#participants").hover(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
+  $("#back").hover(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
+  $("#link").hover(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
 
-$("#participants").hover(
-  function () {
-    $(this).find(".cuty").css("visibility", "visible");
-  },
-  function () {
-    $(this).find(".cuty").css("visibility", "hidden");
-  }
-);
+  $(".name").hover(
+    function () {
+      $(".name").css("visibility", "hidden");
+      $(this).css("visibility", "visible");
+      $(this).find(".cuty").css("visibility", "visible");
+      let id = $(this).attr("id");
+      bcloader.load(`img/${id}.jpg`, function (texture) {
+        // let img=texture.image;
+        // bgWidth= img.width;
+        // bgHeight = img.height;
+        scene.background = texture;
+      });
+    },
+    function () {
+      $(".name").css("visibility", "visible");
+      $(this).find(".cuty").css("visibility", "hidden");
+      scene.background = new THREE.Color("rgb(255, 255, 255)");
+    }
+  );
+} else {
+  $(".name").click(
+    function () {
+      // $(".name").css("visibility", "hidden");
+      // $(this).css("visibility", "visible");
+      $(this).find(".cuty").css("visibility", "visible");
+      let id = $(this).attr("id");
+      bcloader.load(`img/${id}.jpg`, function (texture) {
+        // let img=texture.image;
+        // bgWidth= img.width;
+        // bgHeight = img.height;
+        scene.background = texture;
+      });
+    }
+    // ,
+    // function () {
+    //   $(".name").css("visibility", "visible");
+    //   $(this).find(".cuty").css("visibility", "hidden");
+    //   scene.background = new THREE.Color("rgb(255, 255, 255)");
+    // }
+  );
+}
+
 $("#participants").on("click", function (e) {
   e.preventDefault();
   $("#first").css("display", "none");
@@ -152,14 +221,6 @@ $("#participants").on("click", function (e) {
   $("#back").css("display", "block");
 });
 
-$("#back").hover(
-  function () {
-    $(this).find(".cuty").css("visibility", "visible");
-  },
-  function () {
-    $(this).find(".cuty").css("visibility", "hidden");
-  }
-);
 $("#back").on("click", function (e) {
   e.preventDefault();
   $("#second").css("display", "none");
@@ -167,29 +228,3 @@ $("#back").on("click", function (e) {
   $(this).css("display", "none");
   $("#participants").css("display", "block");
 });
-
-$("#link").hover(
-  function () {
-    $(this).find(".cuty").css("visibility", "visible");
-  },
-  function () {
-    $(this).find(".cuty").css("visibility", "hidden");
-  }
-);
-
-$(".name").hover(
-  function () {
-    $(".name").css("visibility", "hidden");
-    $(this).css("visibility", "visible");
-    $(this).find(".cuty").css("visibility", "visible");
-    let id = $(this).attr("id");
-    bcloader.load(`img/${id}.jpg`, function (texture) {
-      scene.background = texture;
-    });
-  },
-  function () {
-    $(".name").css("visibility", "visible");
-    $(this).find(".cuty").css("visibility", "hidden");
-    scene.background = new THREE.Color("rgb(255, 255, 255)");
-  }
-);
