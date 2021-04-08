@@ -120,7 +120,7 @@ h4 {
   display: grid;
   line-height: 2.6rem;
   width: 95%;
-  top: 3%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -131,7 +131,11 @@ h4 {
 .Departments-title {
   font-size: 1rem;
   /* margin-top: 2.45rem; */
-  margin-top: 1rem;
+  /* margin-top: 0.1rem; */
+}
+
+#gd {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 3080px) {
