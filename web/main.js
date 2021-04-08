@@ -151,6 +151,7 @@ if (isMoblie == false) {
   <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
   </div>`);
   $("#info").css("margin-bottom", "5%");
+  $("#secondPP").css("display", "none");
 }
 
 if (isMoblie == false) {
@@ -198,34 +199,34 @@ if (isMoblie == false) {
     }
   );
 } else {
-  $("#participants").click(
-    function () {
-      $(this).find(".cuty").css("visibility", "visible");
-    },
-    function () {
-      $(this).find(".cuty").css("visibility", "hidden");
-    }
-  );
-  $("#back").click(
-    function () {
-      $(this).find(".cuty").css("visibility", "visible");
-    },
-    function () {
-      $(this).find(".cuty").css("visibility", "hidden");
-    }
-  );
-  $("#link").click(
-    function () {
-      $(this).find(".cuty").css("visibility", "visible");
-    },
-    function () {
-      $(this).find(".cuty").css("visibility", "hidden");
-    }
-  );
+  $("#participants").click(function () {
+    $(this).find(".cuty").css("visibility", "visible");
+    $("#back").find(".cuty").css("visibility", "hidden");
+    $("#links").find(".cuty").css("visibility", "hidden");
+    $(".name").find(".cuty").css("visibility", "hidden");
+  });
+  $("#back").click(function () {
+    $(this).find(".cuty").css("visibility", "visible");
+    $("#links").find(".cuty").css("visibility", "hidden");
+    $("#participants").find(".cuty").css("visibility", "hidden");
+    $(".name").find(".cuty").css("visibility", "hidden");
+    scene.background = new THREE.Color("rgb(255, 255, 255)");
+  });
+  $("#link").click(function () {
+    $(this).find(".cuty").css("visibility", "visible");
+    $("#participants").find(".cuty").css("visibility", "hidden");
+    $("#back").find(".cuty").css("visibility", "hidden");
+    $(".name").find(".cuty").css("visibility", "hidden");
+  });
   $(".name").click(
-    function () {
+    function (e) {
       // $(".name").css("visibility", "hidden");
       // $(this).css("visibility", "visible");
+      e.preventDefault();
+      $(".name").find(".cuty").css("visibility", "hidden");
+      $("#participants").find(".cuty").css("visibility", "hidden");
+      $("#back").find(".cuty").css("visibility", "hidden");
+      $("#links").find(".cuty").css("visibility", "hidden");
       $(this).find(".cuty").css("visibility", "visible");
       let id = $(this).attr("id");
       bcloader.load(`img/${id}.jpg`, function (texture) {
