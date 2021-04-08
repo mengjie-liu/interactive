@@ -260,4 +260,5 @@ $("#back").on("click", function (e) {
   $("#first").css("display", "block");
   $(this).css("display", "none");
   $("#participants").css("display", "block");
+  scene.background = new THREE.Color("rgb(255, 255, 255)");
 });
