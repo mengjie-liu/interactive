@@ -46,14 +46,23 @@ function init() {
   // manager
 
   function loadModel() {
-    object.traverse(function (child) {
-      if (child.isMesh) child.material.map = texture;
-    });
+    // object.traverse(function (child) {
+    //   if (child instanceof THREE.Mesh) child.material.map = texture;
+    // });
 
-    object.position.x = 10;
-    object.position.y = -2;
-    object.rotateY(-0.9);
-    object.scale.set(0.15, 0.15, 0.15);
+    object.material = new THREE.MeshPhongMaterial({ color: 0x000000 });
+
+    if (isMoblie == false) {
+      object.position.x = 10;
+      object.position.y = -2;
+      object.rotateY(-0.9);
+      object.scale.set(0.15, 0.15, 0.15);
+    } else {
+      object.position.y = -1;
+      object.position.z = -10;
+      object.rotateY(-0.5);
+      object.scale.set(0.1, 0.1, 0.1);
+    }
     scene.add(object);
   }
 
@@ -65,9 +74,14 @@ function init() {
 
   // texture
 
-  var textureLoader = new THREE.TextureLoader(manager);
+  // var textureLoader = new THREE.TextureLoader(manager);
 
-  var texture = textureLoader.load("os/osh.mtl");
+  // var texture = textureLoader.load("os/osh.mtl");
+  // object.traverse(function (child) {
+  //   if (child instanceof THREE.Mesh) {
+  //     child.material.map = texture;
+  //   }
+  // });
 
   // model
 
@@ -82,16 +96,30 @@ function init() {
 
   var loader = new THREE.OBJLoader(manager);
 
-  loader.load(
-    "os/osh.obj",
-    function (obj) {
-      object = obj;
-    },
-    onProgress,
-    onError
-  );
+  if (isMoblie == false) {
+    loader.load(
+      "os/osh.obj",
+      function (obj) {
+        object = obj;
+      },
+      onProgress,
+      onError
+    );
+  } else {
+    loader.load(
+      "os/osmb.obj",
+      function (obj) {
+        object = obj;
+      },
+      onProgress,
+      onError
+    );
+  }
 
-  renderer = new THREE.WebGLRenderer({ antialias: true });
+  // renderer = new THREE.WebGLRenderer({ antialias: true });
+  var canvas = document.querySelector("#c");
+  renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+  renderer.setClearColor(0xffffff, 0);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
@@ -113,7 +141,7 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   ratio = $(window).width() / $(window).height();
-  console.log(ratio);
+  // console.log(ratio);
 }
 
 function onDocumentMouseMove(event) {
@@ -133,20 +161,20 @@ function render() {
   renderer.render(scene, camera);
 }
 
-scene.background = new THREE.Color("rgb(255, 255, 255)");
+// scene.background = new THREE.Color("rgb(255, 255, 255)");
 
-let bcloader = new THREE.TextureLoader();
+// let bcloader = new THREE.TextureLoader();
 
 // $("canvas").after(`<div id="link">
 // <a href="https://yaleschoolofart.viewingrooms.com/">virtual studios</a>
 // </div>`);
 
 if (isMoblie == false) {
-  $("canvas").after(`<div id="participants">
+  $("#c").after(`<div id="participants">
 <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
 </div>`);
 } else {
-  $("canvas").css("z-index", "-1");
+  $("#c").css("z-index", "-1");
   $("#info").append(`<div id="participants">
   <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
   </div>`);
@@ -185,17 +213,19 @@ if (isMoblie == false) {
       $(this).css("visibility", "visible");
       $(this).find(".cuty").css("visibility", "visible");
       let id = $(this).attr("id");
-      bcloader.load(`img/${id}.jpg`, function (texture) {
-        // let img=texture.image;
-        // bgWidth= img.width;
-        // bgHeight = img.height;
-        scene.background = texture;
-      });
+      // bcloader.load(`img/${id}.jpg`, function (texture) {
+      //   // let img=texture.image;
+      //   // bgWidth= img.width;
+      //   // bgHeight = img.height;
+      //   scene.background = texture;
+      // });
+      $("#c").css("background-image", `url("img/${id}.jpg")`);
+      // console.log($("#c").css("background"));
     },
     function () {
       $(".name").css("visibility", "visible");
       $(this).find(".cuty").css("visibility", "hidden");
-      scene.background = new THREE.Color("rgb(255, 255, 255)");
+      $("canvas").css("background-image", "none");
     }
   );
 } else {
@@ -210,7 +240,8 @@ if (isMoblie == false) {
     $("#links").find(".cuty").css("visibility", "hidden");
     $("#participants").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
-    scene.background = new THREE.Color("rgb(255, 255, 255)");
+    $("canvas").css("background-image", "none");
+    // scene.background = new THREE.Color("rgb(255, 255, 255)");
   });
   $("#link").click(function () {
     $(this).find(".cuty").css("visibility", "visible");
@@ -218,31 +249,16 @@ if (isMoblie == false) {
     $("#back").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
   });
-  $(".name").click(
-    function (e) {
-      // $(".name").css("visibility", "hidden");
-      // $(this).css("visibility", "visible");
-      e.preventDefault();
-      $(".name").find(".cuty").css("visibility", "hidden");
-      $("#participants").find(".cuty").css("visibility", "hidden");
-      $("#back").find(".cuty").css("visibility", "hidden");
-      $("#links").find(".cuty").css("visibility", "hidden");
-      $(this).find(".cuty").css("visibility", "visible");
-      let id = $(this).attr("id");
-      bcloader.load(`img/${id}.jpg`, function (texture) {
-        // let img=texture.image;
-        // bgWidth= img.width;
-        // bgHeight = img.height;
-        scene.background = texture;
-      });
-    }
-    // ,
-    // function () {
-    //   $(".name").css("visibility", "visible");
-    //   $(this).find(".cuty").css("visibility", "hidden");
-    //   scene.background = new THREE.Color("rgb(255, 255, 255)");
-    // }
-  );
+  $(".name").click(function (e) {
+    e.preventDefault();
+    $(".name").find(".cuty").css("visibility", "hidden");
+    $("#participants").find(".cuty").css("visibility", "hidden");
+    $("#back").find(".cuty").css("visibility", "hidden");
+    $("#links").find(".cuty").css("visibility", "hidden");
+    $(this).find(".cuty").css("visibility", "visible");
+    let id = $(this).attr("id");
+    $("#c").css("background-image", `url("img/${id}.jpg")`);
+  });
 }
 
 $("#participants").on("click", function (e) {
@@ -260,5 +276,6 @@ $("#back").on("click", function (e) {
   $("#first").css("display", "block");
   $(this).css("display", "none");
   $("#participants").css("display", "block");
-  scene.background = new THREE.Color("rgb(255, 255, 255)");
+  $("canvas").css("background-image", "none");
+  // scene.background = new THREE.Color("rgb(255, 255, 255)");
 });

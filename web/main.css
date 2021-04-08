@@ -32,12 +32,19 @@ a {
   text-decoration: none;
 }
 
-canvas {
+#c {
   display: block;
   position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   top: 0;
   left: 0;
-  mix-blend-mode: darken;
+  /* mix-blend-mode: darken; */
+  /* background: url(img/AlNe.jpg) no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   /* z-index: -1; */
 }
 
@@ -80,15 +87,9 @@ canvas {
   letter-spacing: 0.5px;
 }
 
-/* #info {
-  max-height: 70vh;
-  overflow-y: scroll;
-} */
-
 .name {
   z-index: 99;
   text-decoration: none;
-  /* text-align: center; */
 }
 .cuty {
   visibility: hidden;
@@ -129,7 +130,8 @@ h4 {
 
 .Departments-title {
   font-size: 1rem;
-  margin-top: 2.45rem;
+  /* margin-top: 2.45rem; */
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 3080px) {
