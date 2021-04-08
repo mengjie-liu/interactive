@@ -72,6 +72,7 @@ a {
   transform: translate(-50%);
   text-align: center;
   font-size: 2rem;
+  z-index: 99;
 }
 
 #info {

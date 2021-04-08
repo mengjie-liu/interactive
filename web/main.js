@@ -207,6 +207,25 @@ if (isMoblie == false) {
       $(this).find(".cuty").css("visibility", "hidden");
     }
   );
+  $("#participants").on("click", function (e) {
+    e.preventDefault();
+    $("canvas").css("z-index", "-1");
+    $("#first").css("display", "none");
+    $("#second").css("display", "block");
+    $(this).css("display", "none");
+    $("#back").css("display", "block");
+  });
+
+  $("#back").on("click", function (e) {
+    e.preventDefault();
+    $("#c").css("z-index", "10");
+    $("#second").css("display", "none");
+    $("#first").css("display", "block");
+    $(this).css("display", "none");
+    $("#participants").css("display", "block");
+    $("canvas").css("background-image", "none");
+    // scene.background = new THREE.Color("rgb(255, 255, 255)");
+  });
   $(".name").hover(
     function () {
       $(".name").css("visibility", "hidden");
@@ -229,18 +248,29 @@ if (isMoblie == false) {
     }
   );
 } else {
-  $("#participants").click(function () {
+  $("#participants").click(function (e) {
+    e.preventDefault();
     $(this).find(".cuty").css("visibility", "visible");
     $("#back").find(".cuty").css("visibility", "hidden");
     $("#links").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
+    $("canvas").css("z-index", "-1");
+    $("#first").css("display", "none");
+    $("#second").css("display", "block");
+    $(this).css("display", "none");
+    $("#back").css("display", "block");
   });
-  $("#back").click(function () {
+  $("#back").click(function (e) {
+    e.preventDefault();
+    $("#second").css("display", "none");
+    $("#first").css("display", "block");
+    $(this).css("display", "none");
+    $("#participants").css("display", "block");
+    $("canvas").css("background-image", "none");
     $(this).find(".cuty").css("visibility", "visible");
     $("#links").find(".cuty").css("visibility", "hidden");
     $("#participants").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
-    $("canvas").css("background-image", "none");
     // scene.background = new THREE.Color("rgb(255, 255, 255)");
   });
   $("#link").click(function () {
@@ -260,23 +290,3 @@ if (isMoblie == false) {
     $("#c").css("background-image", `url("img/${id}.jpg")`);
   });
 }
-
-$("#participants").on("click", function (e) {
-  e.preventDefault();
-  $("canvas").css("z-index", "-1");
-  $("#first").css("display", "none");
-  $("#second").css("display", "block");
-  $(this).css("display", "none");
-  $("#back").css("display", "block");
-});
-
-$("#back").on("click", function (e) {
-  e.preventDefault();
-  $("#c").css("z-index", "10");
-  $("#second").css("display", "none");
-  $("#first").css("display", "block");
-  $(this).css("display", "none");
-  $("#participants").css("display", "block");
-  $("canvas").css("background-image", "none");
-  // scene.background = new THREE.Color("rgb(255, 255, 255)");
-});
