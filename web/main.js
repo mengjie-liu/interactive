@@ -272,6 +272,7 @@ $("#participants").on("click", function (e) {
 
 $("#back").on("click", function (e) {
   e.preventDefault();
+  $("#c").css("z-index", "10");
   $("#second").css("display", "none");
   $("#first").css("display", "block");
   $(this).css("display", "none");
