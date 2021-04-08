@@ -179,7 +179,7 @@ if (isMoblie == false) {
   <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
   </div>`);
   $("#info").css("margin-bottom", "5%");
-  $("#secondPP").css("display", "none");
+  // $("#secondPP").css("display", "none");
 }
 
 if (isMoblie == false) {
