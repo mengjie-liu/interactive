@@ -177,12 +177,8 @@ h4 {
   html {
     font-size: 14px;
   }
-  /* #info {
-    width: 68%;
-  } */
   .Dps-list {
     top: 6%;
-    /* grid-template-columns: 50% 50%; */
   }
 }
 
@@ -213,7 +209,6 @@ h4 {
   .Dps-list {
     grid-template-columns: 50% 50%;
     height: auto;
-    /* overflow-y: scroll; */
   }
 }
 
@@ -228,7 +223,7 @@ h4 {
 
   #info {
     top: 24.5%;
-    width: 80%;
+    width: 82%;
   }
 
   #participants {
@@ -238,7 +233,6 @@ h4 {
   .Dps-list {
     grid-template-columns: 100%;
     height: auto;
-    /* overflow-y: scroll; */
   }
 }
 
@@ -262,7 +256,6 @@ h4 {
   .Dps-list {
     grid-template-columns: 100%;
     height: auto;
-    /* overflow-y: scroll; */
   }
 }
 

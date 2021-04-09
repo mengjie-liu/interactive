@@ -139,6 +139,7 @@ if (isMoblie == false) {
 <a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual studios<span class="cuty">&nbsp;*</span></a>
 </div>`);
 } else {
+  $("#info").find(".space").remove();
   $("#c").css("z-index", "-1");
   $("#info").append(`
   <div id="participantsm">
