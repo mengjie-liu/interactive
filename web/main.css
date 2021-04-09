@@ -156,8 +156,8 @@ h4 {
     width: 78%;
   }
   .Dps-list {
-    /* top: 6%; */
-    grid-template-columns: 50% 50%;
+    top: 6%;
+    /* grid-template-columns: 50% 50%; */
   }
 }
 
@@ -166,11 +166,11 @@ h4 {
     font-size: 13px;
   }
   #info {
-    top: 24%;
+    top: 24.5%;
   }
   .Dps-list {
     top: 6%;
-    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 50% 50%; */
   }
 }
 
