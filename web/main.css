@@ -132,13 +132,13 @@ h4 {
 
 @media screen and (min-width: 3040px) {
   html {
-    font-size: 34px;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 2600px) and (max-width: 3040px) {
   html {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
