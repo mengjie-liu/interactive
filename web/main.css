@@ -136,7 +136,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 2600px) and (max-width: 3040px) {
+/* @media screen and (min-width: 2600px) and (max-width: 3040px) {
   html {
     font-size: 28px;
   }
@@ -146,7 +146,7 @@ h4 {
   html {
     font-size: 22px;
   }
-}
+} */
 
 @media screen and (max-width: 1600px) and (min-width: 1300px) {
   html {
