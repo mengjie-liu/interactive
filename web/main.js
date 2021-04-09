@@ -222,6 +222,7 @@ if (isMoblie == false) {
 } else {
   $("#participantsm").click(function (e) {
     e.preventDefault();
+    $(document).scrollTop(0);
     $(this).find(".cuty").css("visibility", "visible");
     $("#back").find(".cuty").css("visibility", "hidden");
     $("#links").find(".cuty").css("visibility", "hidden");
@@ -240,6 +241,7 @@ if (isMoblie == false) {
   });
   $("#back").click(function (e) {
     e.preventDefault();
+    $(document).scrollTop(0);
     $("#second").css("display", "none");
     $("#first").css("display", "block");
     $(this).css("display", "none");

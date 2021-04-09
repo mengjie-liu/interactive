@@ -64,7 +64,7 @@ a {
 #participants,
 #vist {
   position: absolute;
-  bottom: 9.5%;
+  bottom: 10.5%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -73,7 +73,7 @@ a {
   z-index: 99;
 }
 #vist {
-  bottom: 5%;
+  bottom: 6%;
 }
 #participantsm,
 #vistm {
@@ -81,7 +81,7 @@ a {
   z-index: 99;
 }
 #vistm {
-  bottom: 5%;
+  bottom: 6%;
 }
 
 #link {
@@ -97,7 +97,7 @@ a {
 
 #info {
   position: absolute;
-  width: 74%;
+  width: 68%;
   top: 28%;
   left: 50%;
   transform: translate(-49.25%);
@@ -177,9 +177,9 @@ h4 {
   html {
     font-size: 14px;
   }
-  #info {
-    width: 78%;
-  }
+  /* #info {
+    width: 68%;
+  } */
   .Dps-list {
     top: 6%;
     /* grid-template-columns: 50% 50%; */
