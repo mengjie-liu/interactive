@@ -33,25 +33,11 @@ function init() {
   );
   camera.position.z = 50;
 
-  // scene
-
   scene = new THREE.Scene();
-
-  // background
-
-  //   scene.background = new THREE.Color("rgb(255, 255, 255)");
-
   scene.add(camera);
 
-  // manager
-
   function loadModel() {
-    // object.traverse(function (child) {
-    //   if (child instanceof THREE.Mesh) child.material.map = texture;
-    // });
-
     object.material = new THREE.MeshPhongMaterial({ color: 0x000000 });
-
     if (isMoblie == false) {
       object.position.x = 10;
       object.position.y = -2;
@@ -67,23 +53,9 @@ function init() {
   }
 
   var manager = new THREE.LoadingManager(loadModel);
-
   manager.onProgress = function (item, loaded, total) {
     console.log(item, loaded, total);
   };
-
-  // texture
-
-  // var textureLoader = new THREE.TextureLoader(manager);
-
-  // var texture = textureLoader.load("os/osh.mtl");
-  // object.traverse(function (child) {
-  //   if (child instanceof THREE.Mesh) {
-  //     child.material.map = texture;
-  //   }
-  // });
-
-  // model
 
   function onProgress(xhr) {
     if (xhr.lengthComputable) {
@@ -116,7 +88,6 @@ function init() {
     );
   }
 
-  // renderer = new THREE.WebGLRenderer({ antialias: true });
   var canvas = document.querySelector("#c");
   renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
   renderer.setClearColor(0xffffff, 0);
@@ -141,7 +112,6 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   ratio = $(window).width() / $(window).height();
-  // console.log(ratio);
 }
 
 function onDocumentMouseMove(event) {
@@ -161,14 +131,6 @@ function render() {
   renderer.render(scene, camera);
 }
 
-// scene.background = new THREE.Color("rgb(255, 255, 255)");
-
-// let bcloader = new THREE.TextureLoader();
-
-// $("canvas").after(`<div id="link">
-// <a href="https://yaleschoolofart.viewingrooms.com/">virtual studios</a>
-// </div>`);
-
 if (isMoblie == false) {
   $("#c").after(`<div id="participants">
 <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
@@ -179,7 +141,6 @@ if (isMoblie == false) {
   <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
   </div>`);
   $("#info").css("margin-bottom", "5%");
-  // $("#secondPP").css("display", "none");
 }
 
 if (isMoblie == false) {
@@ -224,7 +185,6 @@ if (isMoblie == false) {
     $(this).css("display", "none");
     $("#participants").css("display", "block");
     $("canvas").css("background-image", "none");
-    // scene.background = new THREE.Color("rgb(255, 255, 255)");
   });
   $(".name").hover(
     function () {
@@ -232,14 +192,7 @@ if (isMoblie == false) {
       $(this).css("visibility", "visible");
       $(this).find(".cuty").css("visibility", "visible");
       let id = $(this).attr("id");
-      // bcloader.load(`img/${id}.jpg`, function (texture) {
-      //   // let img=texture.image;
-      //   // bgWidth= img.width;
-      //   // bgHeight = img.height;
-      //   scene.background = texture;
-      // });
       $("#c").css("background-image", `url("img/${id}.jpg")`);
-      // console.log($("#c").css("background"));
     },
     function () {
       $(".name").css("visibility", "visible");
@@ -271,7 +224,6 @@ if (isMoblie == false) {
     $("#links").find(".cuty").css("visibility", "hidden");
     $("#participants").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
-    // scene.background = new THREE.Color("rgb(255, 255, 255)");
   });
   $("#link").click(function () {
     $(this).find(".cuty").css("visibility", "visible");

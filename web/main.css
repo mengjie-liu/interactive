@@ -18,7 +18,6 @@ html {
 body {
   margin: 0;
   font-family: sfround;
-  /* font-size: 12px; */
   overflow: hidden;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -40,12 +39,9 @@ a {
   overflow: hidden;
   top: 0;
   left: 0;
-  /* mix-blend-mode: darken; */
-  /* background: url(img/AlNe.jpg) no-repeat; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* z-index: -1; */
 }
 
 #first {
@@ -78,7 +74,6 @@ a {
 #info {
   position: absolute;
   width: 75%;
-  /* text-indent: 2.5rem; */
   top: 26.5%;
   left: 50%;
   transform: translate(-49.25%);
@@ -117,7 +112,6 @@ h4 {
   position: absolute;
   counter-reset: ol;
   font-size: 2rem;
-  /* letter-spacing: -0.0001px; */
   display: grid;
   line-height: 2.6rem;
   width: 95%;
@@ -126,13 +120,10 @@ h4 {
   transform: translate(-50%);
   text-align: center;
   grid-template-columns: 25% 25% 25% 25%;
-  /* grid-column-gap: -0.25rem; */
 }
 
 .Departments-title {
   font-size: 1rem;
-  /* margin-top: 2.45rem; */
-  /* margin-top: 0.1rem; */
 }
 
 #gd {
