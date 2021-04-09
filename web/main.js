@@ -42,12 +42,12 @@ function init() {
       object.position.x = 10;
       object.position.y = -2;
       object.rotateY(-0.9);
-      object.scale.set(1.5, 1.5, 1.5);
+      object.scale.set(15, 15, 15);
     } else {
       object.position.y = -1;
       object.position.z = -10;
       object.rotateY(-0.5);
-      object.scale.set(1, 1, 1);
+      object.scale.set(10, 10, 10);
     }
     scene.add(object);
   }
@@ -70,7 +70,7 @@ function init() {
 
   if (isMoblie == false) {
     loader.load(
-      "os/oshs.obj",
+      "os/osht.obj",
       function (obj) {
         object = obj;
       },
@@ -79,7 +79,7 @@ function init() {
     );
   } else {
     loader.load(
-      "os/osmbs.obj",
+      "os/osmbt.obj",
       function (obj) {
         object = obj;
       },
