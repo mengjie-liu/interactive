@@ -14,7 +14,7 @@ var ratio;
 
 var isMoblie = false;
 
-if ($(window).width() <= 600) {
+if ($(window).width() <= 1050) {
   isMoblie = true;
 }
 
