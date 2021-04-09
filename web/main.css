@@ -64,7 +64,7 @@ a {
 #participants,
 #vist {
   position: absolute;
-  bottom: 10.5%;
+  bottom: 12%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -73,7 +73,7 @@ a {
   z-index: 99;
 }
 #vist {
-  bottom: 6%;
+  bottom: 7.5%;
 }
 #participantsm,
 #vistm {
@@ -81,7 +81,7 @@ a {
   z-index: 99;
 }
 #vistm {
-  bottom: 6%;
+  bottom: 7.5%;
 }
 
 #link {
@@ -97,7 +97,7 @@ a {
 
 #info {
   position: absolute;
-  width: 68%;
+  width: 60%;
   top: 28%;
   left: 50%;
   transform: translate(-49.25%);
@@ -129,7 +129,7 @@ dt {
 h4 {
   margin: 0;
   font-family: sfroundh;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.5px;
 }
 
 .Dps-list {

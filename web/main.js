@@ -233,12 +233,13 @@ if (isMoblie == false) {
     $("#second").css("display", "block");
     $(this).css("display", "none");
     $("#back").css("display", "block");
-    $("#second").prepend(`
-    <div id="link">
-    <a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual&nbsp;studios<span class="cuty">&nbsp;*</span></a>
-    </div>  
-    `);
-    $(".Dps-list").css("top", "12%");
+    $(".Dps-list").find("#line").remove();
+    // $("#second").prepend(`
+    // <div id="link">
+    // <a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual&nbsp;studios<span class="cuty">&nbsp;*</span></a>
+    // </div>
+    // `);
+    $(".Dps-list").css("top", "5%");
   });
   $("#back").click(function (e) {
     e.preventDefault();
