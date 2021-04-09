@@ -136,17 +136,17 @@ h4 {
   }
 }
 
-/* @media screen and (min-width: 2600px) and (max-width: 3040px) {
+@media screen and (min-width: 2600px) and (max-width: 3040px) {
   html {
     font-size: 28px;
   }
 }
 
-@media screen and (min-width: 1900px) and (max-width: 2600px) {
+@media screen and (min-width: 1960px) and (max-width: 2600px) {
   html {
     font-size: 22px;
   }
-} */
+}
 
 @media screen and (max-width: 1600px) and (min-width: 1300px) {
   html {
