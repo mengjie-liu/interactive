@@ -61,20 +61,44 @@ a {
   font-size: 3rem;
 }
 
-#participants {
+#participants,
+#vist {
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
   font-size: 2rem;
+  line-height: 2rem;
+  z-index: 99;
+}
+#vist {
+  bottom: 5%;
+}
+#participantsm,
+#vistm {
+  text-align: center;
+  z-index: 99;
+}
+#vistm {
+  bottom: 5%;
+}
+
+#link {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
   z-index: 99;
 }
 
 #info {
   position: absolute;
-  width: 75%;
-  top: 26.5%;
+  width: 74%;
+  top: 28%;
   left: 50%;
   transform: translate(-49.25%);
   text-align: left;
@@ -117,6 +141,7 @@ h4 {
   width: 95%;
   top: 5%;
   left: 50%;
+  margin-bottom: 2%;
   transform: translate(-50%);
   text-align: center;
   grid-template-columns: 25% 25% 25% 25%;
@@ -166,7 +191,7 @@ h4 {
     font-size: 13px;
   }
   #info {
-    top: 24.5%;
+    top: 26%;
   }
   .Dps-list {
     top: 6%;
@@ -187,8 +212,8 @@ h4 {
   }
   .Dps-list {
     grid-template-columns: 50% 50%;
-    height: 100vh;
-    overflow-y: scroll;
+    height: auto;
+    /* overflow-y: scroll; */
   }
 }
 
@@ -202,6 +227,7 @@ h4 {
   }
 
   #info {
+    top: 24.5%;
     width: 80%;
   }
 
@@ -211,8 +237,8 @@ h4 {
 
   .Dps-list {
     grid-template-columns: 100%;
-    height: 100vh;
-    overflow-y: scroll;
+    height: auto;
+    /* overflow-y: scroll; */
   }
 }
 
@@ -235,8 +261,8 @@ h4 {
 
   .Dps-list {
     grid-template-columns: 100%;
-    height: 100vh;
-    overflow-y: scroll;
+    height: auto;
+    /* overflow-y: scroll; */
   }
 }
 

@@ -135,11 +135,20 @@ if (isMoblie == false) {
   $("#c").after(`<div id="participants">
 <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
 </div>`);
+  $("#c").after(`<div id="vist">
+<a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual studios<span class="cuty">&nbsp;*</span></a>
+</div>`);
 } else {
   $("#c").css("z-index", "-1");
-  $("#info").append(`<div id="participants">
+  $("#info").append(`
+  <div id="participantsm">
   <a href="/"><span class="cuty">*&nbsp;</span>participants<span class="cuty">&nbsp;*</span></a>
-  </div>`);
+  </div>
+  <div id="vistm">
+<a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual&nbsp;studios<span class="cuty">&nbsp;*</span></a>
+</div>
+</br>
+  `);
   $("#info").css("margin-bottom", "5%");
 }
 
@@ -153,6 +162,14 @@ if (isMoblie == false) {
     }
   );
   $("#back").hover(
+    function () {
+      $(this).find(".cuty").css("visibility", "visible");
+    },
+    function () {
+      $(this).find(".cuty").css("visibility", "hidden");
+    }
+  );
+  $("#vist").hover(
     function () {
       $(this).find(".cuty").css("visibility", "visible");
     },
@@ -174,6 +191,7 @@ if (isMoblie == false) {
     $("#first").css("display", "none");
     $("#second").css("display", "block");
     $(this).css("display", "none");
+    $("#vist").css("display", "none");
     $("#back").css("display", "block");
   });
 
@@ -183,6 +201,7 @@ if (isMoblie == false) {
     $("#second").css("display", "none");
     $("#first").css("display", "block");
     $(this).css("display", "none");
+    $("#vist").css("display", "block");
     $("#participants").css("display", "block");
     $("canvas").css("background-image", "none");
   });
@@ -201,7 +220,7 @@ if (isMoblie == false) {
     }
   );
 } else {
-  $("#participants").click(function (e) {
+  $("#participantsm").click(function (e) {
     e.preventDefault();
     $(this).find(".cuty").css("visibility", "visible");
     $("#back").find(".cuty").css("visibility", "hidden");
@@ -212,29 +231,35 @@ if (isMoblie == false) {
     $("#second").css("display", "block");
     $(this).css("display", "none");
     $("#back").css("display", "block");
+    $("#second").prepend(`
+    <div id="link">
+    <a href="https://yaleschoolofart.viewingrooms.com"><span class="cuty">*&nbsp;</span>virtual&nbsp;studios<span class="cuty">&nbsp;*</span></a>
+    </div>  
+    `);
+    $(".Dps-list").css("top", "12%");
   });
   $("#back").click(function (e) {
     e.preventDefault();
     $("#second").css("display", "none");
     $("#first").css("display", "block");
     $(this).css("display", "none");
-    $("#participants").css("display", "block");
+    $("#participantsm").css("display", "block");
     $("canvas").css("background-image", "none");
     $(this).find(".cuty").css("visibility", "visible");
     $("#links").find(".cuty").css("visibility", "hidden");
-    $("#participants").find(".cuty").css("visibility", "hidden");
+    $("#participantsm").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
   });
   $("#link").click(function () {
     $(this).find(".cuty").css("visibility", "visible");
-    $("#participants").find(".cuty").css("visibility", "hidden");
+    $("#participantsm").find(".cuty").css("visibility", "hidden");
     $("#back").find(".cuty").css("visibility", "hidden");
     $(".name").find(".cuty").css("visibility", "hidden");
   });
   $(".name").click(function (e) {
     e.preventDefault();
     $(".name").find(".cuty").css("visibility", "hidden");
-    $("#participants").find(".cuty").css("visibility", "hidden");
+    $("#participantsm").find(".cuty").css("visibility", "hidden");
     $("#back").find(".cuty").css("visibility", "hidden");
     $("#links").find(".cuty").css("visibility", "hidden");
     $(this).find(".cuty").css("visibility", "visible");
