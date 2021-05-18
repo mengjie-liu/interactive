@@ -1,0 +1,116 @@
+@font-face {
+  font-family: bruce;
+  src: url(b16.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: bruce;
+  cursor: default;
+}
+
+body {
+  background-color: black;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#out {
+  position: fixed;
+  width: 485px;
+  height: 750px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(sky/sky1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 220px;
+  filter: blur(1px);
+  box-shadow: 0 0 65px 35px #ffffff73, 0 0 25px 5px #ffffff73,
+    inset 0 0 50px 5px #ffffff9c;
+}
+
+#black-sc {
+  position: absolute;
+  width: 100vw;
+  height: 200%;
+  top: 0;
+  /* overflow-y: scroll; */
+}
+
+#black {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  /* left: 50%;
+  transform: translate(-50%); */
+  background-color: black;
+  /* box-shadow: 0 0 40px 10px #ffffff53; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.intro {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  text-align: center;
+}
+
+.blurry {
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  color: transparent;
+  text-shadow: 0 0 0px white;
+}
+
+.prompt {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 24px;
+  letter-spacing: 1px;
+  bottom: 3vh;
+  color: transparent;
+  text-shadow: 0 0 0px white;
+}
+
+#start {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: black;
+}
+
+/* .blurry {
+  animation: pulse 15s infinite;
+}
+
+@keyframes pulse {
+  20% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
