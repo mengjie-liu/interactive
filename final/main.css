@@ -12,7 +12,7 @@
 
 body {
   background-color: black;
-  overflow: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   overscroll-behavior: none;
 }
@@ -23,18 +23,13 @@ body::-webkit-scrollbar {
 
 #out {
   position: fixed;
-  width: 485px;
-  height: 750px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(sky/sky1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 220px;
   filter: blur(1px);
-  box-shadow: 0 0 65px 35px #ffffff73, 0 0 25px 5px #ffffff73,
-    inset 0 0 50px 5px #ffffff9c;
 }
 
 #black-sc {
@@ -42,7 +37,6 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 200%;
   top: 0;
-  /* overflow-y: scroll; */
 }
 
 #black {
@@ -50,18 +44,11 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 100vh;
   top: 0;
-  /* left: 50%;
-  transform: translate(-50%); */
   background-color: black;
-  /* box-shadow: 0 0 40px 10px #ffffff53; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 .intro {
   position: fixed;
-  width: 100%;
   height: auto;
   top: 50%;
   left: 50%;
@@ -70,7 +57,6 @@ body::-webkit-scrollbar {
 }
 
 .blurry {
-  font-size: 50px;
   letter-spacing: 1px;
   line-height: 150%;
   color: transparent;
@@ -81,11 +67,11 @@ body::-webkit-scrollbar {
   position: fixed;
   left: 50%;
   transform: translate(-50%);
-  font-size: 24px;
   letter-spacing: 1px;
   bottom: 3vh;
   color: transparent;
   text-shadow: 0 0 0px white;
+  cursor: pointer;
 }
 
 #start {
@@ -96,21 +82,82 @@ body::-webkit-scrollbar {
   background-color: black;
 }
 
-/* .blurry {
-  animation: pulse 15s infinite;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #out {
+    width: 300px;
+    height: 480px;
+    border-radius: 150px;
+    box-shadow: 0 0 55px 30px #ffffff73, 0 0 18px 4px #ffffff73,
+      inset 0 0 42px 4px #ffffff9c;
+  }
+  .blurry {
+    font-size: 23px;
+  }
+  .prompt {
+    font-size: 14px;
+  }
+  .intro {
+    width: 90%;
+  }
 }
 
-@keyframes pulse {
-  20% {
-    opacity: 1;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #out {
+    width: 420px;
+    height: 650px;
+    border-radius: 185px;
+    box-shadow: 0 0 55px 30px #ffffff73, 0 0 18px 4px #ffffff73,
+      inset 0 0 42px 4px #ffffff9c;
   }
-  55% {
-    opacity: 0;
+  .blurry {
+    font-size: 35px;
   }
-  60% {
-    opacity: 0;
+  .prompt {
+    font-size: 20px;
   }
-  100% {
-    opacity: 1;
+  .intro {
+    width: 100%;
   }
-} */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1100px) {
+  #out {
+    width: 420px;
+    height: 650px;
+    border-radius: 185px;
+    box-shadow: 0 0 55px 30px #ffffff73, 0 0 18px 4px #ffffff73,
+      inset 0 0 42px 4px #ffffff9c;
+  }
+  .blurry {
+    font-size: 40px;
+  }
+  .prompt {
+    font-size: 20px;
+  }
+  .intro {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1441px) {
+  #out {
+    width: 485px;
+    height: 750px;
+    border-radius: 220px;
+    box-shadow: 0 0 65px 35px #ffffff73, 0 0 25px 5px #ffffff73,
+      inset 0 0 50px 5px #ffffff9c;
+  }
+  .blurry {
+    font-size: 50px;
+  }
+  .prompt {
+    font-size: 24px;
+  }
+  .intro {
+    width: 100%;
+  }
+}
